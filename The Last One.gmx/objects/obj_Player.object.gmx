@@ -36,6 +36,15 @@ runImgSpeed = 0.4;
 verticalLock = false;
 horizontalLock = false;
 global.playerRun = true;
+
+//Water, Food &amp; Health system
+pWater = 100;
+pFood = 100;
+pHealth = 100;
+pWaterDecay = 0.1; //Per second
+pFoodDecay = 0.1 //Per Second
+pWaterDamage = 1; //Per Second
+pFoodDamage = 1; //Per Second
 </string>
           </argument>
         </arguments>
@@ -131,6 +140,51 @@ if (place_meeting(x,y+vSpeed,obj_Collision))
 //Changing x and y
 x += hSpeed;
 y += vSpeed;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Water, Food &amp; Health system
+//Health
+
+//Hurt if water is too low
+if (pWater = 0){pHealth -= pWaterDamage / room_speed;}
+//Hurt if food is too low
+if (pFood = 0){pHealth -= pFoodDamage / room_speed;}
+
+//Death
+if (pHealth &lt;= 0){/*Death animation*/}
+
+
+//Water
+//Water decay
+pWater -= pWaterDecay / room_speed;
+//Value is always between 0 - 100
+if (pWater &gt; 100){pWater = 100;}
+if (pWater &lt; 0){pWater = 0;}
+
+//Food
+//Food decay
+pFood -= pFoodDecay / room_speed;
+//Value is always between 0 - 100
+if (pFood &gt; 100){pFood = 100;}
+if (pFood &lt; 0){pFood = 0;}
 </string>
           </argument>
         </arguments>
