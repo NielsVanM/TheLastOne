@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1920</width>
   <height>1080</height>
-  <vsnap>1</vsnap>
-  <hsnap>1</hsnap>
+  <vsnap>32</vsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="&lt;undefined&gt;" x="1486" y="720" name="inst_2EAB4439" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Player" x="1526" y="867" name="inst_CA203398" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Player" x="1504" y="864" name="inst_CA203398" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="1664" y="655" name="inst_7D84CAE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="1659" y="703" name="inst_61C06878" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="1541" y="672" name="inst_9A876856" locked="0" code="" scaleX="1.57142853736877" scaleY="7.25" colour="4294967295" rotation="0"/>
@@ -85,12 +85,12 @@
     <instance objName="&lt;undefined&gt;" x="1032" y="723" name="inst_2FE43D79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="1085" y="657" name="inst_697A96B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="1078" y="655" name="inst_D23DD1C0" locked="0" code="" scaleX="0.879999995231628" scaleY="0.860000014305115" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Locker" x="1463" y="697" name="inst_15A9DCE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Locker" x="1524" y="698" name="inst_D72C5D0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Locker" x="1583" y="696" name="inst_3B0D423F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Bureau" x="1088" y="657" name="inst_58FFAC77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Chair" x="1113" y="682" name="inst_E4D79A49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Bed" x="1309" y="688" name="inst_42F11E62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Locker" x="1440" y="704" name="inst_15A9DCE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Locker" x="1504" y="704" name="inst_D72C5D0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Locker" x="1568" y="704" name="inst_3B0D423F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Bureau" x="1120" y="672" name="inst_58FFAC77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Chair" x="1120" y="704" name="inst_E4D79A49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Bed" x="1312" y="704" name="inst_42F11E62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_TileSet_FLoor" x="1088" y="864" w="64" h="64" xo="128" yo="192" id="10000044" name="inst_3C172754" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
