@@ -26,7 +26,10 @@
             <sprite>sprites\spr_Bed_Used</sprite>
           </sprites>
           <sprites name="Chair">
-            <sprite>sprites\spr_Chair</sprite>
+            <sprite>sprites\spr_Chair_Up</sprite>
+            <sprite>sprites\spr_Chair_Down</sprite>
+            <sprite>sprites\spr_Chair_Right</sprite>
+            <sprite>sprites\spr_Chair_Left</sprite>
           </sprites>
           <sprites name="Bureau">
             <sprite>sprites\spr_Bureau</sprite>
@@ -116,20 +119,20 @@
           <object>objects\obj_Closet_Wood</object>
           <object>objects\obj_Closet</object>
         </objects>
+        <object>objects\obj_Bureau</object>
+        <object>objects\obj_Bed</object>
+        <object>objects\obj_Chair</object>
+        <object>objects\obj_Doormat</object>
+        <object>objects\obj_Locker</object>
+        <object>objects\obj_TV</object>
       </objects>
-      <object>objects\obj_Bureau</object>
-      <object>objects\obj_Bed</object>
-      <object>objects\obj_Chair</object>
-      <object>objects\obj_Doormat</object>
-      <object>objects\obj_Locker</object>
-      <object>objects\obj_TV</object>
     </objects>
     <objects name="Controllers">
-      <object>objects\obj_Master</object>
       <objects name="Rooms">
         <object>objects\obj_Controller_TitleScreen</object>
         <object>objects\obj_Controller_Home1</object>
       </objects>
+      <object>objects\obj_Master</object>
       <object>objects\obj_Collision</object>
     </objects>
     <objects name="Entities">

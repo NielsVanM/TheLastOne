@@ -29,8 +29,10 @@
 mainSelected = 0;
 optionSelected = 0;
 exitSelected = 0;
+survivalSelected = 0;
 
 optionMenu = false;
+survivalMenu = false;
 
 enterLock = 0;
 </string>
@@ -56,7 +58,8 @@ enterLock = 0;
           <argument>
             <kind>1</kind>
             <string>///Selection Code
-if (optionMenu = false)
+//main menu
+if (optionMenu = false &amp;&amp; survivalMenu = false)
 {
     //Main menu
     //User input
@@ -73,11 +76,13 @@ if (optionMenu = false)
         enterLock = 2;
         if (mainSelected = 0){room_goto(rm_Home);}
         if (mainSelected = 1){/*Load game*/}
-        if (mainSelected = 2){/*survival*/}
+        if (mainSelected = 2){survivalMenu = true;}
         if (mainSelected = 3){optionMenu = true;}
         if (mainSelected = 4){game_end();}
     }
 }
+
+//Option Menu
 if (optionMenu = true)
 {
     //User input
@@ -98,6 +103,28 @@ if (optionMenu = true)
         if (optionSelected = 3){script_execute(scr_SaveSettings); optionMenu = false;}
     }
 }
+
+//Survival menu
+if (survivalMenu = true)
+{
+    //User input
+    if (keyboard_check_pressed(vk_up)){survivalSelected -= 1;}
+    if (keyboard_check_pressed(vk_down)){survivalSelected += 1;}
+    
+    //If optionSelected becomes to big select first option
+    if (survivalSelected &gt; 2){survivalSelected = 0;}
+    if (survivalSelected &lt; 0){survivalSelected = 2;}
+    
+    //If enter is pressed execute button
+    if (keyboard_check_pressed(vk_enter) &amp;&amp; enterLock = 0)
+    {
+        enterLock = 2;
+        if (survivalSelected = 0){}
+        if (survivalSelected = 1){}
+        if (survivalSelected = 2){survivalMenu = false;}
+    }
+}
+
 
 //Resetting enterLock
 if (enterLock &gt; 0)
@@ -160,7 +187,7 @@ draw_set_font(fnt_GameTitle);
 draw_text(960,230,'The Last One');
 
 //Main menu
-if (optionMenu = false)
+if (optionMenu = false &amp;&amp; survivalMenu = false)
 {
     //Draw menu text &amp; setting font
     draw_set_font(fnt_TitleScreen);
@@ -193,6 +220,21 @@ if (optionMenu = true)
     if (optionSelected = 1){draw_text(960,675,'_________')}
     if (optionSelected = 2){draw_text(960,810,'_____________')}
     if (optionSelected = 3){draw_text(960,945,'____')}
+}
+
+//Surival menu
+if (survivalMenu = true)
+{
+    //Draw menu text &amp; setting font
+    draw_set_font(fnt_TitleScreen);
+    draw_text(960,540,'New Survial');
+    draw_text(960,675,'Load Survival');
+    draw_text(960,810,'Back');
+    
+    //Draw selection bar
+    if (survivalSelected = 0){draw_text(960,540,'____________')}
+    if (survivalSelected = 1){draw_text(960,675,'_____________')}
+    if (survivalSelected = 2){draw_text(960,810,'____')}
 }
 </string>
           </argument>
