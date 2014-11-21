@@ -61,6 +61,11 @@
           <sprite>sprites\spr_Doormat</sprite>
         </sprites>
       </sprites>
+      <sprites name="Outdoors">
+        <sprites name="Houses">
+          <sprite>sprites\spr_House1</sprite>
+        </sprites>
+      </sprites>
     </sprites>
     <sprites name="Entities">
       <sprites name="Living">
@@ -126,6 +131,11 @@
         <object>objects\obj_Locker</object>
         <object>objects\obj_TV</object>
       </objects>
+      <objects name="Outdoors">
+        <objects name="Houses">
+          <object>objects\obj_House1</object>
+        </objects>
+      </objects>
     </objects>
     <objects name="Controllers">
       <objects name="Rooms">
@@ -146,6 +156,7 @@
     <rooms name="Main Story">
       <room>rooms\rm_Home</room>
       <room>rooms\rm_Home_Down</room>
+      <room>rooms\rm_Outsidehouse</room>
     </rooms>
   </rooms>
   <help>
