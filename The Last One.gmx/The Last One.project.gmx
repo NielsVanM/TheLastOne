@@ -160,6 +160,10 @@
         </objects>
         <object>objects\obj_Trigger_GoOutside</object>
       </objects>
+      <objects name="Room Fading">
+        <object>objects\obj_Room_FadeIn</object>
+        <object>objects\obj_Room_FadeOut</object>
+      </objects>
       <object>objects\obj_Collision</object>
     </objects>
   </objects>

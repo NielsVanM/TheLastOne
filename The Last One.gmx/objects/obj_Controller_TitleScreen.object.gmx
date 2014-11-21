@@ -153,7 +153,7 @@ if (enterLock &gt; 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Load settins
+            <string>///Load settings
 script_execute(scr_LoadSettings);
 </string>
           </argument>
