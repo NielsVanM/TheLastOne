@@ -149,6 +149,7 @@
     <objects name="Game Mechanics">
       <objects name="Controllers">
         <objects name="Rooms">
+          <object>objects\obj_Missions</object>
           <object>objects\obj_Controller_TitleScreen</object>
           <object>objects\obj_Controller_Home</object>
         </objects>
