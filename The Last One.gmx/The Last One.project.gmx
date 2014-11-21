@@ -77,7 +77,11 @@
         </sprites>
       </sprites>
     </sprites>
-    <sprite>sprites\spr_Controller</sprite>
+    <sprites name="Game Mechanics">
+      <sprite>sprites\spr_Controller</sprite>
+      <sprite>sprites\spr_Trigger</sprite>
+      <sprite>sprites\spr_Collision</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tileset">
@@ -137,26 +141,34 @@
         </objects>
       </objects>
     </objects>
-    <objects name="Controllers">
-      <objects name="Rooms">
-        <object>objects\obj_Controller_TitleScreen</object>
-        <object>objects\obj_Controller_Home1</object>
-      </objects>
-      <object>objects\obj_Master</object>
-      <object>objects\obj_Collision</object>
-    </objects>
     <objects name="Entities">
       <objects name="Living">
         <object>objects\obj_Player</object>
       </objects>
     </objects>
+    <objects name="Game Mechanics">
+      <objects name="Controllers">
+        <objects name="Rooms">
+          <object>objects\obj_Controller_TitleScreen</object>
+          <object>objects\obj_Controller_Home</object>
+        </objects>
+        <object>objects\obj_Master</object>
+      </objects>
+      <objects name="Triggers">
+        <objects name="Own Home">
+          <object>objects\obj_Trigger_Home_Stairs</object>
+        </objects>
+        <object>objects\obj_Trigger_GoOutside</object>
+      </objects>
+      <object>objects\obj_Collision</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_TitleScreen</room>
     <rooms name="Main Story">
-      <room>rooms\rm_Home</room>
-      <room>rooms\rm_Home_Down</room>
-      <room>rooms\rm_Outsidehouse</room>
+      <room>rooms\rm_Home_Upstairs</room>
+      <room>rooms\rm_Home_Downstairs</room>
+      <room>rooms\rm_MainWorld</room>
     </rooms>
   </rooms>
   <help>

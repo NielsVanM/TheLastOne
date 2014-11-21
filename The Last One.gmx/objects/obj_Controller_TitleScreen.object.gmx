@@ -74,7 +74,7 @@ if (optionMenu = false &amp;&amp; survivalMenu = false)
     if (keyboard_check_pressed(vk_enter) &amp;&amp; enterLock = 0)
     {
         enterLock = 2;
-        if (mainSelected = 0){room_goto(rm_Home);}
+        if (mainSelected = 0){room_goto(rm_Home_Upstairs);}
         if (mainSelected = 1){/*Load game*/}
         if (mainSelected = 2){survivalMenu = true;}
         if (mainSelected = 3){optionMenu = true;}
