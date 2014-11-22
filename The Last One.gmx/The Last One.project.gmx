@@ -101,6 +101,7 @@
       <script>scripts\scr_LoadSettings.gml</script>
     </scripts>
   </scripts>
+  <shaders name="shaders"/>
   <fonts name="fonts">
     <fonts name="TitleScreen">
       <font>fonts\fnt_GameTitle</font>
