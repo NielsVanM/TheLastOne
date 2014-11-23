@@ -101,7 +101,6 @@
       <script>scripts\scr_LoadSettings.gml</script>
     </scripts>
   </scripts>
-  <shaders name="shaders"/>
   <fonts name="fonts">
     <fonts name="TitleScreen">
       <font>fonts\fnt_GameTitle</font>
@@ -154,7 +153,6 @@
           <object>objects\obj_Controller_TitleScreen</object>
           <object>objects\obj_Controller_Home</object>
         </objects>
-        <object>objects\obj_Master</object>
       </objects>
       <objects name="Triggers">
         <objects name="Own Home">
@@ -166,7 +164,13 @@
         <object>objects\obj_Room_FadeIn</object>
         <object>objects\obj_Room_FadeOut</object>
       </objects>
+      <objects name="Lighting">
+        <object>objects\obj_LightMaster</object>
+        <object>objects\obj_FlashLight</object>
+        <object>objects\obj_NormalLight</object>
+      </objects>
       <object>objects\obj_Collision</object>
+      <object>objects\obj_MasterController</object>
     </objects>
   </objects>
   <rooms name="rooms">

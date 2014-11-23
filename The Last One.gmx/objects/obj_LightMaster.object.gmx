@@ -2,9 +2,9 @@
 <object>
   <spriteName>spr_Controller</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,14 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Objectives
-useFlashlight = false;
-drinkWater = false;
-lookAtClock = false;
-cleanBed = false;
-openCurtains = false;
-gotKey = false;
-walkOutside = false;
+            <string>///Create canvas
+global.light = surface_create(view_wview[0],view_hview[0]);
 </string>
           </argument>
         </arguments>
@@ -55,55 +49,41 @@ walkOutside = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Objectives get
-if (useFlashlight = false)
+            <string>///Draw canvas
+surface_set_target(global.light);
+draw_set_color(c_white);
+draw_rectangle(0,0,view_wview[0],view_hview[0],false);
+surface_reset_target();
+
+depth = obj_Player.depth - 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Draw surface
+if (global.dark = true)
 {
-    if (keyboard_check_pressed(ord('L')))
-    {
-        useFlashlight = true;
-    }
-}
-/*else if (drinkWater = false)
-{
-    if (place_meeting(x,y-1,obj_WaterBottle) &amp;&amp; keyboard_check_pressed(vk_space))
-    {
-        drinkWater = true;   
-    }
-}
-else if (lookAtClock = false)
-{
-    if (place_meeting(x,y-1,obj_Clock) &amp;&amp; keyboard_check_pressed(vk_space))
-    {
-        lookAtClock = true;
-    }
-}
-else if (cleanBed = false)
-{
-    if (place_meeting(x+1,y,obj_Bed) || place_meeting(x-1,y,obj_Bed)) &amp;&amp; (keyboard_check_pressed(vk_space))
-    {
-        cleanBed = true;
-    }
-}
-else if (openCurtains = false)
-{
-    if (place_meeting(x,y,obj_Curtains) &amp;&amp; keyboard_check_pressed(vk_space))
-    {
-        openCurtains = true;   
-    }
-}
-else if (gotKey = false)
-{
-    if (place_meeting(x,y+1,obj_Key))
-    {
-        gotKey = true;
-    }
-}
-else if (walkOutside = false)
-{
-    if (place_meeting(x,y,obj_Trigger_GoOutside))
-    {
-        walkOutside = true
-    }
+    draw_set_blend_mode(bm_subtract);
+    draw_surface(global.light,view_xview[0],view_yview[0]);
+    draw_set_blend_mode(bm_normal);
 }
 </string>
           </argument>
