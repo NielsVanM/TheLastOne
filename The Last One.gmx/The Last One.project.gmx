@@ -65,6 +65,12 @@
         <sprites name="Houses">
           <sprite>sprites\spr_House1</sprite>
         </sprites>
+        <sprites name="Cars">
+          <sprite>sprites\spr_Car1_Broken</sprite>
+          <sprite>sprites\spr_Car1</sprite>
+          <sprite>sprites\spr_Car2_Broken</sprite>
+          <sprite>sprites\spr_Car2</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="Entities">
@@ -82,6 +88,10 @@
           <sprite>sprites\spr_Zombie1_Up</sprite>
           <sprite>sprites\spr_Zombie1_Left</sprite>
           <sprite>sprites\spr_Zombie1_Right</sprite>
+          <sprite>sprites\spr_Zombie2_Up</sprite>
+          <sprite>sprites\spr_Zombie2_Down</sprite>
+          <sprite>sprites\spr_Zombie2_left</sprite>
+          <sprite>sprites\spr_Zombie_Right</sprite>
         </sprites>
       </sprites>
     </sprites>
@@ -153,6 +163,12 @@
         <objects name="Houses">
           <object>objects\obj_House1</object>
         </objects>
+        <objects name="Cars">
+          <object>objects\obj_Car1_Broken</object>
+          <object>objects\obj_Car1</object>
+          <object>objects\obj_Car2_Broken</object>
+          <object>objects\obj_Car2</object>
+        </objects>
       </objects>
     </objects>
     <objects name="Entities">
@@ -162,6 +178,7 @@
       <objects name="Dead">
         <objects name="Zombie">
           <object>objects\obj_Zombie</object>
+          <object>objects\obj_Zombie2</object>
         </objects>
       </objects>
     </objects>

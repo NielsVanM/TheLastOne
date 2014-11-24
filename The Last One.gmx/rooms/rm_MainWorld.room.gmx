@@ -52,7 +52,10 @@
   </views>
   <instances>
     <instance objName="obj_House1" x="384" y="96" name="inst_5B3F5733" locked="0" code="" scaleX="1.74000000953674" scaleY="1.73000001907349" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie" x="448" y="416" name="inst_8D89D2BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Car1_Broken" x="518" y="408" name="inst_59698E04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Zombie" x="288" y="128" name="inst_7050FA90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Zombie2" x="454" y="411" name="inst_BBFAE5B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Car2_Broken" x="403" y="408" name="inst_D6C101D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
