@@ -76,6 +76,14 @@
           <sprite>sprites\spr_Player_Up</sprite>
         </sprites>
       </sprites>
+      <sprites name="Dead">
+        <sprites name="Zombie">
+          <sprite>sprites\spr_Zombie1_Down</sprite>
+          <sprite>sprites\spr_Zombie1_Up</sprite>
+          <sprite>sprites\spr_Zombie1_Left</sprite>
+          <sprite>sprites\spr_Zombie1_Right</sprite>
+        </sprites>
+      </sprites>
     </sprites>
     <sprites name="Game Mechanics">
       <sprite>sprites\spr_Controller</sprite>
@@ -91,8 +99,13 @@
       <background>background\bg_TileSet_Walls</background>
       <background>background\bg_TileSet_Walls2</background>
     </backgrounds>
+    <backgrounds name="Background">
+      <background>background\bg_Ground</background>
+    </backgrounds>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\pth_Zombie</path>
+  </paths>
   <scripts name="scripts">
     <scripts name="Save">
       <script>scripts\scr_SaveSettings.gml</script>
@@ -146,6 +159,11 @@
     <objects name="Entities">
       <objects name="Living">
         <object>objects\obj_Player</object>
+      </objects>
+      <objects name="Dead">
+        <objects name="Zombie">
+          <object>objects\obj_Zombie</object>
+        </objects>
       </objects>
     </objects>
     <objects name="Game Mechanics">
