@@ -181,6 +181,7 @@ script_execute(scr_LoadSettings);
 //Setting font and centering text
 draw_set_halign(fa_center);
 draw_set_valign(fa_center);
+draw_set_color(c_black);
 draw_set_font(fnt_GameTitle);
 
 //Drawing GameName
