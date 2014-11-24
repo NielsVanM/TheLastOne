@@ -26,7 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>///Variables
+sizeNormal = 256;
+sizeHidden = 128;
+global.size = 0;
+
 flashLightOn = false;
+flashLightWorking = true;
+global.flashLightBattery = 100;
+batteryDrain = 0.3 //Per second
 </string>
           </argument>
         </arguments>
@@ -49,7 +56,7 @@ flashLightOn = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Drawing light to surface
+            <string>///Flashlight mechanics
 
 //Toggle flashlight
 if (keyboard_check_pressed(ord('L')))
@@ -58,17 +65,19 @@ if (keyboard_check_pressed(ord('L')))
 }
 
 //If flashlight is on draw ellipse
-if (flashLightOn = true)
+if (flashLightOn = true &amp;&amp; flashLightWorking = true)
 {
-    //Setting lightsize
-    size = 256;
-    
+
+    //Set size
+    global.size = sizeNormal;
+    if (global.hide = true){global.size = sizeHidden;}    
+
     //Setting blend mode &amp; target surface
     draw_set_blend_mode(bm_subtract);
     surface_set_target(global.light);
     
     //Drawing light to surface
-    draw_ellipse_colour(x-size/2-view_xview,y-size/2-view_yview,x+size/2-view_xview,y+size/2-view_yview,c_white,c_black,false)
+    draw_ellipse_colour(x-global.size/2-view_xview,y-global.size/2-view_yview,x+global.size/2-view_xview,y+global.size/2-view_yview,c_white,c_black,false)
     
     //Reseting blend mode &amp; target surface
     draw_set_blend_mode(bm_normal);
@@ -78,6 +87,15 @@ if (flashLightOn = true)
 //Locking flashlight to player
 x = obj_Player.x;
 y = obj_Player.y;
+
+//Flashlight battery drain
+if (flashLightOn = true &amp;&amp; global.hide = false){global.flashLightBattery -= batteryDrain / room_speed;}
+else if (flashLightOn = true &amp;&amp; global.hide = true){global.flashLightBattery -= (batteryDrain / room_speed) / 2;}
+
+//If battery is empty disable flashlight
+if (global.flashLightBattery &lt; 0){global.flashLightBattery = 0;}
+if (global.flashLightBattery = 0){flashLightWorking = false;}
+if (global.flashLightBattery &gt; 0){flashLightWorking = true;}
 </string>
           </argument>
         </arguments>

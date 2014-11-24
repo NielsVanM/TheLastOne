@@ -41,14 +41,10 @@ global.playerRun = true;
 pWater = 100;
 pFood = 100;
 pHealth = 100;
-pWaterDecay = 0.1; //Per second
-pFoodDecay = 0.1 //Per Second
+pWaterDecay = 0.3; //Per second
+pFoodDecay = 0.3; //Per Second
 pWaterDamage = 1; //Per Second
 pFoodDamage = 1; //Per Second
-
-//Flashlight
-flashLightOn = false;
-size = 128;
 </string>
           </argument>
         </arguments>
@@ -257,6 +253,38 @@ depth = y * -1;
             <kind>1</kind>
             <string>///Draw player
 if (global.hide = false){draw_self();}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///DEBUG DELETE WHEN COMPILING
+draw_set_font(fnt_Instructions);
+if (global.debug = true)
+{
+    draw_text(x,y+10,x);
+    draw_text(x,y+20,y);
+    draw_text(x,y+30,pWater);
+    draw_text(x,y+40,pFood);
+    draw_text(x,y+50,pHealth);
+    draw_text(x,y+60,global.flashLightBattery);
+    draw_text(x,y+70,global.size);
+}
 </string>
           </argument>
         </arguments>
