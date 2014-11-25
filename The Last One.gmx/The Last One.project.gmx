@@ -64,6 +64,8 @@
       <sprites name="Outdoors">
         <sprites name="Houses">
           <sprite>sprites\spr_House1</sprite>
+          <sprite>sprites\spr_House2</sprite>
+          <sprite>sprites\spr_House3</sprite>
         </sprites>
         <sprites name="Cars">
           <sprite>sprites\spr_Car1_Broken</sprite>
@@ -166,6 +168,8 @@
       <objects name="Outdoors">
         <objects name="Houses">
           <object>objects\obj_House1</object>
+          <object>objects\obj_House2</object>
+          <object>objects\obj_House3</object>
         </objects>
         <objects name="Cars">
           <object>objects\obj_Car1_Broken</object>
