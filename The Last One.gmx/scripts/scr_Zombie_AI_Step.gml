@@ -11,37 +11,93 @@ if (isWalking = false)
     //Right
     if (moveDirection = 0)
     {
-        //If ther is no collision on the way
-        if (!collision_line(x,y,x+moveLength,y,obj_Collision,false,true))
+        //If ther isn't a collision
+        if (!collision_line(x,y,x+moveSpeed,y,obj_Collision,false,true))
         {
-            //Set walking
-            isWalking = true;
+            //Disabling walking
+            isWalking = false;
             
-            //Set coordinates moving towards
-            towardsX = 
-            towardsY =
+            //Setting x and y the object is moving towards
+            towardsX = x + moveLength;
+            towardsY = y;
             
-            //Move object
-            move_towards_point(x+moveLength,y,moveSpeed);
-            walkTimer = 4 * room_speed;
+            //Setting hSpeed & vSpeed
+            hSpeed = moveSpeed;
+            vSpeed = 0;
         }
     }
     
     //Left
-    //Up
-    //Down
-}
-
-//Walktimer
-if (isWalking = true)
-{
-    //Decay walktimer
-    walkTimer -= 1;
-    //Ensureing the timer doesn't go below 0
-    if (walkTimer < 0){walkTimer = 0;}
-    //Resetting isWalking
-    if (walkTimer = 0)
+    if (moveDirection = 1)
     {
-        isWalking = false;
+        //If there isn't a collision
+        if (!collision_line(x,y,x-moveSpeed,y,obj_Collision,false,true))
+        {
+            //Disable walking
+            isWalking = false;
+            
+            //Setting x and y the object is moving towards
+            towardsX = x - moveLength;
+            towardsY = y;
+            
+            //Setting hSpeed & vSpeed
+            hSpeed = -moveSpeed;
+            vSpeed = 0;
+        }
+    }
+    
+    //Up
+    if (moveDirection = 2)
+    {
+        //If there isn't a collision
+        if (!collision_line(x,y,x,y-moveLength,obj_Collision,false,true))
+        {
+            //Disable walking
+            isWalking = false;
+            
+            //Setting x and y the object is moving towards
+            towardsX = x;
+            towardsY = y - moveLength;
+            
+            //Setting hSpeed & vSpeed
+            hSpeed = 0;
+            vSpeed = -moveSpeed;
+        }
+    }
+    //Down
+    if (moveDirection = 3)
+    {
+        //If there isn't a collision
+        if (!collision_line(x,y,x,y+moveLength,obj_Collision,false,true))
+        {
+            //Disable walking
+            isWalking = false;
+            
+            //Setting x and y the object is moving towards
+            towardsX = x;
+            towardsY = y + moveLength;
+            
+            //Setting hSpeed & vSpeed
+            hSpeed = 0;
+            vSpeed = moveSpeed;
+        }
     }
 }
+
+//If destination is reached reset hSpeed & vSpeed
+if (x = towardsX && y = towardsY)
+{
+    hSpeed = 0;
+    vSpeed = 0;
+    walkCooldown = 2 * room_speed;
+}
+
+//Walk cooldown
+if (walkCooldown > 0)
+{
+    walkCooldown -= 1;
+}
+
+//Changing x and y
+x += hSpeed;
+y += vSpeed;
