@@ -117,6 +117,10 @@
     <path>paths\pth_Zombie</path>
   </paths>
   <scripts name="scripts">
+    <scripts name="AI">
+      <script>scripts\scr_Zombie_AI_Create.gml</script>
+      <script>scripts\scr_Zombie_AI_Step.gml</script>
+    </scripts>
     <scripts name="Save">
       <script>scripts\scr_SaveSettings.gml</script>
     </scripts>
@@ -176,9 +180,16 @@
         <object>objects\obj_Player</object>
       </objects>
       <objects name="Dead">
-        <objects name="Zombie">
-          <object>objects\obj_Zombie</object>
-          <object>objects\obj_Zombie2</object>
+        <objects name="With Path">
+          <objects name="Zombies">
+            <object>objects\obj_Zombie_Path</object>
+            <object>objects\obj_Zombie2_Path</object>
+          </objects>
+        </objects>
+        <objects name="With AI">
+          <objects name="Zombies">
+            <object>objects\obj_Zombie1_AI</object>
+          </objects>
         </objects>
       </objects>
     </objects>
