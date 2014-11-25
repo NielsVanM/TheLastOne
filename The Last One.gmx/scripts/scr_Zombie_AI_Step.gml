@@ -114,12 +114,79 @@ if (lockedOn = false)
 }
 
 ///Player tracking
+if (distance_to_object(obj_Player) < trackRange){lockedOn = true;}
 
-//Moving on to player
-if (distance_to_object(obj_Player) < trackRange && distance_to_object(obj_Player) > hitRange)
-{
-    //Setting lockedOn
-    lockedOn = true;    
+if (lockedOn = true)
+{ 
+    //Moving on to player
+    if (distance_to_object(obj_Player) < trackRange && distance_to_object(obj_Player) > hitRange)
+    {
+        //Lockedon
+        lockedOn = true
+        
+        //Stopping zombie
+        hSpeed = 0;
+        vSpeed = 0;
+        image_speed = 0;
+        
+        //Moving to player
+        if (!collision_line(x,y,obj_Player.x,obj_Player.y,obj_Collision,false,true))
+        {
+            //Towards player.x
+            if (toggleCoor = 0)
+            {
+                if (x < obj_Player.x)
+                {
+                    hSpeed = moveSpeed;
+                    sprite_index = spr_Zombie1_Right;
+                    image_speed = imgSpeed;
+                }
+                if(x > obj_Player.x)
+                {
+                    hSpeed = -moveSpeed;
+                    sprite_index = spr_Zombie1_Left;
+                    image_speed = imgSpeed;
+                }
+                if (x = obj_Player.x){toggleCoor = 1;}
+            }
+            
+            //Towards player.y
+            if (toggleCoor = 1)
+            {
+                if (y < obj_Player.y)
+                {
+                    vSpeed = moveSpeed;
+                    sprite_index = spr_Zombie1_Down;
+                    image_speed = imgSpeed;
+                }
+                if (y > obj_Player.y)
+                {
+                    vSpeed = -moveSpeed;
+                    sprite_index = spr_Zombie1_Up;
+                    image_speed = imgSpeed;
+                }
+                if (y = obj_Player.y){toggleCoor = 0;}
+            }
+        }
+    }
+    
+    //Hitting the player
+    if (distance_to_object(obj_Player) < hitRange)
+    {
+        hSpeed = 0;
+        vSpeed = 0;
+        image_speed = 0;
+        image_index = 1;
+        
+        //Hurt Player
+    }
+    
+    //Losing the player
+    if (distance_to_object(obj_Player) > trackRange)
+    {
+        lockedOn = false;
+        isWalking = false;
+    }
 }
 
 //Changing x and y

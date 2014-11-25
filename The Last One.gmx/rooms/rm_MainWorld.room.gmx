@@ -98,35 +98,35 @@
     <instance objName="obj_Cemetery_Wall1" x="0" y="784" name="inst_77965543" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Cemetery_Wall1" x="0" y="736" name="inst_EC8FA8D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Cemetery_Wall3" x="-2" y="726" name="inst_1E49D99D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Cemetery_Statue1" x="223" y="754" name="inst_64BD297E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tombston_Blood1" x="288" y="992" name="inst_27B4F562" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tombdtoone_Normal2" x="64" y="800" name="inst_992CE72C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cemetery_Statue1" x="241" y="757" name="inst_64BD297E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tombstone_Blood1" x="288" y="992" name="inst_27B4F562" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tombdtone_Normal2" x="64" y="800" name="inst_992CE72C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tombstone_Normal1" x="192" y="864" name="inst_168649FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tombstone_Normal1" x="288" y="800" name="inst_F9803CA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tombstone_Normal1" x="480" y="864" name="inst_BBF784FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tombdtoone_Normal2" x="352" y="864" name="inst_36D725FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tombdtone_Normal2" x="352" y="864" name="inst_36D725FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tombstone_Normal1" x="480" y="992" name="inst_869A8B48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tombdtoone_Normal2" x="352" y="992" name="inst_10932EB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tombdtoone_Normal2" x="64" y="1056" name="inst_B3D5A39C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tombdtone_Normal2" x="352" y="992" name="inst_10932EB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tombdtone_Normal2" x="64" y="1056" name="inst_B3D5A39C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tombstone_Broken1" x="288" y="864" name="inst_27AAFF7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tombstone_Broken1" x="352" y="1056" name="inst_2F47FC98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tombstone_Broken1" x="64" y="992" name="inst_C30E7A65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tombstone_Broken1" x="192" y="800" name="inst_5A0F93A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tombstone_Broken1" x="416" y="800" name="inst_2743B0A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tombstone_Broken1" x="544" y="800" name="inst_393F2963" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tombston_Blood1" x="352" y="800" name="inst_14C272EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tombston_Blood1" x="192" y="992" name="inst_4E7DC231" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tombston_Blood1" x="480" y="1056" name="inst_CE402888" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tombston_Blood1" x="480" y="800" name="inst_DE2FA4FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tombston_Blood1" x="64" y="864" name="inst_9ACF9F24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tombdtoone_Normal2" x="416" y="864" name="inst_EF8A3B17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tombdtoone_Normal2" x="544" y="864" name="inst_1420D8A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tombdtoone_Normal2" x="416" y="1056" name="inst_4B53307B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tombstone_Blood1" x="352" y="800" name="inst_14C272EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tombstone_Blood1" x="192" y="992" name="inst_4E7DC231" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tombstone_Blood1" x="480" y="1056" name="inst_CE402888" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tombstone_Blood1" x="480" y="800" name="inst_DE2FA4FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tombstone_Blood1" x="64" y="864" name="inst_9ACF9F24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tombdtone_Normal2" x="416" y="864" name="inst_EF8A3B17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tombdtone_Normal2" x="544" y="864" name="inst_1420D8A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tombdtone_Normal2" x="416" y="1056" name="inst_4B53307B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tombstone_Normal1" x="288" y="1056" name="inst_24D1E133" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tombstone_Broken1" x="416" y="992" name="inst_557A0C6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tombstone_Normal1" x="192" y="1056" name="inst_0532B29F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tombstone_Broken1" x="544" y="1056" name="inst_0C5EF005" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tombdtoone_Normal2" x="544" y="992" name="inst_F62B1B38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tombdtone_Normal2" x="544" y="992" name="inst_F62B1B38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Zombie1_AI" x="224" y="928" name="inst_B7217D64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Zombie1_AI" x="448" y="928" name="inst_456226EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

@@ -8,9 +8,9 @@ moveLength = 128;
 
 //Tracking player
 lockedOn = false;
-trackRange = 100;
-hitRange = 10;
-loseRange = 150;
+trackRange = 200;
+hitRange = 5;
+toggleCoor = 0;
 
 //Both
 moveSpeed = 1;

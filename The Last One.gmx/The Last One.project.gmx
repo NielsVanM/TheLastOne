@@ -208,9 +208,9 @@
           <object>objects\obj_Cemetery_Statue1</object>
           <objects name="Tombstones">
             <object>objects\obj_Tombstone_Normal1</object>
-            <object>objects\obj_Tombdtoone_Normal2</object>
+            <object>objects\obj_Tombdtone_Normal2</object>
             <object>objects\obj_Tombstone_Broken1</object>
-            <object>objects\obj_Tombston_Blood1</object>
+            <object>objects\obj_Tombstone_Blood1</object>
           </objects>
         </objects>
       </objects>
