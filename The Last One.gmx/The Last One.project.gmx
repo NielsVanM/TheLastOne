@@ -74,6 +74,9 @@
           <sprite>sprites\spr_Car2</sprite>
         </sprites>
       </sprites>
+      <sprites name="Water">
+        <sprite>sprites\spr_Water1</sprite>
+      </sprites>
     </sprites>
     <sprites name="Entities">
       <sprites name="Living">
@@ -110,6 +113,7 @@
       <background>background\bg_TileSet_Ground2</background>
       <background>background\bg_TileSet_Walls</background>
       <background>background\bg_TileSet_Walls2</background>
+      <background>background\bg_Tileset_Random</background>
     </backgrounds>
     <backgrounds name="Background">
       <background>background\bg_Ground</background>
@@ -177,6 +181,9 @@
           <object>objects\obj_Car2_Broken</object>
           <object>objects\obj_Car2</object>
         </objects>
+      </objects>
+      <objects name="Water">
+        <object>objects\obj_Water1</object>
       </objects>
     </objects>
     <objects name="Entities">
