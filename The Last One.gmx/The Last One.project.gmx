@@ -66,12 +66,21 @@
           <sprite>sprites\spr_House1</sprite>
           <sprite>sprites\spr_House2</sprite>
           <sprite>sprites\spr_House3</sprite>
+          <sprites name="Doors">
+            <sprite>sprites\spr_Door_Closed1</sprite>
+          </sprites>
         </sprites>
         <sprites name="Cars">
           <sprite>sprites\spr_Car1_Broken</sprite>
           <sprite>sprites\spr_Car1</sprite>
           <sprite>sprites\spr_Car2_Broken</sprite>
           <sprite>sprites\spr_Car2</sprite>
+        </sprites>
+        <sprites name="Cemetery">
+          <sprite>sprites\spr_Cemetery_Walls1</sprite>
+          <sprite>sprites\spr_Cemetery_Walls2</sprite>
+          <sprite>sprites\spr_Cemetery_Walls3</sprite>
+          <sprite>sprites\spr_Cemetery_Sign</sprite>
         </sprites>
       </sprites>
       <sprites name="Water">
@@ -174,12 +183,21 @@
           <object>objects\obj_House1</object>
           <object>objects\obj_House2</object>
           <object>objects\obj_House3</object>
+          <objects name="Doors">
+            <object>objects\obj_Door_Closed1</object>
+          </objects>
         </objects>
         <objects name="Cars">
           <object>objects\obj_Car1_Broken</object>
           <object>objects\obj_Car1</object>
           <object>objects\obj_Car2_Broken</object>
           <object>objects\obj_Car2</object>
+        </objects>
+        <objects name="Cemetery">
+          <object>objects\obj_Cemetery_Wall1</object>
+          <object>objects\obj_Cemetery_Wall2</object>
+          <object>objects\obj_Cemetery_Wall3</object>
+          <object>objects\obj_Cemetery_Sign</object>
         </objects>
       </objects>
       <objects name="Water">
