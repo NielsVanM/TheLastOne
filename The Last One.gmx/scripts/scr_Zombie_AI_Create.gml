@@ -7,7 +7,7 @@ global.walkCooldown = 0;
 moveLength = 128;
 
 //Tracking player
-lockedOnPlayer = false;
+lockedOn = false;
 trackRange = 100;
 hitRange = 10;
 loseRange = 150;
