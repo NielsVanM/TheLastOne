@@ -81,6 +81,13 @@
           <sprite>sprites\spr_Cemetery_Walls2</sprite>
           <sprite>sprites\spr_Cemetery_Walls3</sprite>
           <sprite>sprites\spr_Cemetery_Sign</sprite>
+          <sprite>sprites\spr_Cemetery_Statue1</sprite>
+          <sprites name="Tombstones">
+            <sprite>sprites\spr_Tombstone_Normal1</sprite>
+            <sprite>sprites\spr_Tombstone_Normal2</sprite>
+            <sprite>sprites\spr_Tombstone_Broken_1</sprite>
+            <sprite>sprites\spr_Tombstone_Blood1</sprite>
+          </sprites>
         </sprites>
       </sprites>
       <sprites name="Water">
@@ -198,6 +205,13 @@
           <object>objects\obj_Cemetery_Wall2</object>
           <object>objects\obj_Cemetery_Wall3</object>
           <object>objects\obj_Cemetery_Sign</object>
+          <object>objects\obj_Cemetery_Statue1</object>
+          <objects name="Tombstones">
+            <object>objects\obj_Tombstone_Normal1</object>
+            <object>objects\obj_Tombdtoone_Normal2</object>
+            <object>objects\obj_Tombstone_Broken1</object>
+            <object>objects\obj_Tombston_Blood1</object>
+          </objects>
         </objects>
       </objects>
       <objects name="Water">
