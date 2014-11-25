@@ -284,6 +284,7 @@ if (global.debug = true)
     draw_text(x,y+50,pHealth);
     draw_text(x,y+60,global.flashLightBattery);
     draw_text(x,y+70,global.size);
+    if instance_exists(obj_Zombie1_AI){draw_text(x,y+80,global.walkCooldown);}
 }
 </string>
           </argument>
