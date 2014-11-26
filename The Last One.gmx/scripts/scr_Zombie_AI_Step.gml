@@ -114,7 +114,10 @@ if (lockedOn = false)
 }
 
 ///Player tracking
-if (distance_to_object(obj_Player) < trackRange){lockedOn = true;}
+if (!collision_line(x,y,obj_Player.x,obj_Player.y,obj_Collision,false,true))
+{
+    if (distance_to_object(obj_Player) < trackRange){lockedOn = true;}
+}
 
 if (lockedOn = true)
 { 

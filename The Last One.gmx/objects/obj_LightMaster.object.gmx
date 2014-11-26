@@ -55,7 +55,7 @@ global.light = surface_create(view_wview[0],view_hview[0]);
     draw_rectangle(0,0,view_wview[0],view_hview[0],false);
     surface_reset_target();
 
-depth = obj_Player.depth - 1;
+depth = obj_Player.depth - 10000;
 </string>
           </argument>
         </arguments>
