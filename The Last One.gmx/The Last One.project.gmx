@@ -89,6 +89,11 @@
             <sprite>sprites\spr_Tombstone_Blood1</sprite>
           </sprites>
         </sprites>
+        <sprites name="Nature">
+          <sprite>sprites\spr_Tree1</sprite>
+          <sprite>sprites\spr_Tent1</sprite>
+          <sprite>sprites\spr_Campfire1</sprite>
+        </sprites>
       </sprites>
       <sprites name="Water">
         <sprite>sprites\spr_Water1</sprite>
@@ -252,6 +257,11 @@
             <object>objects\obj_Tombstone_Broken1</object>
             <object>objects\obj_Tombstone_Blood1</object>
           </objects>
+        </objects>
+        <objects name="Nature">
+          <object>objects\obj_Tree1</object>
+          <object>objects\obj_Tent1</object>
+          <object>objects\obj_Campfire1</object>
         </objects>
       </objects>
       <objects name="Water">
