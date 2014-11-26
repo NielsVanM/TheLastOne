@@ -50,10 +50,10 @@ global.light = surface_create(view_wview[0],view_hview[0]);
           <argument>
             <kind>1</kind>
             <string>///Draw canvas
-surface_set_target(global.light);
-draw_set_color(c_ltgray);
-draw_rectangle(0,0,view_wview[0],view_hview[0],false);
-surface_reset_target();
+    surface_set_target(global.light);
+    draw_set_color(c_ltgray);
+    draw_rectangle(0,0,view_wview[0],view_hview[0],false);
+    surface_reset_target();
 
 depth = obj_Player.depth - 1;
 </string>

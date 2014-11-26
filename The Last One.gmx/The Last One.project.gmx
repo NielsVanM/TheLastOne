@@ -105,14 +105,54 @@
       </sprites>
       <sprites name="Dead">
         <sprites name="Zombie">
-          <sprite>sprites\spr_Zombie1_Down</sprite>
-          <sprite>sprites\spr_Zombie1_Up</sprite>
-          <sprite>sprites\spr_Zombie1_Left</sprite>
-          <sprite>sprites\spr_Zombie1_Right</sprite>
-          <sprite>sprites\spr_Zombie2_Up</sprite>
-          <sprite>sprites\spr_Zombie2_Down</sprite>
-          <sprite>sprites\spr_Zombie2_left</sprite>
-          <sprite>sprites\spr_Zombie_Right</sprite>
+          <sprites name="Zombie1">
+            <sprite>sprites\spr_Zombie1_Down</sprite>
+            <sprite>sprites\spr_Zombie1_Up</sprite>
+            <sprite>sprites\spr_Zombie1_Left</sprite>
+            <sprite>sprites\spr_Zombie1_Right</sprite>
+          </sprites>
+          <sprites name="Zombie2">
+            <sprite>sprites\spr_Zombie2_Up</sprite>
+            <sprite>sprites\spr_Zombie2_Down</sprite>
+            <sprite>sprites\spr_Zombie2_Left</sprite>
+            <sprite>sprites\spr_Zombie_Right</sprite>
+          </sprites>
+          <sprites name="Zombie3">
+            <sprite>sprites\spr_Zombie3_Up</sprite>
+            <sprite>sprites\spr_Zombie3_Down</sprite>
+            <sprite>sprites\spr_Zombie3_Right</sprite>
+            <sprite>sprites\spr_Zombie3_Left</sprite>
+          </sprites>
+          <sprites name="Zombie4">
+            <sprite>sprites\spr_Zombie4_Up</sprite>
+            <sprite>sprites\spr_Zombie4_Down</sprite>
+            <sprite>sprites\spr_Zombie4_Right</sprite>
+            <sprite>sprites\spr_Zombie4_Left</sprite>
+          </sprites>
+          <sprites name="Zombie5">
+            <sprite>sprites\spr_Zombie5_Up</sprite>
+            <sprite>sprites\spr_Zombie5_Down</sprite>
+            <sprite>sprites\spr_Zombie5_Right</sprite>
+            <sprite>sprites\spr_Zombie5_Left</sprite>
+          </sprites>
+          <sprites name="Zombie6">
+            <sprite>sprites\spr_Zombie6_Up</sprite>
+            <sprite>sprites\spr_Zombie6_Down</sprite>
+            <sprite>sprites\spr_Zombie6_Right</sprite>
+            <sprite>sprites\spr_Zombie6_Left</sprite>
+          </sprites>
+          <sprites name="Zombie7">
+            <sprite>sprites\spr_Zombie7_Up</sprite>
+            <sprite>sprites\spr_Zombie7_Down</sprite>
+            <sprite>sprites\spr_Zombie7_Right</sprite>
+            <sprite>sprites\spr_Zombie7_Left</sprite>
+          </sprites>
+          <sprites name="Zombie8">
+            <sprite>sprites\spr_Zombie8_Up</sprite>
+            <sprite>sprites\spr_Zombie8_Down</sprite>
+            <sprite>sprites\spr_Zombie8_Right</sprite>
+            <sprite>sprites\spr_Zombie8_Left</sprite>
+          </sprites>
         </sprites>
       </sprites>
     </sprites>
@@ -226,7 +266,7 @@
         <objects name="With Path">
           <objects name="Zombies">
             <object>objects\obj_Zombie_Path</object>
-            <object>objects\obj_Zombie2_Path</object>
+            <object>objects\obj_Zombie2_BetweenCars</object>
           </objects>
         </objects>
         <objects name="With AI">

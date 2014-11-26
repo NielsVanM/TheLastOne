@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>global.dark = false;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -53,8 +53,8 @@
   <instances>
     <instance objName="obj_House1" x="405" y="107" name="inst_5B3F5733" locked="0" code="" scaleX="1.74000000953674" scaleY="1.73000001907349" colour="4294967295" rotation="0"/>
     <instance objName="obj_Car1_Broken" x="518" y="408" name="inst_59698E04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie_Path" x="288" y="128" name="inst_7050FA90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie2_Path" x="454" y="411" name="inst_BBFAE5B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Zombie1_AI" x="448" y="928" name="inst_456226EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Zombie2_BetweenCars" x="454" y="411" name="inst_BBFAE5B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Car2_Broken" x="403" y="408" name="inst_D6C101D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Zombie1_AI" x="448" y="288" name="inst_F7BFD2CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_House3" x="1343" y="78" name="inst_B641DBBE" locked="0" code="" scaleX="2.51999998092651" scaleY="2.14000010490417" colour="4294967295" rotation="0"/>
@@ -128,7 +128,7 @@
     <instance objName="obj_Tombstone_Broken1" x="544" y="1056" name="inst_0C5EF005" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tombdtone_Normal2" x="544" y="992" name="inst_F62B1B38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Zombie1_AI" x="224" y="928" name="inst_B7217D64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie1_AI" x="448" y="928" name="inst_456226EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Table" x="192" y="320" name="inst_6E0EF71A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_Tileset_Random" x="416" y="256" w="32" h="32" xo="128" yo="32" id="10000354" name="inst_FEEF3F17" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

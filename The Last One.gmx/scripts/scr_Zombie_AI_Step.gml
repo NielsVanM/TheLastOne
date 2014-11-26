@@ -186,6 +186,8 @@ if (lockedOn = true)
     {
         lockedOn = false;
         isWalking = false;
+        hSpeed = 0;
+        vSpeed = 0;
     }
 }
 
