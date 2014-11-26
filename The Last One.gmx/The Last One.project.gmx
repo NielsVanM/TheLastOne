@@ -175,6 +175,7 @@
       <background>background\bg_TileSet_Walls</background>
       <background>background\bg_TileSet_Walls2</background>
       <background>background\bg_Tileset_Random</background>
+      <background>background\bg_Tileset_2Random</background>
     </backgrounds>
     <backgrounds name="Background">
       <background>background\bg_Ground</background>
