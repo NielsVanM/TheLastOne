@@ -127,7 +127,7 @@
     <instance objName="obj_Tombstone_Blood1" x="512" y="992" name="inst_08708C39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tombstone_Blood1" x="416" y="1088" name="inst_F34A7CA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tent1" x="1088" y="576" name="inst_D90114D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Campfire1" x="1056" y="704" name="inst_7DF7DFB3" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Campfire1" x="1088" y="736" name="inst_7DF7DFB3" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree1" x="832" y="1120" name="inst_F97DC79D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree1" x="1536" y="1120" name="inst_74019882" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree1" x="1536" y="352" name="inst_E4699BB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -143,6 +143,7 @@
     <instance objName="obj_Tree1" x="1472" y="544" name="inst_DDD675BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree1" x="1248" y="640" name="inst_F7184D46" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree1" x="1024" y="416" name="inst_81D4E6DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_CampFireLight" x="1088" y="736" name="inst_1E07FF60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_Tileset_Random" x="416" y="256" w="32" h="32" xo="128" yo="32" id="10000354" name="inst_FEEF3F17" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

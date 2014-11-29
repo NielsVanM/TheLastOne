@@ -309,6 +309,7 @@
         <object>objects\obj_LightMaster</object>
         <object>objects\obj_FlashLight</object>
         <object>objects\obj_NormalLight</object>
+        <object>objects\obj_CampFireLight</object>
       </objects>
       <object>objects\obj_Collision</object>
       <object>objects\obj_MasterController</object>
