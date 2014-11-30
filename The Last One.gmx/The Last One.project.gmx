@@ -169,13 +169,13 @@
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tileset">
-      <background>background\bg_TileSet_FLoor</background>
+      <background>background\bg_TileSet_Floor</background>
       <background>background\bg_TileSet_Ground</background>
       <background>background\bg_TileSet_Ground2</background>
       <background>background\bg_TileSet_Walls</background>
       <background>background\bg_TileSet_Walls2</background>
       <background>background\bg_Tileset_Random</background>
-      <background>background\bg_Tileset_2Random</background>
+      <background>background\bg_Tileset_Random2</background>
     </backgrounds>
     <backgrounds name="Background">
       <background>background\bg_Ground</background>
@@ -254,7 +254,7 @@
           <object>objects\obj_Cemetery_Statue1</object>
           <objects name="Tombstones">
             <object>objects\obj_Tombstone_Normal1</object>
-            <object>objects\obj_Tombdtone_Normal2</object>
+            <object>objects\obj_Tombstone_Normal2</object>
             <object>objects\obj_Tombstone_Broken1</object>
             <object>objects\obj_Tombstone_Blood1</object>
           </objects>
