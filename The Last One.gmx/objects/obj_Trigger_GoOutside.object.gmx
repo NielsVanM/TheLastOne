@@ -2,7 +2,7 @@
 <object>
   <spriteName>spr_Trigger</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -43,7 +43,7 @@ if (room = rm_MainWorld)
 {
     if (place_meeting(x,y,obj_Player))
     {
-        if (keyboard_check(ord('S')))
+        if (keyboard_check(ord('W')))
         {
             room_goto(rm_Home_Downstairs);
             obj_Player.x = 384;
