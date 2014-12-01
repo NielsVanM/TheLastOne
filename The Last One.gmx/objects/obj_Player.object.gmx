@@ -37,12 +37,14 @@ verticalLock = false;
 horizontalLock = false;
 global.playerRun = true;
 
-//Water, Food &amp; Health system
+//Water, Food ,Health, Stamina
 pWater = 100;
 pFood = 100;
 pHealth = 100;
+pStamina = 100;
 pWaterDecay = 0.3; //Per second
 pFoodDecay = 0.3; //Per Second
+pStaminaDecay = 26 / room_speed; //Per second
 pWaterDamage = 1; //Per Second
 pFoodDamage = 1; //Per Second
 </string>
@@ -96,17 +98,21 @@ keyLeft = -keyboard_check(ord('A'));
 keyUp = -keyboard_check(ord('W'));
 keyDown = keyboard_check(ord('S'));
 keySprint = keyboard_check(vk_shift);
+keySneak = keyboard_check(vk_control);
 
-//Sprinting mechanism
+//Sprinting &amp; sneaking mechanism
 moveSpeed = normalMoveSpeed;
 imgSpeed = normalImgSpeed;
-if (keySprint = 1){moveSpeed = runMoveSpeed; imgSpeed = runImgSpeed;}
+if (keySprint = 1 &amp;&amp; pStamina &gt; 0){moveSpeed = runMoveSpeed; imgSpeed = runImgSpeed;}
 
 //Calculating movement
 hMove = keyLeft + keyRight;
 vMove = keyUp + keyDown;
 hSpeed = hMove * moveSpeed;
 vSpeed = vMove * moveSpeed;
+
+//Setting ismoving variable
+if (hSpeed != 0 || vSpeed != 0){isMoving = true;}else{isMoving = false;}
 
 //Locking Vertical Movement &amp; changing Sprites
 if (hMove == 0 &amp;&amp; vMove == 0){image_speed = 0; image_index = 1;}
@@ -182,7 +188,7 @@ y += vSpeed;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Water, Food &amp; Health system
+            <string>///Water, Food, Health, Stamina
 //Health
 
 //Hurt if water is too low
@@ -207,6 +213,18 @@ pFood -= pFoodDecay / room_speed;
 //Value is always between 0 - 100
 if (pFood &gt; 100){pFood = 100;}
 if (pFood &lt; 0){pFood = 0;}
+
+//Stamina
+if (pStamina &gt; 100){pStamina = 100;}
+if (pStamina &lt; 0){pStamina = 0;}
+if (keyboard_check(vk_shift) &amp;&amp; pStamina &gt; 0 &amp;&amp; isMoving = true)
+{
+    pStamina -= pStaminaDecay;
+}
+else if (!keyboard_check(vk_shift))
+{
+    pStamina += 3 / room_speed;
+}
 </string>
           </argument>
         </arguments>
@@ -282,9 +300,9 @@ if (global.debug = true)
     draw_text(x,y+30,pWater);
     draw_text(x,y+40,pFood);
     draw_text(x,y+50,pHealth);
-    draw_text(x,y+60,global.flashLightBattery);
-    draw_text(x,y+70,global.size);
-    if instance_exists(obj_Zombie1_AI){draw_text(x,y+80,global.walkCooldown);}
+    draw_text(x,y+60,pStamina);
+    draw_text(x,y+70,global.flashLightBattery);
+    draw_text(x,y+80,global.size);
 }
 </string>
           </argument>

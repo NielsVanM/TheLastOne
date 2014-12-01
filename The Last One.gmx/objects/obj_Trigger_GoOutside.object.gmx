@@ -26,13 +26,29 @@
           <argument>
             <kind>1</kind>
             <string>///Move outside
-if (place_meeting(x,y,obj_Player))
+if (room = rm_Home_Downstairs)
 {
-    if (keyboard_check(ord('S')))
+    if (place_meeting(x,y,obj_Player))
     {
-        room_goto(rm_MainWorld);
-        obj_Player.x = 448;
-        obj_Player.y = 288;
+        if (keyboard_check(ord('S')))
+        {
+            room_goto(rm_MainWorld);
+            obj_Player.x = 448;
+            obj_Player.y = 288;
+        }
+    }
+}
+
+if (room = rm_MainWorld)
+{
+    if (place_meeting(x,y,obj_Player))
+    {
+        if (keyboard_check(ord('S')))
+        {
+            room_goto(rm_Home_Downstairs);
+            obj_Player.x = 384;
+            obj_Player.y = 704;
+        }
     }
 }
 </string>
