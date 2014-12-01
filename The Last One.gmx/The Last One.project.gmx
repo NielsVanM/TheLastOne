@@ -73,12 +73,15 @@
           <sprites name="Doors">
             <sprite>sprites\spr_Door_Closed1</sprite>
           </sprites>
+          <sprite>sprites\spr_House4</sprite>
         </sprites>
         <sprites name="Cars">
           <sprite>sprites\spr_Car1_Broken</sprite>
           <sprite>sprites\spr_Car1</sprite>
           <sprite>sprites\spr_Car2_Broken</sprite>
           <sprite>sprites\spr_Car2</sprite>
+          <sprite>sprites\spr_Car_Military_Left</sprite>
+          <sprite>sprites\spr_Car_Military_Right</sprite>
         </sprites>
         <sprites name="Cemetery">
           <sprite>sprites\spr_Cemetery_Walls1</sprite>
@@ -92,6 +95,8 @@
             <sprite>sprites\spr_Tombstone_Broken_1</sprite>
             <sprite>sprites\spr_Tombstone_Blood1</sprite>
           </sprites>
+          <sprite>sprites\spr_Grave1</sprite>
+          <sprite>sprites\spr_Grave_Open</sprite>
         </sprites>
         <sprites name="Nature">
           <sprite>sprites\spr_Tree1</sprite>
@@ -101,6 +106,26 @@
       </sprites>
       <sprites name="Water">
         <sprite>sprites\spr_Water1</sprite>
+        <sprite>sprites\spr_Water2</sprite>
+      </sprites>
+      <sprites name="Blood">
+        <sprite>sprites\spr_BloodSpatter1</sprite>
+        <sprite>sprites\spr_BloodSpatter2</sprite>
+        <sprite>sprites\spr_BloodSpatter3</sprite>
+      </sprites>
+      <sprites name="Barrier">
+        <sprite>sprites\spr_Barrier1</sprite>
+        <sprite>sprites\spr_Barrier2</sprite>
+        <sprite>sprites\spr_Barrier3</sprite>
+        <sprite>sprites\spr_Barrier4</sprite>
+        <sprite>sprites\spr_Barrier5</sprite>
+        <sprite>sprites\spr_Barrier6</sprite>
+        <sprite>sprites\spr_Barrier7</sprite>
+        <sprite>sprites\spr_Barrier8</sprite>
+        <sprite>sprites\spr_Barrier9</sprite>
+        <sprite>sprites\spr_Barrier10</sprite>
+        <sprite>sprites\spr_Barrier11</sprite>
+        <sprite>sprites\spr_Barrier12</sprite>
       </sprites>
     </sprites>
     <sprites name="Entities">
@@ -247,12 +272,15 @@
           <objects name="Doors">
             <object>objects\obj_Door_Closed1</object>
           </objects>
+          <object>objects\obj_House4</object>
         </objects>
         <objects name="Cars">
           <object>objects\obj_Car1_Broken</object>
           <object>objects\obj_Car1</object>
           <object>objects\obj_Car2_Broken</object>
           <object>objects\obj_Car2</object>
+          <object>objects\obj_Car_Military_Left</object>
+          <object>objects\obj_Car_Military_Right</object>
         </objects>
         <objects name="Cemetery">
           <object>objects\obj_Cemetery_Wall1</object>
@@ -266,6 +294,8 @@
             <object>objects\obj_Tombstone_Broken1</object>
             <object>objects\obj_Tombstone_Blood1</object>
           </objects>
+          <object>objects\obj_Grave1</object>
+          <object>objects\obj_Grave_Open</object>
         </objects>
         <objects name="Nature">
           <object>objects\obj_Tree1</object>
@@ -275,6 +305,26 @@
       </objects>
       <objects name="Water">
         <object>objects\obj_Water1</object>
+        <object>objects\obj_Water2</object>
+      </objects>
+      <objects name="Blood">
+        <object>objects\obj_BloodSpatter1</object>
+        <object>objects\obj_BloodSpatter2</object>
+        <object>objects\obj_BloodSpatter3</object>
+      </objects>
+      <objects name="Barrier">
+        <object>objects\obj_Barrier1</object>
+        <object>objects\obj_Barrier2</object>
+        <object>objects\obj_Barrier3</object>
+        <object>objects\obj_Barrier4</object>
+        <object>objects\obj_Barrier5</object>
+        <object>objects\obj_Barrier6</object>
+        <object>objects\obj_Barrier7</object>
+        <object>objects\obj_Barrier8</object>
+        <object>objects\obj_Barrier9</object>
+        <object>objects\obj_Barrier10</object>
+        <object>objects\obj_Barrier11</object>
+        <object>objects\obj_Barrier12</object>
       </objects>
     </objects>
     <objects name="Entities">
