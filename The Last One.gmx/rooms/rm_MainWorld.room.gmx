@@ -145,6 +145,12 @@
     <instance objName="obj_Tree1" x="1024" y="416" name="inst_81D4E6DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CampFireLight" x="1088" y="736" name="inst_1E07FF60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="-32" y="0" name="inst_1D25EC07" locked="0" code="" scaleX="1" scaleY="64" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Water1" x="1248" y="704" name="inst_DF7964D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Water1" x="1216" y="704" name="inst_E9AF2C31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Water1" x="1184" y="704" name="inst_54E24CE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Water1" x="1184" y="672" name="inst_87B0FA76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Water1" x="1248" y="672" name="inst_9AAC7376" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Water1" x="1216" y="672" name="inst_E34BA43F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_Tileset_Random" x="416" y="256" w="32" h="32" xo="128" yo="32" id="10000354" name="inst_FEEF3F17" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

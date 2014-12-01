@@ -30,6 +30,7 @@
             <sprite>sprites\spr_Chair_Down</sprite>
             <sprite>sprites\spr_Chair_Right</sprite>
             <sprite>sprites\spr_Chair_Left</sprite>
+            <sprite>sprites\spr_Stool</sprite>
           </sprites>
           <sprites name="Bureau">
             <sprite>sprites\spr_Bureau</sprite>
@@ -40,6 +41,7 @@
           </sprites>
           <sprites name="Table">
             <sprite>sprites\spr_Table</sprite>
+            <sprite>sprites\sp_Table2</sprite>
           </sprites>
           <sprites name="Couch">
             <sprite>sprites\spr_Couch_Back</sprite>
@@ -59,6 +61,7 @@
         </sprites>
         <sprites name="Misc">
           <sprite>sprites\spr_Doormat</sprite>
+          <sprite>sprites\spr_Wall_Tent</sprite>
         </sprites>
       </sprites>
       <sprites name="Outdoors">
@@ -208,6 +211,7 @@
       <objects name="Indoors">
         <objects name="Table">
           <object>objects\obj_Table</object>
+          <object>objects\obj_Table_2</object>
         </objects>
         <objects name="Couch">
           <object>objects\obj_Couch_Back</object>
@@ -230,6 +234,8 @@
         <object>objects\obj_Doormat</object>
         <object>objects\obj_Locker</object>
         <object>objects\obj_TV</object>
+        <object>objects\obj_Wall_Tent</object>
+        <object>objects\obj_Stool</object>
       </objects>
       <objects name="Outdoors">
         <objects name="Houses">
@@ -283,6 +289,7 @@
         <objects name="With AI">
           <objects name="Zombies">
             <object>objects\obj_Zombie1_AI</object>
+            <object>objects\obj_Zombie2_AI</object>
           </objects>
         </objects>
       </objects>
@@ -321,6 +328,7 @@
       <room>rooms\rm_Home_Upstairs</room>
       <room>rooms\rm_Home_Downstairs</room>
       <room>rooms\rm_MainWorld</room>
+      <room>rooms\rm_Tent</room>
     </rooms>
   </rooms>
   <help>
