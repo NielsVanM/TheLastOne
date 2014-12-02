@@ -3,7 +3,7 @@
 isWalking = false;
 towardsX = 0;
 towardsY = 0;
-global.walkCooldown = 0;
+walkCooldown = 0;
 moveLength = 128;
 
 //Tracking player

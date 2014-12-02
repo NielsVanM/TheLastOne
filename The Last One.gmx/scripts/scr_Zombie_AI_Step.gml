@@ -136,13 +136,13 @@ if (lockedOn = false)
     {
         hSpeed = 0;
         vSpeed = 0;
-        if (global.walkCooldown = 0){global.walkCooldown = 2 * room_speed;}
+        if (walkCooldown = 0){walkCooldown = 2 * room_speed;}
     }
         
     //Walk cooldown
-    if (global.walkCooldown > 0){global.walkCooldown -= 1; image_speed = 0; image_index = 1;}
-    if (global.walkCooldown = 1){isWalking = false;}
-    if (global.walkCooldown = 0){image_speed = imgSpeed;}
+    if (walkCooldown > 0){walkCooldown -= 1; image_speed = 0; image_index = 1;}
+    if (walkCooldown = 1){isWalking = false;}
+    if (walkCooldown = 0){image_speed = imgSpeed;}
 }
 
 ///Player tracking
