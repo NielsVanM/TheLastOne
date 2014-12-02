@@ -1,4 +1,8 @@
 ///Zombie AI
+
+//Depth correctin
+depth = y * -1;
+
 ///Wandering around
 if (lockedOn = false)
 {
@@ -11,14 +15,21 @@ if (lockedOn = false)
         if (moveDirection = 0)
         {
             //If there isn't a collision
-            if (!collision_line(x,y,x+moveSpeed,y,obj_Collision,false,true))
+            if (!collision_line(x,y,x+moveLength,y,obj_Collision,false,true))
             {
                 //Disable walking
                 isWalking = true;
                 
                 //Set sprite
-                sprite_index = spr_Zombie1_Right;
                 image_speed = imgSpeed;
+                if (tag = 1){sprite_index = spr_Zombie1_Right;}
+                if (tag = 2){sprite_index = spr_Zombie2_Right;}
+                if (tag = 3){sprite_index = spr_Zombie3_Right;}
+                if (tag = 4){sprite_index = spr_Zombie4_Right;}
+                if (tag = 5){sprite_index = spr_Zombie5_Right;}
+                if (tag = 6){sprite_index = spr_Zombie6_Right;}
+                if (tag = 7){sprite_index = spr_Zombie7_Right;}
+                if (tag = 8){sprite_index = spr_Zombie8_Right;}
                 
                 //Setting x and y the object is moving towards
                 towardsX = x + moveLength;
@@ -34,14 +45,21 @@ if (lockedOn = false)
         if (moveDirection = 1)
         {
             //If there isn't a collision
-            if (!collision_line(x,y,x-moveSpeed,y,obj_Collision,false,true))
+            if (!collision_line(x,y,x-moveLength,y,obj_Collision,false,true))
             {
                 //Disable walking
                 isWalking = true;
                 
                 //Set sprite
-                sprite_index = spr_Zombie1_Left;
                 image_speed = imgSpeed;
+                if (tag = 1){sprite_index = spr_Zombie1_Left;}
+                if (tag = 2){sprite_index = spr_Zombie2_Left;}
+                if (tag = 3){sprite_index = spr_Zombie3_Left;}
+                if (tag = 4){sprite_index = spr_Zombie4_Left;}
+                if (tag = 5){sprite_index = spr_Zombie5_Left;}
+                if (tag = 6){sprite_index = spr_Zombie6_Left;}
+                if (tag = 7){sprite_index = spr_Zombie7_Left;}
+                if (tag = 8){sprite_index = spr_Zombie8_Left;}
                 
                 //Setting x and y the object is moving towards
                 towardsX = x - moveLength;
@@ -63,8 +81,15 @@ if (lockedOn = false)
                 isWalking = true;
                     
                 //Set sprite
-                sprite_index = spr_Zombie1_Up;
                 image_speed = imgSpeed;
+                if (tag = 1){sprite_index = spr_Zombie1_Up;}
+                if (tag = 2){sprite_index = spr_Zombie2_Up;}
+                if (tag = 3){sprite_index = spr_Zombie3_Up;}
+                if (tag = 4){sprite_index = spr_Zombie4_Up;}
+                if (tag = 5){sprite_index = spr_Zombie5_Up;}
+                if (tag = 6){sprite_index = spr_Zombie6_Up;}
+                if (tag = 7){sprite_index = spr_Zombie7_Up;}
+                if (tag = 8){sprite_index = spr_Zombie8_Up;}
                 
                 //Setting x and y the object is moving towards
                 towardsX = x;
@@ -85,8 +110,15 @@ if (lockedOn = false)
                 isWalking = true;
                 
                 //Set sprite
-                sprite_index = spr_Zombie1_Down;
                 image_speed = imgSpeed;
+                if (tag = 1){sprite_index = spr_Zombie1_Down;}
+                if (tag = 2){sprite_index = spr_Zombie2_Down;}
+                if (tag = 3){sprite_index = spr_Zombie3_Down;}
+                if (tag = 4){sprite_index = spr_Zombie4_Down;}
+                if (tag = 5){sprite_index = spr_Zombie5_Down;}
+                if (tag = 6){sprite_index = spr_Zombie6_Down;}
+                if (tag = 7){sprite_index = spr_Zombie7_Down;}
+                if (tag = 8){sprite_index = spr_Zombie8_Down;}
                 
                 //Setting x and y the object is moving towards
                 towardsX = x;
@@ -141,14 +173,28 @@ if (lockedOn = true)
                 if (x < obj_Player.x)
                 {
                     hSpeed = moveSpeed;
-                    sprite_index = spr_Zombie1_Right;
                     image_speed = imgSpeed;
+                    if (tag = 1){sprite_index = spr_Zombie1_Right;}
+                    if (tag = 2){sprite_index = spr_Zombie2_Right;}
+                    if (tag = 3){sprite_index = spr_Zombie3_Right;}
+                    if (tag = 4){sprite_index = spr_Zombie4_Right;}
+                    if (tag = 5){sprite_index = spr_Zombie5_Right;}
+                    if (tag = 6){sprite_index = spr_Zombie6_Right;}
+                    if (tag = 7){sprite_index = spr_Zombie7_Right;}
+                    if (tag = 8){sprite_index = spr_Zombie8_Right;}
                 }
                 if(x > obj_Player.x)
                 {
                     hSpeed = -moveSpeed;
-                    sprite_index = spr_Zombie1_Left;
                     image_speed = imgSpeed;
+                    if (tag = 1){sprite_index = spr_Zombie1_Left;}
+                    if (tag = 2){sprite_index = spr_Zombie2_Left;}
+                    if (tag = 3){sprite_index = spr_Zombie3_Left;}
+                    if (tag = 4){sprite_index = spr_Zombie4_Left;}
+                    if (tag = 5){sprite_index = spr_Zombie5_Left;}
+                    if (tag = 6){sprite_index = spr_Zombie6_Left;}
+                    if (tag = 7){sprite_index = spr_Zombie7_Left;}
+                    if (tag = 8){sprite_index = spr_Zombie8_Left;}
                 }
                 if (x = obj_Player.x){toggleCoor = 1;}
             }
@@ -159,14 +205,28 @@ if (lockedOn = true)
                 if (y < obj_Player.y)
                 {
                     vSpeed = moveSpeed;
-                    sprite_index = spr_Zombie1_Down;
                     image_speed = imgSpeed;
+                    if (tag = 1){sprite_index = spr_Zombie1_Down;}
+                    if (tag = 2){sprite_index = spr_Zombie2_Down;}
+                    if (tag = 3){sprite_index = spr_Zombie3_Down;}
+                    if (tag = 4){sprite_index = spr_Zombie4_Down;}
+                    if (tag = 5){sprite_index = spr_Zombie5_Down;}
+                    if (tag = 6){sprite_index = spr_Zombie6_Down;}
+                    if (tag = 7){sprite_index = spr_Zombie7_Down;}
+                    if (tag = 8){sprite_index = spr_Zombie8_Down;}
                 }
                 if (y > obj_Player.y)
                 {
                     vSpeed = -moveSpeed;
-                    sprite_index = spr_Zombie1_Up;
                     image_speed = imgSpeed;
+                    if (tag = 1){sprite_index = spr_Zombie1_Up;}
+                    if (tag = 2){sprite_index = spr_Zombie2_Up;}
+                    if (tag = 3){sprite_index = spr_Zombie3_Up;}
+                    if (tag = 4){sprite_index = spr_Zombie4_Up;}
+                    if (tag = 5){sprite_index = spr_Zombie5_Up;}
+                    if (tag = 6){sprite_index = spr_Zombie6_Up;}
+                    if (tag = 7){sprite_index = spr_Zombie7_Up;}
+                    if (tag = 8){sprite_index = spr_Zombie8_Up;}
                 }
                 if (y = obj_Player.y){toggleCoor = 0;}
             }

@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Launch variable script
+tag = 1;
 script_execute(scr_Zombie_AI_Create);
 </string>
           </argument>

@@ -149,7 +149,7 @@
             <sprite>sprites\spr_Zombie2_Up</sprite>
             <sprite>sprites\spr_Zombie2_Down</sprite>
             <sprite>sprites\spr_Zombie2_Left</sprite>
-            <sprite>sprites\spr_Zombie_Right</sprite>
+            <sprite>sprites\spr_Zombie2_Right</sprite>
           </sprites>
           <sprites name="Zombie3">
             <sprite>sprites\spr_Zombie3_Up</sprite>
@@ -208,6 +208,7 @@
     </backgrounds>
     <backgrounds name="Background">
       <background>background\bg_Ground</background>
+      <background>background\bg_Grass</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
@@ -342,6 +343,12 @@
           <objects name="Zombies">
             <object>objects\obj_Zombie1_AI</object>
             <object>objects\obj_Zombie2_AI</object>
+            <object>objects\obj_Zombie3_AI</object>
+            <object>objects\obj_Zombie4_AI</object>
+            <object>objects\obj_Zombie5_AI</object>
+            <object>objects\obj_Zombie6_AI</object>
+            <object>objects\obj_Zombie7_AI</object>
+            <object>objects\obj_Zombie8_AI</object>
           </objects>
         </objects>
       </objects>

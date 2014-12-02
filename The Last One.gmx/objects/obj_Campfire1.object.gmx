@@ -67,10 +67,33 @@ part_type_blend(Fire0,1);
 part_type_life(Fire0,20,60);
 
 ///Emit particles
-///Emit particles
-emitter1 = part_emitter_create(CampFire);
-part_emitter_region(CampFire,emitter1,x-20,x+20,y-8,y+8,ps_shape_ellipse,1);
-part_emitter_stream(CampFire,emitter1,Fire0,5);
+Wood = part_emitter_create(CampFire);
+part_emitter_region(CampFire,Wood,x-20,x+20,y-8,y+8,ps_shape_ellipse,1);
+part_emitter_stream(CampFire,Wood,Fire0,10);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Delete particles
+part_emitter_stream(CampFire,Wood,Fire0,0);
 </string>
           </argument>
         </arguments>
