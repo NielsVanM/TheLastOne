@@ -44,7 +44,7 @@ if (lockedOn = false)
         //Left
         if (moveDirection = 1)
         {
-            //If there isn't a collision
+            //If there isn't a collision            
             if (!collision_line(x,y,x-moveLength,y,obj_Collision,false,true))
             {
                 //Disable walking
