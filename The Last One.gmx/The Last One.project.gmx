@@ -70,10 +70,10 @@
           <sprite>sprites\spr_House1</sprite>
           <sprite>sprites\spr_House2</sprite>
           <sprite>sprites\spr_House3</sprite>
+          <sprite>sprites\spr_House4</sprite>
           <sprites name="Doors">
             <sprite>sprites\spr_Door_Closed1</sprite>
           </sprites>
-          <sprite>sprites\spr_House4</sprite>
         </sprites>
         <sprites name="Cars">
           <sprite>sprites\spr_Car1_Broken</sprite>
@@ -102,6 +102,10 @@
           <sprite>sprites\spr_Tree1</sprite>
           <sprite>sprites\spr_Tent1</sprite>
           <sprite>sprites\spr_Campfire1</sprite>
+        </sprites>
+        <sprites name="Misc">
+          <sprite>sprites\spr_Fence1</sprite>
+          <sprite>sprites\spr_Fence_Broken1</sprite>
         </sprites>
       </sprites>
       <sprites name="Water">
@@ -302,6 +306,10 @@
           <object>objects\obj_Tree1</object>
           <object>objects\obj_Tent1</object>
           <object>objects\obj_Campfire1</object>
+        </objects>
+        <objects name="Misc">
+          <object>objects\obj_Fence1</object>
+          <object>objects\obj_Fence_Broken1</object>
         </objects>
       </objects>
       <objects name="Water">
