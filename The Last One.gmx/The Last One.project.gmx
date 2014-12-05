@@ -63,6 +63,8 @@
           <sprite>sprites\spr_Doormat</sprite>
           <sprite>sprites\spr_Wall_Tent</sprite>
           <sprite>sprites\spr_Doormat2</sprite>
+          <sprite>sprites\spr_Fireplace1</sprite>
+          <sprite>sprites\spr_Fireplace2</sprite>
         </sprites>
       </sprites>
       <sprites name="Outdoors">
@@ -71,6 +73,7 @@
           <sprite>sprites\spr_House2</sprite>
           <sprite>sprites\spr_House3</sprite>
           <sprite>sprites\spr_House4</sprite>
+          <sprite>sprites\sprite_House5_SecretLab</sprite>
           <sprites name="Doors">
             <sprite>sprites\spr_Door_Closed1</sprite>
           </sprites>
@@ -100,6 +103,10 @@
         </sprites>
         <sprites name="Nature">
           <sprite>sprites\spr_Tree1</sprite>
+          <sprite>sprites\spr_Tree2</sprite>
+          <sprite>sprites\spr_Tree3</sprite>
+          <sprite>sprites\spr_Tree4</sprite>
+          <sprite>sprites\spr_Tree5</sprite>
           <sprite>sprites\spr_Tent1</sprite>
           <sprite>sprites\spr_Campfire1</sprite>
         </sprites>
@@ -268,16 +275,19 @@
         <object>objects\obj_Wall_Tent</object>
         <object>objects\obj_Stool</object>
         <object>objects\obj_Doormat2</object>
+        <object>objects\obj_Fireplace1</object>
+        <object>objects\obj_Fireplace2</object>
       </objects>
       <objects name="Outdoors">
         <objects name="Houses">
           <object>objects\obj_House1</object>
           <object>objects\obj_House2</object>
           <object>objects\obj_House3</object>
+          <object>objects\obj_House4</object>
+          <object>objects\obj_House5_SecretLab</object>
           <objects name="Doors">
             <object>objects\obj_Door_Closed1</object>
           </objects>
-          <object>objects\obj_House4</object>
         </objects>
         <objects name="Cars">
           <object>objects\obj_Car1_Broken</object>
@@ -304,6 +314,10 @@
         </objects>
         <objects name="Nature">
           <object>objects\obj_Tree1</object>
+          <object>objects\obj_Tree2</object>
+          <object>objects\obj_Tree3</object>
+          <object>objects\obj_Tree4</object>
+          <object>objects\obj_Tree5</object>
           <object>objects\obj_Tent1</object>
           <object>objects\obj_Campfire1</object>
         </objects>
@@ -397,6 +411,7 @@
       <room>rooms\rm_Home_Downstairs</room>
       <room>rooms\rm_MainWorld</room>
       <room>rooms\rm_Tent</room>
+      <room>rooms\rm_House_SecretLab</room>
     </rooms>
   </rooms>
   <help>
