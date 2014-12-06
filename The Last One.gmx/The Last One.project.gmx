@@ -34,6 +34,7 @@
           </sprites>
           <sprites name="Bureau">
             <sprite>sprites\spr_Bureau</sprite>
+            <sprite>sprites\spr_Bureau2_Pc</sprite>
           </sprites>
           <sprites name="Closet">
             <sprite>sprites\spr_Closet</sprite>
@@ -65,6 +66,35 @@
           <sprite>sprites\spr_Doormat2</sprite>
           <sprite>sprites\spr_Fireplace1</sprite>
           <sprite>sprites\spr_Fireplace2</sprite>
+          <sprite>sprites\spr_Carpet</sprite>
+        </sprites>
+        <sprites name="Air Shaft">
+          <sprite>sprites\spr_AirShaft1</sprite>
+          <sprite>sprites\spr_AirShaft2</sprite>
+          <sprite>sprites\spr_AirShaft3</sprite>
+          <sprite>sprites\spr_AirShaft4</sprite>
+          <sprite>sprites\spr_AirShaft5</sprite>
+          <sprite>sprites\spr_AirShaft6</sprite>
+          <sprite>sprites\spr_AirShaft7</sprite>
+          <sprite>sprites\spr_AirShaft8</sprite>
+          <sprite>sprites\spr_AirShaft9</sprite>
+          <sprite>sprites\spr_AirShaft10</sprite>
+          <sprite>sprites\spr_AirShaft11</sprite>
+          <sprite>sprites\spr_AirShaft12</sprite>
+          <sprite>sprites\spr_AirShaft13</sprite>
+          <sprite>sprites\spr_AirShaft14</sprite>
+        </sprites>
+        <sprites name="Wall Decorations">
+          <sprites name="Windows">
+            <sprite>sprites\spr_Window1</sprite>
+            <sprite>sprites\spr_Window2</sprite>
+            <sprite>sprites\spr_Window3</sprite>
+            <sprite>sprites\spr_Window4</sprite>
+          </sprites>
+          <sprites name="Paintings">
+            <sprite>sprites\spr_Painting1</sprite>
+            <sprite>sprites\spr_Painting2</sprite>
+          </sprites>
         </sprites>
       </sprites>
       <sprites name="Outdoors">
@@ -114,6 +144,20 @@
           <sprite>sprites\spr_Fence1</sprite>
           <sprite>sprites\spr_Fence_Broken1</sprite>
         </sprites>
+        <sprites name="Barrier">
+          <sprite>sprites\spr_Barrier1</sprite>
+          <sprite>sprites\spr_Barrier2</sprite>
+          <sprite>sprites\spr_Barrier3</sprite>
+          <sprite>sprites\spr_Barrier4</sprite>
+          <sprite>sprites\spr_Barrier5</sprite>
+          <sprite>sprites\spr_Barrier6</sprite>
+          <sprite>sprites\spr_Barrier7</sprite>
+          <sprite>sprites\spr_Barrier8</sprite>
+          <sprite>sprites\spr_Barrier9</sprite>
+          <sprite>sprites\spr_Barrier10</sprite>
+          <sprite>sprites\spr_Barrier11</sprite>
+          <sprite>sprites\spr_Barrier12</sprite>
+        </sprites>
       </sprites>
       <sprites name="Water">
         <sprite>sprites\spr_Water1</sprite>
@@ -123,20 +167,6 @@
         <sprite>sprites\spr_BloodSpatter1</sprite>
         <sprite>sprites\spr_BloodSpatter2</sprite>
         <sprite>sprites\spr_BloodSpatter3</sprite>
-      </sprites>
-      <sprites name="Barrier">
-        <sprite>sprites\spr_Barrier1</sprite>
-        <sprite>sprites\spr_Barrier2</sprite>
-        <sprite>sprites\spr_Barrier3</sprite>
-        <sprite>sprites\spr_Barrier4</sprite>
-        <sprite>sprites\spr_Barrier5</sprite>
-        <sprite>sprites\spr_Barrier6</sprite>
-        <sprite>sprites\spr_Barrier7</sprite>
-        <sprite>sprites\spr_Barrier8</sprite>
-        <sprite>sprites\spr_Barrier9</sprite>
-        <sprite>sprites\spr_Barrier10</sprite>
-        <sprite>sprites\spr_Barrier11</sprite>
-        <sprite>sprites\spr_Barrier12</sprite>
       </sprites>
     </sprites>
     <sprites name="Entities">
@@ -265,18 +295,61 @@
         <objects name="Closet">
           <object>objects\obj_Closet_Wood</object>
           <object>objects\obj_Closet</object>
+          <object>objects\obj_Locker</object>
         </objects>
-        <object>objects\obj_Bureau</object>
-        <object>objects\obj_Bed</object>
-        <object>objects\obj_Chair</object>
-        <object>objects\obj_Doormat</object>
-        <object>objects\obj_Locker</object>
-        <object>objects\obj_TV</object>
-        <object>objects\obj_Wall_Tent</object>
-        <object>objects\obj_Stool</object>
-        <object>objects\obj_Doormat2</object>
-        <object>objects\obj_Fireplace1</object>
-        <object>objects\obj_Fireplace2</object>
+        <objects name="Chair">
+          <object>objects\obj_Chair</object>
+          <object>objects\obj_Stool</object>
+        </objects>
+        <objects name="Bureau">
+          <object>objects\obj_Bureau</object>
+          <object>objects\obj_Bureau2_Pc</object>
+        </objects>
+        <objects name="Fireplace">
+          <object>objects\obj_Fireplace1</object>
+          <object>objects\obj_Fireplace2</object>
+        </objects>
+        <objects name="Doormat">
+          <object>objects\obj_Doormat</object>
+          <object>objects\obj_Doormat2</object>
+        </objects>
+        <objects name="Bed">
+          <object>objects\obj_Bed</object>
+        </objects>
+        <objects name="TV">
+          <object>objects\obj_TV</object>
+        </objects>
+        <objects name="Air Shaft">
+          <object>objects\obj_AirShaft1</object>
+          <object>objects\obj_AirShaft2</object>
+          <object>objects\obj_AirShaft3</object>
+          <object>objects\obj_AirShaft4</object>
+          <object>objects\obj_AirShaft5</object>
+          <object>objects\obj_AirShaft6</object>
+          <object>objects\obj_AirShaft7</object>
+          <object>objects\obj_AirShaft8</object>
+          <object>objects\obj_AirShaft9</object>
+          <object>objects\obj_AirShaft10</object>
+          <object>objects\obj_AirShaft11</object>
+          <object>objects\obj_AirShaft12</object>
+          <object>objects\obj_AirShaft13</object>
+          <object>objects\obj_AirShaft14</object>
+        </objects>
+        <objects name="Wall Decorations">
+          <objects name="Windows">
+            <object>objects\obj_Window1</object>
+            <object>objects\obj_Window2</object>
+            <object>objects\obj_Window3</object>
+            <object>objects\obj_Window4</object>
+          </objects>
+          <objects name="Paintings">
+            <object>objects\obj_Painting1</object>
+            <object>objects\obj_Painting2</object>
+          </objects>
+        </objects>
+        <objects name="Carpet">
+          <object>objects\obj_Carpet1</object>
+        </objects>
       </objects>
       <objects name="Outdoors">
         <objects name="Houses">
@@ -324,6 +397,21 @@
         <objects name="Misc">
           <object>objects\obj_Fence1</object>
           <object>objects\obj_Fence_Broken1</object>
+          <object>objects\obj_Wall_Tent</object>
+        </objects>
+        <objects name="Barrier">
+          <object>objects\obj_Barrier1</object>
+          <object>objects\obj_Barrier2</object>
+          <object>objects\obj_Barrier3</object>
+          <object>objects\obj_Barrier4</object>
+          <object>objects\obj_Barrier5</object>
+          <object>objects\obj_Barrier6</object>
+          <object>objects\obj_Barrier7</object>
+          <object>objects\obj_Barrier8</object>
+          <object>objects\obj_Barrier9</object>
+          <object>objects\obj_Barrier10</object>
+          <object>objects\obj_Barrier11</object>
+          <object>objects\obj_Barrier12</object>
         </objects>
       </objects>
       <objects name="Water">
@@ -334,20 +422,6 @@
         <object>objects\obj_BloodSpatter1</object>
         <object>objects\obj_BloodSpatter2</object>
         <object>objects\obj_BloodSpatter3</object>
-      </objects>
-      <objects name="Barrier">
-        <object>objects\obj_Barrier1</object>
-        <object>objects\obj_Barrier2</object>
-        <object>objects\obj_Barrier3</object>
-        <object>objects\obj_Barrier4</object>
-        <object>objects\obj_Barrier5</object>
-        <object>objects\obj_Barrier6</object>
-        <object>objects\obj_Barrier7</object>
-        <object>objects\obj_Barrier8</object>
-        <object>objects\obj_Barrier9</object>
-        <object>objects\obj_Barrier10</object>
-        <object>objects\obj_Barrier11</object>
-        <object>objects\obj_Barrier12</object>
       </objects>
     </objects>
     <objects name="Entities">
