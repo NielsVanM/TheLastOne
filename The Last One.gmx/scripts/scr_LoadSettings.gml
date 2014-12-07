@@ -1,7 +1,7 @@
 //If file exist open it
-if (file_exists('savedata.ini'))
+if (file_exists('settings.ini'))
 {
-    ini_open('savedata.ini');
+    ini_open('settings.ini');
     
     //Read variables
     global.music = ini_read_real('Prefs','Music',1);

@@ -262,9 +262,11 @@
     </scripts>
     <scripts name="Save">
       <script>scripts\scr_SaveSettings.gml</script>
+      <script>scripts\scr_SaveGame.gml</script>
     </scripts>
     <scripts name="Load">
       <script>scripts\scr_LoadSettings.gml</script>
+      <script>scripts\scr_LoadGame.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">

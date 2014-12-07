@@ -1,8 +1,8 @@
 //Delete file if it exists
-if (file_exists('savedata.ini')){file_delete('savedata.ini')}
+if (file_exists('settings.ini')){file_delete('settings.ini');}
 
 //Open new file/create new file
-ini_open('savedata.ini');
+ini_open('settings.ini');
 
 //Writing variables
 ini_write_real('Prefs','Music',global.music);
