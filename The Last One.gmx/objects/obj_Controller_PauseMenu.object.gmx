@@ -67,7 +67,7 @@ if (global.pause = true)
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -91,6 +91,10 @@ if (global.pause = true)
     draw_set_alpha(0.5);
     draw_rectangle(obj_Player.x,obj_Player.y,obj_Player.x,obj_Player.y,false)
     draw_set_alpha(1);
+    
+    //Draw Game Paused text
+    draw_set_font(fnt_GameTitle);
+    draw_text(960,230,'Game Paused');
 }
 </string>
           </argument>

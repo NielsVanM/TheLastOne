@@ -92,6 +92,8 @@ instance_create(x,y,obj_FlashLight);
           <argument>
             <kind>1</kind>
             <string>///Movement
+//For menu
+if (global.pause = true){image_speed = 0; exit;}
 
 //User input
 keyRight = keyboard_check(ord('D'));
@@ -280,8 +282,10 @@ y += vSpeed;
           <argument>
             <kind>1</kind>
             <string>///Water, Food, Health, Stamina
-//Health
 
+//For pause menu
+if (global.pause = true){exit;}
+//Health
 //Hurt if water is too low
 if (pWater = 0){pHealth -= pWaterDamage / room_speed;}
 //Hurt if food is too low
@@ -316,6 +320,9 @@ else if (!keyboard_check(vk_shift))
 {
     pStamina += 3 / room_speed;
 }
+
+////////DEBUG
+if (global.debug = true){pStamina = 100;}
 </string>
           </argument>
         </arguments>
