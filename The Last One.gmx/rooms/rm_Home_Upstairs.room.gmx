@@ -64,7 +64,7 @@
     <instance objName="obj_Collision" x="1088" y="928" name="inst_BF58287F" locked="0" code="" scaleX="16" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1600" y="672" name="inst_147B9AF4" locked="0" code="" scaleX="1" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1056" y="672" name="inst_3809F36A" locked="0" code="" scaleX="1" scaleY="8" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Trigger_Home_Stairs" x="1108" y="885" name="inst_881F9068" locked="0" code="" scaleX="1.45161294937134" scaleY="2.875" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_HomeStairs" x="1108" y="885" name="inst_881F9068" locked="0" code="" scaleX="1.45161294937134" scaleY="2.875" colour="4294967295" rotation="0"/>
     <instance objName="obj_FlashLight" x="1440" y="832" name="inst_D8477328" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_LightMaster" x="0" y="0" name="inst_7A5EBF3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_NightVision" x="-160" y="-32" name="inst_6A300983" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -527,9 +527,15 @@
       </objects>
       <objects name="Triggers">
         <objects name="Own Home">
-          <object>objects\obj_Trigger_Home_Stairs</object>
+          <object>objects\obj_Trigger_HomeStairs</object>
+          <object>objects\obj_Trigger_HomeOutside</object>
         </objects>
-        <object>objects\obj_Trigger_GoOutside</object>
+        <objects name="Tent">
+          <object>objects\obj_Trigger_TentOutside</object>
+        </objects>
+        <objects name="Secret Lab">
+          <object>objects\obj_Trigger_HouselabOutside</object>
+        </objects>
       </objects>
       <objects name="Room Fading">
         <object>objects\obj_Room_FadeIn</object>
@@ -549,12 +555,18 @@
   <rooms name="rooms">
     <room>rooms\rm_TitleScreen</room>
     <rooms name="Main Story">
-      <room>rooms\rm_Home_Upstairs</room>
-      <room>rooms\rm_Home_Downstairs</room>
       <room>rooms\rm_MainWorld</room>
       <room>rooms\rm_Tent</room>
-      <room>rooms\rm_House_SecretLab</room>
-      <room>rooms\rm_SecretLab</room>
+      <rooms name="Houses">
+        <rooms name="Home">
+          <room>rooms\rm_Home_Upstairs</room>
+          <room>rooms\rm_Home_Downstairs</room>
+        </rooms>
+        <rooms name="Secret Lab">
+          <room>rooms\rm_House_SecretLab</room>
+          <room>rooms\rm_SecretLab</room>
+        </rooms>
+      </rooms>
     </rooms>
   </rooms>
   <help>

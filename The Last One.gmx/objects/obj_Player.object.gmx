@@ -139,7 +139,7 @@ if (horizontalLock = false) {
         
         if (hMove = 1) { // Right
             sprite_index = spr_Player_Right;
-            global.faceDirection = 90;
+            global.faceDirection = 0;
             
             if (hMove = -1) { // Lock speed
                 hSpeed = 0;
@@ -147,14 +147,14 @@ if (horizontalLock = false) {
             
             if (vMove = 1) { // Moving down &amp; Player sprite down &amp;  Set face direction down &amp; Horizontal speed 0
                 sprite_index = spr_Player_Down;
-                global.faceDirection = 180;
+                global.faceDirection = 270;
                 vSpeed = vMove * moveSpeed;
                 hSpeed = 0;
             }
             
             if (vMove = -1) { // Moving up &amp; Player sprite up &amp;  Set face direction up &amp; Horizontal speed 0
                 sprite_index = spr_Player_Up;
-                global.faceDirection = 0;
+                global.faceDirection = 90;
                 vSpeed = vMove * moveSpeed;
                 hSpeed = 0;
             }
@@ -162,7 +162,7 @@ if (horizontalLock = false) {
         
         if (hMove = -1) { // Left
             sprite_index = spr_Player_Left;
-            global.faceDirection = 270;
+            global.faceDirection = 180;
         
             if (hMove = 1) { // Lock speed
                 hSpeed = 0;
@@ -170,14 +170,14 @@ if (horizontalLock = false) {
                         
             if (vMove = 1) { // Moving down &amp; Player sprite down &amp;  Set face direction down &amp; Horizontal speed 0
                 sprite_index = spr_Player_Down;
-                global.faceDirection = 180;
+                global.faceDirection = 270;
                 vSpeed = vMove * moveSpeed;
                 hSpeed = 0;
             }
             
             if (vMove = -1) { // Moving up &amp; Player sprite up &amp;  Set face direction up &amp; Horizontal speed 0
                 sprite_index = spr_Player_Up;
-                global.faceDirection = 0;
+                global.faceDirection = 90;
                 vSpeed = vMove * moveSpeed;
                 hSpeed = 0;
             }
@@ -195,7 +195,7 @@ if (verticalLock = false) {
         
         if (vMove = 1) { // Down
             sprite_index = spr_Player_Down;
-            global.faceDirection = 180;
+            global.faceDirection = 270;
         
             if (vMove = -1) { // Lock speed
                 vSpeed = 0;
@@ -203,14 +203,14 @@ if (verticalLock = false) {
                         
             if (hMove = 1) { // Moving right &amp; Player sprite right &amp;  Set face direction right &amp; Vertical speed 0
                 sprite_index = spr_Player_Right;
-                global.faceDirection = 90;
+                global.faceDirection = 0;
                 hSpeed = hMove * moveSpeed;
                 vSpeed = 0;
             }
             
             if (hMove = -1) { // Moving left &amp; Player sprite left &amp;  Set face direction left &amp; Vertical speed 0
                 sprite_index = spr_Player_Left;
-                global.faceDirection = 270;
+                global.faceDirection = 180;
                 hSpeed = hMove * moveSpeed;
                 vSpeed = 0;
             }
@@ -218,7 +218,7 @@ if (verticalLock = false) {
         
         if (vMove = -1) { // Up
             sprite_index = spr_Player_Up;
-            global.faceDirection = 0;
+            global.faceDirection = 90;
         
             if (vMove = 1) { // Lock speed
                 vSpeed = 0;
@@ -226,14 +226,14 @@ if (verticalLock = false) {
                         
             if (hMove = 1) { // Moving right &amp; Player sprite right &amp;  Set face direction right &amp; Vertical speed 0
                 sprite_index = spr_Player_Right;
-                global.faceDirection = 90;
+                global.faceDirection = 0;
                 hSpeed = hMove * moveSpeed;
                 vSpeed = 0;
             }
             
             if (hMove = -1) { // Moving left &amp; Player sprite left &amp;  Set face direction left &amp; Vertical speed 0
                 sprite_index = spr_Player_Left;
-                global.faceDirection = 270;
+                global.faceDirection = 180;
                 hSpeed = hMove * moveSpeed;
                 vSpeed = 0;
             }   

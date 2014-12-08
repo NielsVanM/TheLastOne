@@ -146,19 +146,19 @@
     <instance objName="obj_CampFireLight" x="1088" y="736" name="inst_1E07FF60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="-32" y="0" name="inst_1D25EC07" locked="0" code="" scaleX="1" scaleY="64" colour="4294967295" rotation="0"/>
     <instance objName="obj_Water2" x="1185" y="618" name="inst_103D1449" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Trigger_GoOutside" x="441" y="212" name="inst_BE521DAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collision" x="1186" y="654" name="inst_D376862D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collision" x="1186" y="622" name="inst_D90CC338" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collision" x="1218" y="654" name="inst_CBE31229" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collision" x="1250" y="654" name="inst_AC72D132" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collision" x="1218" y="622" name="inst_C5DD4FEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collision" x="1250" y="622" name="inst_F28C344A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collision" x="1255" y="654" name="inst_7652921A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collision" x="1255" y="623" name="inst_5EABDEF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collision" x="1255" y="619" name="inst_FC3AA111" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collision" x="1223" y="619" name="inst_14112A80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collision" x="1191" y="619" name="inst_F35E2E6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collision" x="1186" y="619" name="inst_0984F5AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_HomeOutside" x="441" y="212" name="inst_BE521DAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="1187" y="620" name="inst_D376862D" locked="0" code="" scaleX="3.19354844093323" scaleY="2.0625" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tree2" x="3744" y="1152" name="inst_288B8552" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tree2" x="3680" y="1728" name="inst_250290E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tree2" x="3680" y="1600" name="inst_5F6261B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tree2" x="3616" y="1312" name="inst_0E1BD502" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tree2" x="3680" y="1472" name="inst_2CF95353" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tree2" x="3808" y="1536" name="inst_6BFD4621" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tree2" x="3776" y="1344" name="inst_484057AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tree2" x="3776" y="1824" name="inst_08B395C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_House5_SecretLab" x="3251" y="1153" name="inst_6EB52309" locked="0" code="" scaleX="2.38000011444092" scaleY="2.17000007629395" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tree2" x="3584" y="1184" name="inst_7FB5C834" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_TentOutside" x="1089" y="643" name="inst_216717AF" locked="0" code="" scaleX="0.970000028610229" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Grave1" x="48" y="1004" name="inst_70B9FF5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Grave1" x="336" y="1004" name="inst_BF2F0505" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Grave1" x="560" y="1004" name="inst_1D7E864C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -298,16 +298,6 @@
     <instance objName="obj_Tree2" x="2720" y="1344" name="inst_06D5DD4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree2" x="2752" y="1152" name="inst_3EC762FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree2" x="3616" y="1888" name="inst_12CD5C8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tree2" x="3680" y="1728" name="inst_250290E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tree2" x="3680" y="1600" name="inst_5F6261B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tree2" x="3680" y="1472" name="inst_2CF95353" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tree2" x="3616" y="1312" name="inst_0E1BD502" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tree2" x="3584" y="1184" name="inst_7FB5C834" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tree2" x="3744" y="1152" name="inst_288B8552" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tree2" x="3776" y="1344" name="inst_484057AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tree2" x="3808" y="1536" name="inst_6BFD4621" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tree2" x="3776" y="1824" name="inst_08B395C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_House5_SecretLab" x="3247" y="1159" name="inst_6EB52309" locked="0" code="" scaleX="2.38235282897949" scaleY="2.16883111000061" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_Tileset_Random" x="416" y="256" w="32" h="32" xo="128" yo="32" id="10000354" name="inst_FEEF3F17" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
