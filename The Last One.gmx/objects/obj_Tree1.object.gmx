@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Depth correctin
+            <string>///Depth correction
 depth = y * -1;
 </string>
           </argument>

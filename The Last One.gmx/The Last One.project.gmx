@@ -55,6 +55,7 @@
             <sprite>sprites\spr_Stair_Down_Small</sprite>
             <sprite>sprites\spr_Stair_Up</sprite>
             <sprite>sprites\spr_Stair_Up_Small</sprite>
+            <sprite>sprites\spr_Stair1</sprite>
           </sprites>
           <sprites name="TV">
             <sprite>sprites\spr_TV</sprite>
@@ -67,6 +68,7 @@
           <sprite>sprites\spr_Fireplace1</sprite>
           <sprite>sprites\spr_Fireplace2</sprite>
           <sprite>sprites\spr_Carpet</sprite>
+          <sprite>sprites\spr_Plant1</sprite>
         </sprites>
         <sprites name="Air Shaft">
           <sprite>sprites\spr_AirShaft1</sprite>
@@ -83,6 +85,10 @@
           <sprite>sprites\spr_AirShaft12</sprite>
           <sprite>sprites\spr_AirShaft13</sprite>
           <sprite>sprites\spr_AirShaft14</sprite>
+          <sprite>sprites\spr_AirShaft15</sprite>
+          <sprite>sprites\spr_AirShaft16</sprite>
+          <sprite>sprites\spr_AirShaft17</sprite>
+          <sprite>sprites\spr_AirShaft18</sprite>
         </sprites>
         <sprites name="Wall Decorations">
           <sprites name="Windows">
@@ -95,6 +101,33 @@
             <sprite>sprites\spr_Painting1</sprite>
             <sprite>sprites\spr_Painting2</sprite>
           </sprites>
+        </sprites>
+        <sprites name="Laboratory Items">
+          <sprite>sprites\spr_CapsuleG_Empty</sprite>
+          <sprite>sprites\spr_CapsuleY_Empty</sprite>
+          <sprite>sprites\spr_CapsuleB_Empty</sprite>
+          <sprite>sprites\spr_CapsuleG_Full</sprite>
+          <sprite>sprites\spr_CapsuleY_Full</sprite>
+          <sprite>sprites\spr_CapsuleB_Full</sprite>
+          <sprite>sprites\spr_Capsule_Broken1</sprite>
+          <sprite>sprites\spr_Capsule_Broken2</sprite>
+          <sprite>sprites\spr_HugeComputer</sprite>
+          <sprite>sprites\spr_SmallComputer</sprite>
+          <sprite>sprites\spr_SmallComputer2</sprite>
+          <sprite>sprites\spr_SmallComputer3</sprite>
+          <sprite>sprites\spr_ProjectTable1</sprite>
+          <sprite>sprites\spr_ProjectTable2</sprite>
+          <sprite>sprites\spr_ProjectTable1_Broken</sprite>
+          <sprite>sprites\spr_ProjectTable2_Broken</sprite>
+          <sprite>sprites\spr_LabTable</sprite>
+          <sprite>sprites\spr_LabTableBlood</sprite>
+          <sprite>sprites\spr_DigitalScreen</sprite>
+          <sprite>sprites\spr_DigitalScreen_Broken</sprite>
+          <sprite>sprites\spr_LabMap1</sprite>
+          <sprite>sprites\spr_LabMap2</sprite>
+          <sprite>sprites\spr_SurgeryTable1</sprite>
+          <sprite>sprites\spr_SurgeryTable2</sprite>
+          <sprite>sprites\spr_SurgeryTable3</sprite>
         </sprites>
       </sprites>
       <sprites name="Outdoors">
@@ -293,6 +326,7 @@
           <object>objects\obj_Stairs_Down_Small</object>
           <object>objects\obj_Stairs_Up_Small</object>
           <object>objects\obj_Stair_Up</object>
+          <object>objects\obj_Stair1</object>
         </objects>
         <objects name="Closet">
           <object>objects\obj_Closet_Wood</object>
@@ -336,6 +370,10 @@
           <object>objects\obj_AirShaft12</object>
           <object>objects\obj_AirShaft13</object>
           <object>objects\obj_AirShaft14</object>
+          <object>objects\obj_AirShaft15</object>
+          <object>objects\obj_AirShaft16</object>
+          <object>objects\obj_AirShaft17</object>
+          <object>objects\obj_AirShaft18</object>
         </objects>
         <objects name="Wall Decorations">
           <objects name="Windows">
@@ -351,6 +389,33 @@
         </objects>
         <objects name="Carpet">
           <object>objects\obj_Carpet1</object>
+        </objects>
+        <objects name="Laboratory Items">
+          <object>objects\obj_CapsuleG_Empty</object>
+          <object>objects\obj_CapsuleY_Empty</object>
+          <object>objects\obj_CapsuleB_Empty</object>
+          <object>objects\obj_CapsuleG_Full</object>
+          <object>objects\obj_CapsuleY_Full</object>
+          <object>objects\obj_CapsuleB_Full</object>
+          <object>objects\obj_Capsule_Broken1</object>
+          <object>objects\obj_Capsule_Broken2</object>
+          <object>objects\obj_HugeComputer</object>
+          <object>objects\obj_SmallComputer</object>
+          <object>objects\obj_SmallComputer2</object>
+          <object>objects\obj_SmallComputer3</object>
+          <object>objects\obj_ProjectTable1</object>
+          <object>objects\obj_ProjectTable2</object>
+          <object>objects\obj_ProjectTable1_Broken</object>
+          <object>objects\obj_ProjectTable2_Broken</object>
+          <object>objects\obj_LabTable</object>
+          <object>objects\obj_LabTableBlood</object>
+          <object>objects\obj_DigitalScreen</object>
+          <object>objects\obj_DigitalScreen_Broken</object>
+          <object>objects\obj_LabMap1</object>
+          <object>objects\obj_LabMap2</object>
+          <object>objects\obj_SurgeryTable1</object>
+          <object>objects\obj_SurgeryTable2</object>
+          <object>objects\obj_SurgeryTable3</object>
         </objects>
       </objects>
       <objects name="Outdoors">
@@ -489,6 +554,7 @@
       <room>rooms\rm_MainWorld</room>
       <room>rooms\rm_Tent</room>
       <room>rooms\rm_House_SecretLab</room>
+      <room>rooms\rm_SecretLab</room>
     </rooms>
   </rooms>
   <help>
