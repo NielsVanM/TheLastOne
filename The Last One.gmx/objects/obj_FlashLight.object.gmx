@@ -57,6 +57,8 @@ batteryDrain = 0.3 //Per second
           <argument>
             <kind>1</kind>
             <string>///Flashlight mechanics
+//Pause game
+if (global.pause = true){exit;}
 
 //Toggle flashlight
 if (keyboard_check_pressed(ord('L')))
