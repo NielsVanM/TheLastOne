@@ -100,72 +100,162 @@ keyDown = keyboard_check(ord('S'));
 keySprint = keyboard_check(vk_shift);
 keySneak = keyboard_check(vk_control);
 
-//Sprinting &amp; sneaking mechanism
+// Sprinting &amp; sneaking mechanism
 moveSpeed = normalMoveSpeed;
 imgSpeed = normalImgSpeed;
-if (keySprint = 1 &amp;&amp; pStamina &gt; 0){moveSpeed = runMoveSpeed; imgSpeed = runImgSpeed;}
 
-//Calculating movement
+if (keySprint = 1 &amp;&amp; pStamina &gt; 0) {
+    moveSpeed = runMoveSpeed; 
+    imgSpeed = runImgSpeed;
+}
+
+// Calculating movement
 hMove = keyLeft + keyRight;
 vMove = keyUp + keyDown;
 hSpeed = hMove * moveSpeed;
 vSpeed = vMove * moveSpeed;
 
-//Setting ismoving variable
-if (hSpeed != 0 || vSpeed != 0){isMoving = true;}else{isMoving = false;}
+// Setting ismoving variable
+if (hSpeed != 0 || vSpeed != 0) {
+    isMoving = true; 
+} else {
+    isMoving = false;
+}
 
-//Locking Vertical Movement &amp; changing Sprites
-if (hMove == 0 &amp;&amp; vMove == 0){image_speed = 0; image_index = 1;}
-if (horizontalLock = false)
-{
-    if (hMove = 1 or hMove = -1)
-    {
-        vSpeed = 0;
+// Setting the image speed and the Image index
+if (hMove == 0 &amp;&amp; vMove == 0) {
+    image_speed = 0; 
+    image_index = 1;
+}
+
+// Locking Verical Movement &amp; changing Sprites
+if (horizontalLock = false) {
+    if (hMove = 1 || hMove = -1) { 
+        image_speed = imgSpeed;
         verticalLock = true;
-        if (hMove = 1){sprite_index = spr_Player_Right; image_speed = imgSpeed; global.faceDirection = 90;}
-        if (hMove = -1){sprite_index = spr_Player_Left; image_speed = imgSpeed; global.faceDirection = 270;}
-    }
-    else
-    {
+        
+        if (hMove = 1) { // Right
+            sprite_index = spr_Player_Right;
+            global.faceDirection = 90;
+            
+            if (hMove = -1) { // Lock speed
+                hSpeed = 0;
+            }
+            
+            if (vMove = 1) { // Moving down &amp; Player sprite down &amp;  Set face direction down &amp; Horizontal speed 0
+                sprite_index = spr_Player_Down;
+                global.faceDirection = 180;
+                vSpeed = vMove * moveSpeed;
+                hSpeed = 0;
+            }
+            
+            if (vMove = -1) { // Moving up &amp; Player sprite up &amp;  Set face direction up &amp; Horizontal speed 0
+                sprite_index = spr_Player_Up;
+                global.faceDirection = 0;
+                vSpeed = vMove * moveSpeed;
+                hSpeed = 0;
+            }
+        }
+        
+        if (hMove = -1) { // Left
+            sprite_index = spr_Player_Left;
+            global.faceDirection = 270;
+        
+            if (hMove = 1) { // Lock speed
+                hSpeed = 0;
+            }
+                        
+            if (vMove = 1) { // Moving down &amp; Player sprite down &amp;  Set face direction down &amp; Horizontal speed 0
+                sprite_index = spr_Player_Down;
+                global.faceDirection = 180;
+                vSpeed = vMove * moveSpeed;
+                hSpeed = 0;
+            }
+            
+            if (vMove = -1) { // Moving up &amp; Player sprite up &amp;  Set face direction up &amp; Horizontal speed 0
+                sprite_index = spr_Player_Up;
+                global.faceDirection = 0;
+                vSpeed = vMove * moveSpeed;
+                hSpeed = 0;
+            }
+        }
+    } else {
         verticalLock = false;
     }
 }
-//Locking Horizontal Movement &amp; changing Sprites
-if (verticalLock = false)
-{
-    if (vMove = 1 or vMove = -1)
-    {
-        hSpeed = 0;
+
+// Locking Horizontal Movement &amp; changing Sprites
+if (verticalLock = false) {
+    if (vMove = 1 || vMove = -1) {
+        image_speed = imgSpeed;
         horizontalLock = true;
-        if (vMove = 1){sprite_index = spr_Player_Down; image_speed = imgSpeed; global.faceDirection = 180;}
-        if (vMove = -1){sprite_index = spr_Player_Up; image_speed = imgSpeed; global.faceDirection = 0;}
-    }
-    else
-    {
+        
+        if (vMove = 1) { // Down
+            sprite_index = spr_Player_Down;
+            global.faceDirection = 180;
+        
+            if (vMove = -1) { // Lock speed
+                vSpeed = 0;
+            }
+                        
+            if (hMove = 1) { // Moving right &amp; Player sprite right &amp;  Set face direction right &amp; Vertical speed 0
+                sprite_index = spr_Player_Right;
+                global.faceDirection = 90;
+                hSpeed = hMove * moveSpeed;
+                vSpeed = 0;
+            }
+            
+            if (hMove = -1) { // Moving left &amp; Player sprite left &amp;  Set face direction left &amp; Vertical speed 0
+                sprite_index = spr_Player_Left;
+                global.faceDirection = 270;
+                hSpeed = hMove * moveSpeed;
+                vSpeed = 0;
+            }
+        }
+        
+        if (vMove = -1) { // Up
+            sprite_index = spr_Player_Up;
+            global.faceDirection = 0;
+        
+            if (vMove = 1) { // Lock speed
+                vSpeed = 0;
+            }
+                        
+            if (hMove = 1) { // Moving right &amp; Player sprite right &amp;  Set face direction right &amp; Vertical speed 0
+                sprite_index = spr_Player_Right;
+                global.faceDirection = 90;
+                hSpeed = hMove * moveSpeed;
+                vSpeed = 0;
+            }
+            
+            if (hMove = -1) { // Moving left &amp; Player sprite left &amp;  Set face direction left &amp; Vertical speed 0
+                sprite_index = spr_Player_Left;
+                global.faceDirection = 270;
+                hSpeed = hMove * moveSpeed;
+                vSpeed = 0;
+            }   
+        }
+    } else {
         horizontalLock = false
     }
 }
 
-//Horizontal collision
-if (place_meeting(x+hSpeed,y,obj_Collision))
-{
-    while (!place_meeting(x+sign(hSpeed),y,obj_Collision))
-    {
+// Horizontal collision
+if (place_meeting(x + hSpeed, y, obj_Collision)) {
+    while (!place_meeting(x + sign(hSpeed), y, obj_Collision)) {
         x += sign(hSpeed);
     }
     hSpeed = 0;
 }
-//Vertical collision
-if (place_meeting(x,y+vSpeed,obj_Collision))
-{
-    while (!place_meeting(x,y+sign(vSpeed),obj_Collision))
-    {
+// Vertical collision
+if (place_meeting(x, y + vSpeed, obj_Collision)) {
+    while (!place_meeting(x,y+sign(vSpeed),obj_Collision)) {
         y += sign(vSpeed);
     }
     vSpeed = 0;
 }
 
-//Changing x and y
+// Changing x and y
 x += hSpeed;
 y += vSpeed;
 </string>
