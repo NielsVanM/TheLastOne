@@ -92,6 +92,7 @@ instance_create(x,y,obj_FlashLight);
           <argument>
             <kind>1</kind>
             <string>///Movement
+
 //User input
 keyRight = keyboard_check(ord('D'));
 keyLeft = -keyboard_check(ord('A'));

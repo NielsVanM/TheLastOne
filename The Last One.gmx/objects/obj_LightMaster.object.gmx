@@ -55,7 +55,7 @@ draw_set_color(c_ltgray);
 draw_rectangle(0,0,view_wview[0],view_hview[0],false);
 surface_reset_target();
 
-depth = obj_Player.depth - 10000;
+depth = -100000;
 </string>
           </argument>
         </arguments>

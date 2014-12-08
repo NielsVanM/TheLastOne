@@ -2,8 +2,8 @@
 <object>
   <spriteName>spr_Controller</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
-  <depth>0</depth>
+  <visible>-1</visible>
+  <depth>10000</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,20 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Variables
-//Options
-global.music = true;
-global.sound = true;
-global.particles = true;
-
-//Player global variables
-global.hide = false;
-global.faceDirection = 0;
-
-//Light gloabl variables
-global.dark = true;
-
-//DEBUG
-global.debug = false;
+global.pause = false;
 </string>
           </argument>
         </arguments>
@@ -62,14 +49,49 @@ global.debug = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Master keybinds
-//Togle debug
-if (keyboard_check_pressed(ord('Q')))
+            <string>///Pause menu code
+
+//Toggle menu
+if (keyboard_check_pressed(vk_escape))
 {
-    global.debug = !global.debug;
+    if (global.pause = false){global.pause = true;}else{global.pause = false;}
 }
 
-if (keyboard_check_pressed(ord('R'))){game_restart();}
+//Acutual menu
+if (global.pause = true)
+{
+    
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Draw menu
+if (global.pause = true)
+{
+    //Draw background
+    draw_set_alpha(0.5);
+    draw_rectangle(obj_Player.x,obj_Player.y,obj_Player.x,obj_Player.y,false)
+    draw_set_alpha(1);
+}
 </string>
           </argument>
         </arguments>

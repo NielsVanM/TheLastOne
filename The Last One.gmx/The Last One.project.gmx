@@ -458,6 +458,7 @@
           <object>objects\obj_Controller_TitleScreen</object>
           <object>objects\obj_Controller_Home</object>
         </objects>
+        <object>objects\obj_Controller_PauseMenu</object>
       </objects>
       <objects name="Triggers">
         <objects name="Own Home">

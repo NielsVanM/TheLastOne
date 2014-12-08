@@ -1,5 +1,10 @@
 ///Zombie AI
 
+if (instance_exists(obj_Controller_PauseMenu))
+{
+    if (global.pause = true){image_speed = 0; exit;}
+}
+
 //Depth correctin
 depth = y * -1;
 
@@ -145,112 +150,115 @@ if (lockedOn = false)
     if (walkCooldown = 0){image_speed = imgSpeed;}
 }
 
-///Player tracking
-if (!collision_line(x,y,obj_Player.x,obj_Player.y,obj_Collision,false,true))
+if (instance_exists(obj_Player))
 {
-    if (distance_to_object(obj_Player) < trackRange){lockedOn = true;}
-}
-
-if (lockedOn = true)
-{ 
-    //Moving on to player
-    if (distance_to_object(obj_Player) < trackRange && distance_to_object(obj_Player) > hitRange)
+    ///Player tracking
+    if (!collision_line(x,y,obj_Player.x,obj_Player.y,obj_Collision,false,true))
     {
-        //Lockedon
-        lockedOn = true
-        
-        //Stopping zombie
-        hSpeed = 0;
-        vSpeed = 0;
-        image_speed = 0;
-        
-        //Moving to player
-        if (!collision_line(x,y,obj_Player.x,obj_Player.y,obj_Collision,false,true))
+        if (distance_to_object(obj_Player) < trackRange){lockedOn = true;}
+    }
+    
+    if (lockedOn = true)
+    { 
+        //Moving on to player
+        if (distance_to_object(obj_Player) < trackRange && distance_to_object(obj_Player) > hitRange)
         {
-            //Towards player.x
-            if (toggleCoor = 0)
-            {
-                if (x < obj_Player.x)
-                {
-                    hSpeed = moveSpeed;
-                    image_speed = imgSpeed;
-                    if (tag = 1){sprite_index = spr_Zombie1_Right;}
-                    if (tag = 2){sprite_index = spr_Zombie2_Right;}
-                    if (tag = 3){sprite_index = spr_Zombie3_Right;}
-                    if (tag = 4){sprite_index = spr_Zombie4_Right;}
-                    if (tag = 5){sprite_index = spr_Zombie5_Right;}
-                    if (tag = 6){sprite_index = spr_Zombie6_Right;}
-                    if (tag = 7){sprite_index = spr_Zombie7_Right;}
-                    if (tag = 8){sprite_index = spr_Zombie8_Right;}
-                }
-                if(x > obj_Player.x)
-                {
-                    hSpeed = -moveSpeed;
-                    image_speed = imgSpeed;
-                    if (tag = 1){sprite_index = spr_Zombie1_Left;}
-                    if (tag = 2){sprite_index = spr_Zombie2_Left;}
-                    if (tag = 3){sprite_index = spr_Zombie3_Left;}
-                    if (tag = 4){sprite_index = spr_Zombie4_Left;}
-                    if (tag = 5){sprite_index = spr_Zombie5_Left;}
-                    if (tag = 6){sprite_index = spr_Zombie6_Left;}
-                    if (tag = 7){sprite_index = spr_Zombie7_Left;}
-                    if (tag = 8){sprite_index = spr_Zombie8_Left;}
-                }
-                if (x = obj_Player.x){toggleCoor = 1;}
-            }
+            //Lockedon
+            lockedOn = true
             
-            //Towards player.y
-            if (toggleCoor = 1)
+            //Stopping zombie
+            hSpeed = 0;
+            vSpeed = 0;
+            image_speed = 0;
+            
+            //Moving to player
+            if (!collision_line(x,y,obj_Player.x,obj_Player.y,obj_Collision,false,true))
             {
-                if (y < obj_Player.y)
+                //Towards player.x
+                if (toggleCoor = 0)
                 {
-                    vSpeed = moveSpeed;
-                    image_speed = imgSpeed;
-                    if (tag = 1){sprite_index = spr_Zombie1_Down;}
-                    if (tag = 2){sprite_index = spr_Zombie2_Down;}
-                    if (tag = 3){sprite_index = spr_Zombie3_Down;}
-                    if (tag = 4){sprite_index = spr_Zombie4_Down;}
-                    if (tag = 5){sprite_index = spr_Zombie5_Down;}
-                    if (tag = 6){sprite_index = spr_Zombie6_Down;}
-                    if (tag = 7){sprite_index = spr_Zombie7_Down;}
-                    if (tag = 8){sprite_index = spr_Zombie8_Down;}
+                    if (x < obj_Player.x)
+                    {
+                        hSpeed = moveSpeed;
+                        image_speed = imgSpeed;
+                        if (tag = 1){sprite_index = spr_Zombie1_Right;}
+                        if (tag = 2){sprite_index = spr_Zombie2_Right;}
+                        if (tag = 3){sprite_index = spr_Zombie3_Right;}
+                        if (tag = 4){sprite_index = spr_Zombie4_Right;}
+                        if (tag = 5){sprite_index = spr_Zombie5_Right;}
+                        if (tag = 6){sprite_index = spr_Zombie6_Right;}
+                        if (tag = 7){sprite_index = spr_Zombie7_Right;}
+                        if (tag = 8){sprite_index = spr_Zombie8_Right;}
+                    }
+                    if(x > obj_Player.x)
+                    {
+                        hSpeed = -moveSpeed;
+                        image_speed = imgSpeed;
+                        if (tag = 1){sprite_index = spr_Zombie1_Left;}
+                        if (tag = 2){sprite_index = spr_Zombie2_Left;}
+                        if (tag = 3){sprite_index = spr_Zombie3_Left;}
+                        if (tag = 4){sprite_index = spr_Zombie4_Left;}
+                        if (tag = 5){sprite_index = spr_Zombie5_Left;}
+                        if (tag = 6){sprite_index = spr_Zombie6_Left;}
+                        if (tag = 7){sprite_index = spr_Zombie7_Left;}
+                        if (tag = 8){sprite_index = spr_Zombie8_Left;}
+                    }
+                    if (x = obj_Player.x){toggleCoor = 1;}
                 }
-                if (y > obj_Player.y)
+                
+                //Towards player.y
+                if (toggleCoor = 1)
                 {
-                    vSpeed = -moveSpeed;
-                    image_speed = imgSpeed;
-                    if (tag = 1){sprite_index = spr_Zombie1_Up;}
-                    if (tag = 2){sprite_index = spr_Zombie2_Up;}
-                    if (tag = 3){sprite_index = spr_Zombie3_Up;}
-                    if (tag = 4){sprite_index = spr_Zombie4_Up;}
-                    if (tag = 5){sprite_index = spr_Zombie5_Up;}
-                    if (tag = 6){sprite_index = spr_Zombie6_Up;}
-                    if (tag = 7){sprite_index = spr_Zombie7_Up;}
-                    if (tag = 8){sprite_index = spr_Zombie8_Up;}
+                    if (y < obj_Player.y)
+                    {
+                        vSpeed = moveSpeed;
+                        image_speed = imgSpeed;
+                        if (tag = 1){sprite_index = spr_Zombie1_Down;}
+                        if (tag = 2){sprite_index = spr_Zombie2_Down;}
+                        if (tag = 3){sprite_index = spr_Zombie3_Down;}
+                        if (tag = 4){sprite_index = spr_Zombie4_Down;}
+                        if (tag = 5){sprite_index = spr_Zombie5_Down;}
+                        if (tag = 6){sprite_index = spr_Zombie6_Down;}
+                        if (tag = 7){sprite_index = spr_Zombie7_Down;}
+                        if (tag = 8){sprite_index = spr_Zombie8_Down;}
+                    }
+                    if (y > obj_Player.y)
+                    {
+                        vSpeed = -moveSpeed;
+                        image_speed = imgSpeed;
+                        if (tag = 1){sprite_index = spr_Zombie1_Up;}
+                        if (tag = 2){sprite_index = spr_Zombie2_Up;}
+                        if (tag = 3){sprite_index = spr_Zombie3_Up;}
+                        if (tag = 4){sprite_index = spr_Zombie4_Up;}
+                        if (tag = 5){sprite_index = spr_Zombie5_Up;}
+                        if (tag = 6){sprite_index = spr_Zombie6_Up;}
+                        if (tag = 7){sprite_index = spr_Zombie7_Up;}
+                        if (tag = 8){sprite_index = spr_Zombie8_Up;}
+                    }
+                    if (y = obj_Player.y){toggleCoor = 0;}
                 }
-                if (y = obj_Player.y){toggleCoor = 0;}
             }
         }
-    }
-    
-    //Hitting the player
-    if (distance_to_object(obj_Player) < hitRange)
-    {
-        hSpeed = 0;
-        vSpeed = 0;
-        image_speed = 0;
-        image_index = 1;
         
-        //Hurt Player
-    }
-    
-    //Losing the player
-    if (distance_to_object(obj_Player) > trackRange)
-    {
-        lockedOn = false;
-        isWalking = false;
-        hSpeed = 0;
-        vSpeed = 0;
+        //Hitting the player
+        if (distance_to_object(obj_Player) < hitRange)
+        {
+            hSpeed = 0;
+            vSpeed = 0;
+            image_speed = 0;
+            image_index = 1;
+            
+            //Hurt Player
+        }
+        
+        //Losing the player
+        if (distance_to_object(obj_Player) > trackRange)
+        {
+            lockedOn = false;
+            isWalking = false;
+            hSpeed = 0;
+            vSpeed = 0;
+        }
     }
 }
 
