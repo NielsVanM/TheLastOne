@@ -69,7 +69,7 @@ part_type_life(Fire0,20,60);
 ///Emit particles
 Wood = part_emitter_create(CampFire);
 part_emitter_region(CampFire,Wood,x-20,x+20,y-8,y+8,ps_shape_ellipse,1);
-part_emitter_stream(CampFire,Wood,Fire0,10);
+part_emitter_stream(CampFire,Wood,Fire0,5);
 </string>
           </argument>
         </arguments>

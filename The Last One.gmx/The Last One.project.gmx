@@ -534,7 +534,7 @@
           <object>objects\obj_Trigger_TentOutside</object>
         </objects>
         <objects name="Secret Lab">
-          <object>objects\obj_Trigger_HouselabOutside</object>
+          <object>objects\obj_Trigger_LabOutside</object>
         </objects>
       </objects>
       <objects name="Room Fading">
