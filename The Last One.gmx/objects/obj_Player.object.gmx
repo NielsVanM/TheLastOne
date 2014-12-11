@@ -350,6 +350,33 @@ depth = y * -1;
         </arguments>
       </action>
     </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///GUI/HUD
+draw_healthbar(0,0,200,50,pHealth,c_black,c_red,c_green,0,true,true);
+draw_healthbar(0,50,200,100,pFood,c_black,c_teal,c_teal,0,true,true);
+draw_healthbar(0,100,200,150,pWater,c_black,c_blue,c_navy,0,true,true);
+draw_healthbar(0,150,200,200,pStamina,c_black,c_yellow,c_yellow,0,true,true);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
