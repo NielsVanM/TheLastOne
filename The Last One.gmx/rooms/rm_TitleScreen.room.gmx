@@ -51,8 +51,8 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_Controller_TitleScreen" x="32" y="32" name="inst_0907F576" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_MasterController" x="1888" y="0" name="inst_AD141629" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_MasterController" x="1952" y="-32" name="inst_18C9772A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_BloodSpatter3" x="225" y="593" name="inst_0A091CC7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="448" y="352" name="inst_E4E99544" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tent1" x="256" y="128" name="inst_542320C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Campfire1" x="256" y="288" name="inst_3F62834F" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
@@ -84,7 +84,7 @@
     <instance objName="obj_Tree1" x="746" y="602" name="inst_2199CD9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree1" x="211" y="93" name="inst_B6AB7FD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree1" x="323" y="97" name="inst_D8D37FDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tree1" x="35" y="98" name="inst_066DE57A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tree1" x="32" y="128" name="inst_066DE57A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree1" x="123" y="36" name="inst_2440FD13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree1" x="23" y="192" name="inst_44B466B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree1" x="103" y="214" name="inst_077512C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -171,7 +171,7 @@
     <instance objName="obj_Collision" x="0" y="928" name="inst_0BAA292D" locked="0" code="" scaleX="60" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="1920" y="0" name="inst_4DC26D20" locked="0" code="" scaleX="1" scaleY="29" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="0" y="-32" name="inst_48242E8F" locked="0" code="" scaleX="60" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collision" x="2016" y="32" name="inst_804F6E05" locked="0" code="" scaleX="0.100000001490116" scaleY="0.100000001490116" colour="4294967295" rotation="0"/>
+    <instance objName="obj_BloodSpatter3" x="343" y="815" name="inst_5501C03D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Zombie1_AI" x="128" y="576" name="inst_4FDBCAEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CampFireLight" x="256" y="288" name="inst_4582CAE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="0" y="256" name="inst_70FE823D" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
@@ -240,8 +240,7 @@
     <instance objName="obj_BloodSpatter3" x="145" y="778" name="inst_971870D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_BloodSpatter3" x="115" y="755" name="inst_CD193A66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_BloodSpatter3" x="191" y="625" name="inst_FD70A36C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_BloodSpatter3" x="225" y="593" name="inst_0A091CC7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_BloodSpatter3" x="343" y="815" name="inst_5501C03D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Controller_TitleScreen" x="-96" y="-32" name="inst_C7F5A8E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

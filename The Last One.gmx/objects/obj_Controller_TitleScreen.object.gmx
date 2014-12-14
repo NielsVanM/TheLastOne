@@ -35,6 +35,10 @@ optionMenu = false;
 survivalMenu = false;
 
 enterLock = 0;
+
+//Start music
+sound_volume(snd_Music_TitleScreen,100)
+if (global.music = true){sound_play(snd_Music_TitleScreen)}
 </string>
           </argument>
         </arguments>
@@ -130,6 +134,38 @@ if (survivalMenu = true)
 if (enterLock &gt; 0)
 {
     enterLock -= 1;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Start/Stop music
+if (global.music = false)
+{
+    if (sound_isplaying(snd_Music_TitleScreen))
+    {
+        sound_stop(snd_Music_TitleScreen);
+    }
+}
+if (global.music = true &amp;&amp; !sound_isplaying(snd_Music_TitleScreen))
+{
+    sound_play(snd_Music_TitleScreen);
 }
 </string>
           </argument>

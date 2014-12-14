@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Variables
+            <string> ///Variables
 //Movement
 normalMoveSpeed = 2;
 runMoveSpeed = 4;
@@ -47,6 +47,14 @@ pFoodDecay = 0.3; //Per Second
 pStaminaDecay = 26 / room_speed; //Per second
 pWaterDamage = 1; //Per Second
 pFoodDamage = 1; //Per Second
+
+//Inventory System
+invSelected = 0;
+
+invSlot[0] = 1;
+invSlot[1] = 2;
+invSlot[2] = 3;
+invSlot[3] = 4;
 </string>
           </argument>
         </arguments>
@@ -343,6 +351,35 @@ if (global.debug = true){pStamina = 100;}
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Inventory System
+
+//Scroll up/down
+if (mouse_wheel_up()){invSelected -= 1;}
+if (mouse_wheel_down()){invSelected += 1;}
+
+//Max scroll sides
+if (invSelected &gt; 3){invSelected = 3;}
+if (invSelected &lt; 0){invSelected = 0;}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///Depth correction
 depth = y * -1;
 </string>
@@ -372,6 +409,40 @@ draw_healthbar(0,0,200,50,pHealth,c_black,c_red,c_green,0,true,true);
 draw_healthbar(0,50,200,100,pFood,c_black,c_teal,c_teal,0,true,true);
 draw_healthbar(0,100,200,150,pWater,c_black,c_blue,c_navy,0,true,true);
 draw_healthbar(0,150,200,200,pStamina,c_black,c_yellow,c_yellow,0,true,true);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Inventory
+//Draw boxes
+draw_set_color(c_black);
+draw_rectangle(1888,32,1920,64,true);
+draw_rectangle(1888,64,1920,96,true);
+draw_rectangle(1888,96,1920,128,true);
+draw_rectangle(1888,128,1920,160,true);
+
+//Draw feedback
+draw_set_color(c_blue);
+if(invSelected = 0){draw_rectangle(32,32,64,64,true);}
+if(invSelected = 1){draw_rectangle(32,64,64,96,true);}
+if(invSelected = 2){draw_rectangle(32,96,64,128,true);}
+if(invSelected = 3){draw_rectangle(32,128,64,160,true);}
 </string>
           </argument>
         </arguments>

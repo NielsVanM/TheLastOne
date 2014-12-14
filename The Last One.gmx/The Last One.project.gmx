@@ -4,7 +4,11 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="Music">
+      <sound>sound\snd_Music_TitleScreen</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Environment">
       <sprites name="Indoors">
