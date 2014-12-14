@@ -570,6 +570,9 @@
           <room>rooms\rm_House_SecretLab</room>
           <room>rooms\rm_SecretLab</room>
         </rooms>
+        <rooms name="Normal House">
+          <room>rooms\rm_Normal_House1</room>
+        </rooms>
       </rooms>
     </rooms>
   </rooms>

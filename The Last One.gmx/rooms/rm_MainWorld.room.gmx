@@ -56,7 +56,7 @@
     <instance objName="obj_Collision" x="0" y="-32" name="inst_F56F8282" locked="0" code="" scaleX="84" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Car2_Broken" x="403" y="408" name="inst_D6C101D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Zombie1_AI" x="448" y="288" name="inst_F7BFD2CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_House3" x="1337" y="74" name="inst_B641DBBE" locked="0" code="" scaleX="2.51999998092651" scaleY="2.14000010490417" colour="4294967295" rotation="0"/>
+    <instance objName="obj_House3" x="1337" y="78" name="inst_B641DBBE" locked="0" code="" scaleX="2.51999998092651" scaleY="2.14000010490417" colour="4294967295" rotation="0"/>
     <instance objName="obj_Cemetery_Sign" x="352" y="1184" name="inst_911021E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Cemetery_Wall1" x="16" y="1082" name="inst_0D00E3AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Cemetery_Wall1" x="16" y="1035" name="inst_43C7B556" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
