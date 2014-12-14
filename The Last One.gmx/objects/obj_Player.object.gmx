@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string> ///Variables
+            <string>///Variables
 //Movement
 normalMoveSpeed = 2;
 runMoveSpeed = 4;
@@ -50,6 +50,12 @@ pFoodDamage = 1; //Per Second
 
 //Inventory System
 invSelected = 0;
+invExtended = false;
+
+invArray[0] = 0;
+invArray[1] = 0;
+invArray[2] = 0;
+invArray[3] = 0;
 
 invSlot[0] = 1;
 invSlot[1] = 2;
@@ -353,13 +359,68 @@ if (global.debug = true){pStamina = 100;}
             <kind>1</kind>
             <string>///Inventory System
 
-//Scroll up/down
-if (mouse_wheel_up()){invSelected -= 1;}
-if (mouse_wheel_down()){invSelected += 1;}
+//Check if tab is pressed
+if (keyboard_check(vk_tab)){invExtended = true}else{invExtended = false;}
 
-//Max scroll sides
+//Scroll up/down
+if (invExtended = false)
+{
+    if (mouse_wheel_up()){invSelected -= 1;}
+    if (mouse_wheel_down()){invSelected += 1;}
+}
+
+//Max scroll up/down
 if (invSelected &gt; 3){invSelected = 3;}
 if (invSelected &lt; 0){invSelected = 0;}
+
+//Extenden inventory when pressing tab
+if (invExtended = true)
+{
+    //First array
+    if (invSelected = 0)
+    {
+        //Select in array
+        if (mouse_wheel_up()){invArray[0] -= 1;}
+        if (mouse_wheel_down()){invArray[0] += 1;}
+        
+        //Max selection
+        if (invArray[0] &gt; 3){invArray[0] = 3;}
+        if (invArray[0] &lt; 0){invArray[0] = 0;}
+    }
+    //Second array
+    if (invSelected = 1)
+    {
+        //Select in array
+        if (mouse_wheel_up()){invArray[1] -= 1;}
+        if (mouse_wheel_down()){invArray[1] += 1;}
+        
+        //Max selection
+        if (invArray[0] &gt; 3){invArray[0] = 3;}
+        if (invArray[0] &lt; 0){invArray[0] = 0;}
+    }
+    //Third array
+    if (invSelected = 2)
+    {
+        //Select in array
+        if (mouse_wheel_up()){invArray[2] -= 1;}
+        if (mouse_wheel_down()){invArray[2] += 1;}
+        
+        //Max selection
+        if (invArray[0] &gt; 3){invArray[0] = 3;}
+        if (invArray[0] &lt; 0){invArray[0] = 0;}
+    }
+    //Fourth array
+    if (invSelected = 3)
+    {
+        //Select in array
+        if (mouse_wheel_up()){invArray[3] -= 1;}
+        if (mouse_wheel_down()){invArray[3] += 1;}
+        
+        //Max selection
+        if (invArray[0] &gt; 3){invArray[0] = 3;}
+        if (invArray[0] &lt; 0){invArray[0] = 0;}
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -430,12 +491,13 @@ draw_healthbar(0,150,200,200,pStamina,c_black,c_yellow,c_yellow,0,true,true);
           <argument>
             <kind>1</kind>
             <string>///Inventory
+//Draw Main Inventory
 //Draw boxes
 draw_set_color(c_black);
-draw_rectangle(1888,32,1920,64,true);
-draw_rectangle(1888,64,1920,96,true);
-draw_rectangle(1888,96,1920,128,true);
-draw_rectangle(1888,128,1920,160,true);
+draw_rectangle(32,32,64,64,true);
+draw_rectangle(32,64,64,96,true);
+draw_rectangle(32,96,64,128,true);
+draw_rectangle(32,128,64,160,true);;
 
 //Draw feedback
 draw_set_color(c_blue);
@@ -443,6 +505,28 @@ if(invSelected = 0){draw_rectangle(32,32,64,64,true);}
 if(invSelected = 1){draw_rectangle(32,64,64,96,true);}
 if(invSelected = 2){draw_rectangle(32,96,64,128,true);}
 if(invSelected = 3){draw_rectangle(32,128,64,160,true);}
+
+//Draw arrays
+if (keyboard_check(vk_tab))
+{
+    //Array one
+    if (invSelected = 0)
+    {
+        //Draw boxes
+        draw_set_color(c_black);
+        draw_rectangle(32,32,64,64,true);
+        draw_rectangle(64,32,96,64,true);
+        draw_rectangle(96,32,128,64,true);
+    }
+    
+    //Array two
+    if (invSelected = 1)
+    {
+        draw_rectangle(32,64,64,96,true);
+        draw_rectangle(32,64,64,96,true);
+        draw_rectangle(32,64,64,96,true);
+    }
+}
 </string>
           </argument>
         </arguments>
