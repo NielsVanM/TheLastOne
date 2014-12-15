@@ -531,22 +531,22 @@ if (mouse_check_button_pressed(mb_left)){pHealth -= 5;}
             <string>///GUI/HUD
 
 //User input
-cMain = 1
+cMain = 0
 
 ///Health, water, food, stamina
 //Draw player sprite
-draw_sprite_ext(spr_Player_Down,1,160,900,5,5,0,c_red,0.4);
+draw_sprite_ext(spr_Player_Down,1,160,900,5,5,0,c_red,1);
 
 //Healthbar
 testHealth = 100
-while (cMain &lt; 32)
+while (cMain &lt;= 32)
 {
-    cMain += 1;
     if (pHealth &gt; testHealth)
     {
-        draw_sprite_part_ext(spr_Player_Down, 1, 0, 0, sprite_width, sprite_height-cMain, 79, 820, 5, 5, c_white, 1);
+        draw_sprite_part_ext(spr_Player_Down, 1, 0, 0, sprite_width, sprite_height-cMain+1, 79, 820, 5, 5, c_white, 1);
     }
     testHealth -= 3.125;
+    cMain += 1;
 }
 </string>
           </argument>
