@@ -475,10 +475,12 @@ depth = y * -1;
           <argument>
             <kind>1</kind>
             <string>///GUI/HUD
-draw_healthbar(0,0,200,50,pHealth,c_black,c_red,c_green,0,true,true);
-draw_healthbar(0,50,200,100,pFood,c_black,c_teal,c_teal,0,true,true);
-draw_healthbar(0,100,200,150,pWater,c_black,c_blue,c_navy,0,true,true);
-draw_healthbar(0,150,200,200,pStamina,c_black,c_yellow,c_yellow,0,true,true);
+
+//Draw player sprite
+draw_sprite_ext(spr_Player_Down,1,128,950,5,5,0,c_white,1);
+
+//Draw healthbars
+draw_healthbar(160,950,1230,1000,pHealth,c_black,c_red,c_lime,0,true,true); //Health
 </string>
           </argument>
         </arguments>
