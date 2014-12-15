@@ -530,76 +530,24 @@ if (mouse_check_button_pressed(mb_left)){pHealth -= 5;}
             <kind>1</kind>
             <string>///GUI/HUD
 
+//User input
+cMain = 1
+
 ///Health, water, food, stamina
 //Draw player sprite
 draw_sprite_ext(spr_Player_Down,1,160,900,5,5,0,c_red,0.4);
+
 //Healthbar
-testHealth = 100;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-1,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-2,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-3,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-4,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-5,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-6,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-7,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-8,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-9,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-10,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-11,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-12,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-13,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-14,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-15,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-16,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-17,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-18,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-19,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-20,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-21,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-22,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-23,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-24,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-25,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-26,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-27,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-28,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-29,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-30,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-31,79,820,5,5,c_white,1);}
-testHealth -= 3.125;
-if (pHealth &gt; testHealth){draw_sprite_part_ext(spr_Player_Down,1,0,0,sprite_width,sprite_height-32,79,820,5,5,c_white,1);}
+testHealth = 100
+while (cMain &lt; 32)
+{
+    cMain += 1;
+    if (pHealth &gt; testHealth)
+    {
+        draw_sprite_part_ext(spr_Player_Down, 1, 0, 0, sprite_width, sprite_height-cMain, 79, 820, 5, 5, c_white, 1);
+    }
+    testHealth -= 3.125;
+}
 </string>
           </argument>
         </arguments>
