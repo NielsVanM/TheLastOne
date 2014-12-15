@@ -506,6 +506,7 @@ if (invExtended = true)
             <string>///Depth correction
 depth = y * -1;
 if (mouse_check_button_pressed(mb_left)){pHealth -= 5;}
+if (mouse_check_button_pressed(mb_right)){pHealth += 5;}
 </string>
           </argument>
         </arguments>
