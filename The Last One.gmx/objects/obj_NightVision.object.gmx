@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Set size
 size = 1200;
-nightVision = false;
+nightVision = true;
 </string>
           </argument>
         </arguments>

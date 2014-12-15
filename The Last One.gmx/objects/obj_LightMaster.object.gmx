@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///Create canvas
 global.light = surface_create(view_wview[0],view_hview[0]);
+global.dark = true;
 </string>
           </argument>
         </arguments>
