@@ -52,10 +52,10 @@
   </views>
   <instances>
     <instance objName="obj_Wall_Tent" x="2272" y="1856" name="inst_9C6A523A" locked="0" code="" scaleX="5.94000005722046" scaleY="3.94000005722046" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Stool" x="2176" y="1984" name="inst_2CD3A523" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Stool" x="2336" y="1984" name="inst_E489C89A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Table_2" x="2234" y="2007" name="inst_3713778C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Table_2" x="2312" y="2007" name="inst_3C48BE62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="2304" y="1888" name="inst_0E84695E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Doormat2" x="2255" y="2192" name="inst_BF73C60A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Zombie2_AI" x="2272" y="1952" name="inst_B3A8C09A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_TentOutside" x="2271" y="2208" name="inst_CA7FD90A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="2272" y="1888" name="inst_646A1D77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="2144" y="2048" name="inst_287B7766" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="2144" y="2016" name="inst_A9C0B607" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -89,10 +89,16 @@
     <instance objName="obj_Collision" x="2368" y="1920" name="inst_7052451E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="2368" y="1888" name="inst_CECD1CDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="2336" y="1888" name="inst_DD27D431" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collision" x="2304" y="1888" name="inst_0E84695E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie2_AI" x="2272" y="1952" name="inst_B3A8C09A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Doormat2" x="2255" y="2192" name="inst_BF73C60A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Trigger_TentOutside" x="2271" y="2208" name="inst_CA7FD90A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Bed" x="2208" y="1952" name="inst_B18FB490" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Table_2" x="2346" y="1965" name="inst_2AD2C14F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Stool" x="2307" y="1929" name="inst_A950F69B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Stool" x="2307" y="1965" name="inst_EA7CCA8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_BloodSpatter3" x="2272" y="1984" name="inst_7D0FF8A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Box1" x="2192" y="2193" name="inst_369E8120" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Box1" x="2224" y="2193" name="inst_7E807DDC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Box1" x="2352" y="2193" name="inst_3D85CA05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Box1" x="2321" y="2193" name="inst_3253E8F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Box2" x="2336" y="2170" name="inst_EDDA0AE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_Tileset_Random2" x="2240" y="1920" w="32" h="32" xo="0" yo="0" id="10001160" name="inst_C0549FEE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

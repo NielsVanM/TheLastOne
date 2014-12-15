@@ -43,6 +43,9 @@
           <sprites name="Closet">
             <sprite>sprites\spr_Closet</sprite>
             <sprite>sprites\spr_Closet_Wood</sprite>
+            <sprite>sprites\spr_Closet2</sprite>
+            <sprite>sprites\spr_Box1</sprite>
+            <sprite>sprites\spr_Box2</sprite>
           </sprites>
           <sprites name="Table">
             <sprite>sprites\spr_Table</sprite>
@@ -336,6 +339,9 @@
           <object>objects\obj_Closet_Wood</object>
           <object>objects\obj_Closet</object>
           <object>objects\obj_Locker</object>
+          <object>objects\obj_Closet2</object>
+          <object>objects\obj_Box1</object>
+          <object>objects\obj_Box2</object>
         </objects>
         <objects name="Chair">
           <object>objects\obj_Chair</object>
