@@ -153,9 +153,18 @@ if (lockedOn = false)
 if (instance_exists(obj_Player))
 {
     ///Player tracking
-    if (!collision_line(x,y,obj_Player.x,obj_Player.y,obj_Collision,false,true))
-    {
-        if (distance_to_object(obj_Player) < trackRange){lockedOn = true;}
+    if (!collision_line(x,y,obj_Player.x,obj_Player.y,obj_Collision,false,true)) {
+    
+        //Sneaking
+        if (global.keySneak = 1) {
+            trackRange = 50;
+        } else {
+            trackRange = 200;
+        }
+        //Tracking
+        if (distance_to_object(obj_Player) < trackRange) {
+                lockedOn = true;
+        }
     }
     
     if (lockedOn = true)

@@ -29,13 +29,14 @@
 //Movement
 normalMoveSpeed = 2;
 runMoveSpeed = 4;
+crouchMoveSpeed = 1;
 hSpeed = 0;
 vSpeed = 0;
 normalImgSpeed = 0.2;
 runImgSpeed = 0.4;
+crouchImgSpeed = 0.1;
 verticalLock = false;
 horizontalLock = false;
-global.playerRun = true;
 
 //Water, Food ,Health, Stamina
 pWater = 100;
@@ -107,7 +108,10 @@ instance_create(x,y,obj_FlashLight);
             <kind>1</kind>
             <string>///Movement
 //For menu
-if (global.pause = true){image_speed = 0; exit;}
+if (global.pause = true) {
+    image_speed = 0; 
+    exit;
+}
 
 //User input
 keyRight = keyboard_check(ord('D'));
@@ -115,7 +119,7 @@ keyLeft = -keyboard_check(ord('A'));
 keyUp = -keyboard_check(ord('W'));
 keyDown = keyboard_check(ord('S'));
 keySprint = keyboard_check(vk_shift);
-keySneak = keyboard_check(vk_control);
+global.keySneak = keyboard_check(vk_control);
 
 // Sprinting &amp; sneaking mechanism
 moveSpeed = normalMoveSpeed;
@@ -124,6 +128,11 @@ imgSpeed = normalImgSpeed;
 if (keySprint = 1 &amp;&amp; pStamina &gt; 0) {
     moveSpeed = runMoveSpeed; 
     imgSpeed = runImgSpeed;
+}
+
+if (global.keySneak = 1) {
+    moveSpeed = crouchMoveSpeed; 
+    imgSpeed = crouchImgSpeed;
 }
 
 // Calculating movement
