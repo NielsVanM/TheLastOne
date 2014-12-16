@@ -114,7 +114,7 @@ instance_create(x,y,obj_FlashLight);
             <kind>1</kind>
             <string>///Movement
 //For menu
-if (global.pause = true || global.console_Selected = true)
+if (global.pause = true)
 {
     image_speed = 0; 
     exit;
