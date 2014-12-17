@@ -76,6 +76,7 @@
           <sprite>sprites\spr_Fireplace2</sprite>
           <sprite>sprites\spr_Carpet</sprite>
           <sprite>sprites\spr_Plant1</sprite>
+          <sprite>sprites\spr_Clock</sprite>
         </sprites>
         <sprites name="Air Shaft">
           <sprite>sprites\spr_AirShaft1</sprite>
@@ -207,6 +208,9 @@
         <sprite>sprites\spr_BloodSpatter1</sprite>
         <sprite>sprites\spr_BloodSpatter2</sprite>
         <sprite>sprites\spr_BloodSpatter3</sprite>
+      </sprites>
+      <sprites name="Food &amp; Drinks">
+        <sprite>sprites\spr_Bottle_Wine</sprite>
       </sprites>
     </sprites>
     <sprites name="Entities">
@@ -427,6 +431,9 @@
           <object>objects\obj_SurgeryTable2</object>
           <object>objects\obj_SurgeryTable3</object>
         </objects>
+        <objects name="Misc">
+          <object>objects\obj_Clock</object>
+        </objects>
       </objects>
       <objects name="Outdoors">
         <objects name="Houses">
@@ -499,6 +506,9 @@
         <object>objects\obj_BloodSpatter1</object>
         <object>objects\obj_BloodSpatter2</object>
         <object>objects\obj_BloodSpatter3</object>
+      </objects>
+      <objects name="Food &amp; Drinks">
+        <object>objects\obj_Bottle_Wine</object>
       </objects>
     </objects>
     <objects name="Entities">

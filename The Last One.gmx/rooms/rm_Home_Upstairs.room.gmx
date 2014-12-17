@@ -75,6 +75,8 @@
     <instance objName="obj_Closet2" x="1421" y="657" name="inst_30F6B753" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Closet2" x="1421" y="706" name="inst_9E82DB33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Closet2" x="1421" y="757" name="inst_9A1F9F67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Bottle_Wine" x="1141" y="664" name="inst_770AC717" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Clock" x="1229" y="661" name="inst_F2739B21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_TileSet_Floor" x="1088" y="864" w="64" h="64" xo="128" yo="192" id="10000044" name="inst_3C172754" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
