@@ -9,19 +9,15 @@ if (instance_exists(obj_Controller_PauseMenu))
 depth = y * -1;
 
 ///Wandering around
-if (lockedOn = false)
-{
-    if (isWalking = false)
-    {
+if (lockedOn = false){
+    if (isWalking = false){
         //Choose direction
         moveDirection = choose(0,1,2,3); // 0 = right 1 = left 2 = up 3 = down
         
         //Right
-        if (moveDirection = 0)
-        {
+        if (moveDirection = 0){
             //If there isn't a collision
-            if (!collision_line(x,y,x+moveLength,y,obj_Collision,false,true))
-            {
+            if (!collision_line(x,y,x+moveLength,y,obj_Collision,false,true)){
                 //Disable walking
                 isWalking = true;
                 
@@ -47,11 +43,9 @@ if (lockedOn = false)
         }
             
         //Left
-        if (moveDirection = 1)
-        {
+        if (moveDirection = 1){
             //If there isn't a collision            
-            if (!collision_line(x,y,x-moveLength,y,obj_Collision,false,true))
-            {
+            if (!collision_line(x,y,x-moveLength,y,obj_Collision,false,true)){
                 //Disable walking
                 isWalking = true;
                 
@@ -77,11 +71,9 @@ if (lockedOn = false)
         }
             
         //Up
-        if (moveDirection = 2)
-        {
+        if (moveDirection = 2){
             //If there isn't a collision
-            if (!collision_line(x,y,x,y-moveLength,obj_Collision,false,true))
-            {
+            if (!collision_line(x,y,x,y-moveLength,obj_Collision,false,true)){
                 //Disable walking
                 isWalking = true;
                     
@@ -106,11 +98,9 @@ if (lockedOn = false)
             }
         }
         //Down
-        if (moveDirection = 3)
-        {
+        if (moveDirection = 3){
             //If there isn't a collision
-            if (!collision_line(x,y,x,y+moveLength,obj_Collision,false,true))
-            {
+            if (!collision_line(x,y,x,y+moveLength,obj_Collision,false,true)){
                 //Disable walking
                 isWalking = true;
                 
@@ -137,8 +127,7 @@ if (lockedOn = false)
     }
         
     //If destination is reached reset hSpeed & vSpeed
-    if (x = towardsX && y = towardsY)
-    {
+    if (x = towardsX && y = towardsY){
         hSpeed = 0;
         vSpeed = 0;
         if (walkCooldown = 0){walkCooldown = 2 * room_speed;}
@@ -150,10 +139,9 @@ if (lockedOn = false)
     if (walkCooldown = 0){image_speed = imgSpeed;}
 }
 
-if (instance_exists(obj_Player))
-{
+if (instance_exists(obj_Player)){
     ///Player tracking
-    if (!collision_line(x,y,obj_Player.x,obj_Player.y,obj_Collision,false,true)) {
+    if (!collision_line(x,y,obj_Player.x,obj_Player.y,obj_Collision,false,true)){
     
         //Sneaking
         if (global.keySneak = 1) {
@@ -167,11 +155,9 @@ if (instance_exists(obj_Player))
         }
     }
     
-    if (lockedOn = true)
-    { 
+    if (lockedOn = true){ 
         //Moving on to player
-        if (distance_to_object(obj_Player) < trackRange && distance_to_object(obj_Player) > hitRange)
-        {
+        if (distance_to_object(obj_Player) < trackRange && distance_to_object(obj_Player) > hitRange){
             //Lockedon
             lockedOn = true
             
@@ -181,13 +167,10 @@ if (instance_exists(obj_Player))
             image_speed = 0;
             
             //Moving to player
-            if (!collision_line(x,y,obj_Player.x,obj_Player.y,obj_Collision,false,true))
-            {
+            if (!collision_line(x,y,obj_Player.x,obj_Player.y,obj_Collision,false,true)){
                 //Towards player.x
-                if (toggleCoor = 0)
-                {
-                    if (x < obj_Player.x)
-                    {
+                if (toggleCoor = 0){
+                    if (x < obj_Player.x){
                         hSpeed = moveSpeed;
                         image_speed = imgSpeed;
                         if (tag = 1){sprite_index = spr_Zombie1_Right;}
@@ -199,8 +182,7 @@ if (instance_exists(obj_Player))
                         if (tag = 7){sprite_index = spr_Zombie7_Right;}
                         if (tag = 8){sprite_index = spr_Zombie8_Right;}
                     }
-                    if(x > obj_Player.x)
-                    {
+                    if(x > obj_Player.x){
                         hSpeed = -moveSpeed;
                         image_speed = imgSpeed;
                         if (tag = 1){sprite_index = spr_Zombie1_Left;}
@@ -216,10 +198,8 @@ if (instance_exists(obj_Player))
                 }
                 
                 //Towards player.y
-                if (toggleCoor = 1)
-                {
-                    if (y < obj_Player.y)
-                    {
+                if (toggleCoor = 1){
+                    if (y < obj_Player.y){
                         vSpeed = moveSpeed;
                         image_speed = imgSpeed;
                         if (tag = 1){sprite_index = spr_Zombie1_Down;}
@@ -231,8 +211,7 @@ if (instance_exists(obj_Player))
                         if (tag = 7){sprite_index = spr_Zombie7_Down;}
                         if (tag = 8){sprite_index = spr_Zombie8_Down;}
                     }
-                    if (y > obj_Player.y)
-                    {
+                    if (y > obj_Player.y){
                         vSpeed = -moveSpeed;
                         image_speed = imgSpeed;
                         if (tag = 1){sprite_index = spr_Zombie1_Up;}
@@ -250,8 +229,7 @@ if (instance_exists(obj_Player))
         }
         
         //Hitting the player
-        if (distance_to_object(obj_Player) < hitRange)
-        {
+        if (distance_to_object(obj_Player) < hitRange){
             hSpeed = 0;
             vSpeed = 0;
             image_speed = 0;
@@ -261,8 +239,7 @@ if (instance_exists(obj_Player))
         }
         
         //Losing the player
-        if (distance_to_object(obj_Player) > trackRange)
-        {
+        if (distance_to_object(obj_Player) > trackRange){
             lockedOn = false;
             isWalking = false;
             hSpeed = 0;

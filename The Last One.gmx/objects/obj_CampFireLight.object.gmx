@@ -28,9 +28,6 @@
             <string>///Variables
 size = 240;
 light = 0;
-
-x = obj_Campfire1.x;
-y = obj_Campfire1.y;
 </string>
           </argument>
         </arguments>

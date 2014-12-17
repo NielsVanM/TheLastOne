@@ -296,9 +296,7 @@
       <background>background\bg_Grass</background>
     </backgrounds>
   </backgrounds>
-  <paths name="paths">
-    <path>paths\pth_Zombie</path>
-  </paths>
+  <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="AI">
       <script>scripts\scr_Zombie_AI_Create.gml</script>
