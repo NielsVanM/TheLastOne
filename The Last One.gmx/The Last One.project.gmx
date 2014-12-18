@@ -282,6 +282,7 @@
       <sprites name="Inventory">
         <sprite>sprites\spr_InvSlot</sprite>
         <sprite>sprites\spr_InvFeedback</sprite>
+        <sprite>sprites\spr_InvFeedback2</sprite>
       </sprites>
     </sprites>
   </sprites>
