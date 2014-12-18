@@ -9,8 +9,11 @@ moveLength = 128;
 //Tracking player
 lockedOn = false;
 trackRange = 200;
-hitRange = 5;
+hitRange = 2;
 toggleCoor = 0;
+hurtTick = 0;
+hurtPlayer = false;
+zombieDamage = 5;
 
 //Both
 moveSpeed = 1;

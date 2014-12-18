@@ -74,37 +74,6 @@ if (keyboard_check_pressed(ord('Q'))){
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Random ticks
-//Zombie hurt tick
-if (zombieHurtCooldown &gt; 0){
-    zombieHurtCooldown -= 1;
-}
-if (zombieHurtCooldown = 0){
-    zombieHurtCooldown = 2 * room_speed;
-    global.zombieHurt = true;
-}else{
-    global.zombieHurt = false;
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
   </events>
   <PhysicsObject>0</PhysicsObject>

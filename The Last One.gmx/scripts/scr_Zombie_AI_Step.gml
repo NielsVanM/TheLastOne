@@ -17,7 +17,7 @@ if (lockedOn = false){
         //Right
         if (moveDirection = 0){
             //If there isn't a collision
-            if (!collision_line(x,y,x+moveLength,y,obj_Collision,false,true)){
+            if (!collision_line(x,y,x+moveLength+8,y,obj_Collision,false,true)){
                 //Disable walking
                 isWalking = true;
                 
@@ -45,7 +45,7 @@ if (lockedOn = false){
         //Left
         if (moveDirection = 1){
             //If there isn't a collision            
-            if (!collision_line(x,y,x-moveLength,y,obj_Collision,false,true)){
+            if (!collision_line(x,y,x-moveLength+8,y,obj_Collision,false,true)){
                 //Disable walking
                 isWalking = true;
                 
@@ -73,7 +73,7 @@ if (lockedOn = false){
         //Up
         if (moveDirection = 2){
             //If there isn't a collision
-            if (!collision_line(x,y,x,y-moveLength,obj_Collision,false,true)){
+            if (!collision_line(x,y,x,y-moveLength+8,obj_Collision,false,true)){
                 //Disable walking
                 isWalking = true;
                     
@@ -100,7 +100,7 @@ if (lockedOn = false){
         //Down
         if (moveDirection = 3){
             //If there isn't a collision
-            if (!collision_line(x,y,x,y+moveLength,obj_Collision,false,true)){
+            if (!collision_line(x,y,x,y+moveLength+8,obj_Collision,false,true)){
                 //Disable walking
                 isWalking = true;
                 
@@ -236,6 +236,21 @@ if (instance_exists(obj_Player)){
             image_index = 1;
             
             //Hurt Player
+            //Timer
+            if (hurtTick > 0){
+                hurtTick -= 1;
+            }
+            if (hurtTick = 0){
+                hurtPlayer = true;
+                hurtTick = 0.5 * room_speed;
+            }else{
+                hurtPlayer = false;
+            }
+            //Hurting the actual player
+            if (hurtPlayer = true){
+                obj_Player.pHealth -= zombieDamage;
+            }
+            
         }
         
         //Losing the player
@@ -244,6 +259,7 @@ if (instance_exists(obj_Player)){
             isWalking = false;
             hSpeed = 0;
             vSpeed = 0;
+            hurtTick = 0.5 * room_speed;
         }
     }
 }
