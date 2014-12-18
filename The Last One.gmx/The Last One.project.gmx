@@ -279,6 +279,10 @@
       <sprite>sprites\spr_Controller</sprite>
       <sprite>sprites\spr_Trigger</sprite>
       <sprite>sprites\spr_Collision</sprite>
+      <sprites name="Inventory">
+        <sprite>sprites\spr_InvSlot</sprite>
+        <sprite>sprites\spr_InvFeedback</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">

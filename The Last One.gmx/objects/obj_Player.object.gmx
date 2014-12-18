@@ -331,9 +331,8 @@ y += vSpeed;
 //For pause menu
 if (global.pause = true){exit;}
 //Health
-//Hurt if water is too low
+//Hurt by water and food
 if (pWater = 0){pHealth -= pWaterDamage / room_speed;}
-//Hurt if food is too low
 if (pFood = 0){pHealth -= pFoodDamage / room_speed;}
 
 //Death
@@ -357,12 +356,10 @@ if (pFood &lt; 0){pFood = 0;}
 //Stamina
 if (pStamina &gt; 100){pStamina = 100;}
 if (pStamina &lt; 0){pStamina = 0;}
-if (keyboard_check(vk_shift) &amp;&amp; pStamina &gt; 0 &amp;&amp; isMoving = true)
-{
+if (keyboard_check(vk_shift) &amp;&amp; pStamina &gt; 0 &amp;&amp; isMoving = true){
     pStamina -= pStaminaDecay;
 }
-else if (!keyboard_check(vk_shift))
-{
+else if (!keyboard_check(vk_shift)){
     pStamina += 3 / room_speed;
 }
 
@@ -394,22 +391,19 @@ if (global.debug = true){pStamina = 100;}
 if (keyboard_check(vk_tab)){invExtended = true}else{invExtended = false;}
 
 //Scroll up/down
-if (invExtended = false)
-{
+if (invExtended = false){
     if (mouse_wheel_up()){invSelected -= 1;}
     if (mouse_wheel_down()){invSelected += 1;}
 }
 
 //Max scroll up/down
-if (invSelected &gt; 3){invSelected = 3;}
+if (invSelected &gt; 4){invSelected = 4;}
 if (invSelected &lt; 0){invSelected = 0;}
 
 //Extenden inventory when pressing tab
-if (invExtended = true)
-{
+if (invExtended = true){
     //First array
-    if (invSelected = 0)
-    {
+    if (invSelected = 0){
         //Select in array
         if (mouse_wheel_up()){invArray[0] -= 1;}
         if (mouse_wheel_down()){invArray[0] += 1;}
@@ -419,8 +413,7 @@ if (invExtended = true)
         if (invArray[0] &lt; 0){invArray[0] = 0;}
     }
     //Second array
-    if (invSelected = 1)
-    {
+    if (invSelected = 1){
         //Select in array
         if (mouse_wheel_up()){invArray[1] -= 1;}
         if (mouse_wheel_down()){invArray[1] += 1;}
@@ -430,8 +423,7 @@ if (invExtended = true)
         if (invArray[0] &lt; 0){invArray[0] = 0;}
     }
     //Third array
-    if (invSelected = 2)
-    {
+    if (invSelected = 2){
         //Select in array
         if (mouse_wheel_up()){invArray[2] -= 1;}
         if (mouse_wheel_down()){invArray[2] += 1;}
@@ -441,8 +433,7 @@ if (invExtended = true)
         if (invArray[0] &lt; 0){invArray[0] = 0;}
     }
     //Fourth array
-    if (invSelected = 3)
-    {
+    if (invSelected = 3){
         //Select in array
         if (mouse_wheel_up()){invArray[3] -= 1;}
         if (mouse_wheel_down()){invArray[3] += 1;}
@@ -584,36 +575,66 @@ while (cMain &lt;= 32){
             <kind>1</kind>
             <string>///Inventory
 //Draw Main Inventory
-//Draw boxes
-draw_set_color(c_black);
-draw_rectangle(32,32,64,64,true);
-draw_rectangle(32,64,64,96,true);
-draw_rectangle(32,96,64,128,true);
-draw_rectangle(32,128,64,160,true);;
+//Draw slots
+draw_sprite_ext(spr_InvSlot,0,1888-32,540-256,2,2,0,c_white,1);
+draw_sprite_ext(spr_InvSlot,0,1888-32,540-128,2,2,0,c_white,1);
+draw_sprite_ext(spr_InvSlot,0,1888-32,540,2,2,0,c_white,1);
+draw_sprite_ext(spr_InvSlot,0,1888-32,540+128,2,2,0,c_white,1);
+draw_sprite_ext(spr_InvSlot,0,1888-32,540+256,2,2,0,c_white,1);
 
-//Draw feedback
-draw_set_color(c_blue);
-if(invSelected = 0){draw_rectangle(32,32,64,64,true);}
-if(invSelected = 1){draw_rectangle(32,64,64,96,true);}
-if(invSelected = 2){draw_rectangle(32,96,64,128,true);}
-if(invSelected = 3){draw_rectangle(32,128,64,160,true);}
+//Draw feedback for slots
+if (invSelected = 0){
+    draw_sprite_ext(spr_InvFeedback,0,1888-32,540-256,2,2,0,c_white,1);
+}
+if (invSelected = 1){
+    draw_sprite_ext(spr_InvFeedback,0,1888-32,540-128,2,2,0,c_white,1);
+}
+if (invSelected = 2){
+    draw_sprite_ext(spr_InvFeedback,0,1888-32,540,2,2,0,c_white,1);
+}
+if (invSelected = 3){
+    draw_sprite_ext(spr_InvFeedback,0,1888-32,540+128,2,2,0,c_white,1);
+}
+if (invSelected = 4){
+    draw_sprite_ext(spr_InvFeedback,0,1888-32,540+256,2,2,0,c_white,1);
+}
 
 //Draw arrays
-if (keyboard_check(vk_tab)){
-    //Array one
+if (invExtended = true){
+    //Draw first array
     if (invSelected = 0){
-        //Draw boxes
-        draw_set_color(c_black);
-        draw_rectangle(32,32,64,64,true);
-        draw_rectangle(64,32,96,64,true);
-        draw_rectangle(96,32,128,64,true);
+        //Draw slots
+        draw_sprite_ext(spr_InvSlot,0,1888-32-128,540-256,2,2,0,c_white,1);
+        draw_sprite_ext(spr_InvSlot,0,1888-32-256,540-256,2,2,0,c_white,1);
+        draw_sprite_ext(spr_InvSlot,0,1888-32-384,540-256,2,2,0,c_white,1);
     }
-    
-    //Array two
+    //Draw second array
     if (invSelected = 1){
-        draw_rectangle(32,64,64,96,true);
-        draw_rectangle(32,64,64,96,true);
-        draw_rectangle(32,64,64,96,true);
+        //Draw slots
+        draw_sprite_ext(spr_InvSlot,0,1888-32-128,540-128,2,2,0,c_white,1);
+        draw_sprite_ext(spr_InvSlot,0,1888-32-256,540-128,2,2,0,c_white,1);
+        draw_sprite_ext(spr_InvSlot,0,1888-32-384,540-128,2,2,0,c_white,1);
+    }
+    //Draw third array
+    if (invSelected = 2){
+        //Draw slots
+        draw_sprite_ext(spr_InvSlot,0,1888-32-128,540,2,2,0,c_white,1);
+        draw_sprite_ext(spr_InvSlot,0,1888-32-256,540,2,2,0,c_white,1);
+        draw_sprite_ext(spr_InvSlot,0,1888-32-384,540,2,2,0,c_white,1);
+    }
+    //Draw fourth array
+    if (invSelected = 3){
+        //Draw slots
+        draw_sprite_ext(spr_InvSlot,0,1888-32-128,540+128,2,2,0,c_white,1);
+        draw_sprite_ext(spr_InvSlot,0,1888-32-256,540+128,2,2,0,c_white,1);
+        draw_sprite_ext(spr_InvSlot,0,1888-32-384,540+128,2,2,0,c_white,1);
+    }
+    //Draw fith array
+    if (invSelected = 4){
+        //Draw slots
+        draw_sprite_ext(spr_InvSlot,0,1888-32-128,540+256,2,2,0,c_white,1);
+        draw_sprite_ext(spr_InvSlot,0,1888-32-256,540+256,2,2,0,c_white,1);
+        draw_sprite_ext(spr_InvSlot,0,1888-32-384,540+256,2,2,0,c_white,1);
     }
 }
 </string>
