@@ -61,10 +61,10 @@ invArray[2] = 0;
 invArray[3] = 0;
 invArray[4] = 0;
 
-invSlot[0] = 1;
-invSlot[1] = 2;
-invSlot[2] = 3;
-invSlot[3] = 4;
+invSlot[0] = 0;
+invSlot[1] = 0;
+invSlot[2] = 0;
+invSlot[3] = 0;
 
 //Console
 global.console = "";
@@ -482,52 +482,6 @@ if (mouse_check_button_pressed(mb_right)){pHealth += 5;}
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Console
-
-//User input
-keySlash = keyboard_check(ord('C'));
-keyEnter = keyboard_check(vk_enter);
-
-//Check for backslash
-if (keySlash = 1) {
-    keyboard_string = global.console;
-    global.console_Selected = true;
-}
-
-//something
-if (global.console_Selected = true) {
-    global.console = keyboard_string;
-}
-
-//Check for enter
-if (keyEnter = 1) {
-    if (global.console_Selected = true) {
-        if (global.console = "/test") {
-            global.console = "Valid command";
-        }
-        global.console_Selected = false;
-    }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="8" enumb="64">
       <action>
@@ -759,28 +713,6 @@ if (global.debug = true){
     draw_text(x,y+70,global.flashLightBattery);
     draw_text(x,y+80,global.size);
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Draw console
-draw_text(x,y+20,global.console);
 </string>
           </argument>
         </arguments>

@@ -104,6 +104,7 @@ if (optionMenu = true)
 
 //Enterlock
 if (enterLock &gt; 0){enterLock -= 1;}
+if (enterLock &lt; 0){enterLock = 0;}
 </string>
           </argument>
         </arguments>

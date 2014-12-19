@@ -285,6 +285,12 @@
         <sprite>sprites\spr_InvFeedback2</sprite>
       </sprites>
     </sprites>
+    <sprites name="Items">
+      <sprites name="Weaponary">
+        <sprite>sprites\spr_MP5_Left</sprite>
+        <sprite>sprites\spr_MP5_Right</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tileset">
