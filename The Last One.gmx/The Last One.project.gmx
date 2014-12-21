@@ -104,6 +104,20 @@
             <sprite>sprites\spr_Window2</sprite>
             <sprite>sprites\spr_Window3</sprite>
             <sprite>sprites\spr_Window4</sprite>
+            <sprite>sprites\spr_Window_Closed1</sprite>
+            <sprite>sprites\spr_Window_Open1</sprite>
+            <sprite>sprites\spr_Window_Closed2</sprite>
+            <sprite>sprites\spr_Window_Open2</sprite>
+            <sprite>sprites\spr_Window_Closed3</sprite>
+            <sprite>sprites\spr_Window_Open3</sprite>
+            <sprite>sprites\spr_Window_Closed4</sprite>
+            <sprite>sprites\spr_Window_Open4</sprite>
+            <sprite>sprites\spr_Window_Closed5</sprite>
+            <sprite>sprites\spr_Window_Open5</sprite>
+            <sprite>sprites\spr_Window_Closed6</sprite>
+            <sprite>sprites\spr_Window_Open6</sprite>
+            <sprite>sprites\spr_Window_Closed7</sprite>
+            <sprite>sprites\spr_Window_Open7</sprite>
           </sprites>
           <sprites name="Paintings">
             <sprite>sprites\spr_Painting1</sprite>
@@ -404,6 +418,20 @@
             <object>objects\obj_Window2</object>
             <object>objects\obj_Window3</object>
             <object>objects\obj_Window4</object>
+            <object>objects\obj_Window_Closed1</object>
+            <object>objects\obj_Window_Open1</object>
+            <object>objects\obj_Window_Closed2</object>
+            <object>objects\obj_Window_Open2</object>
+            <object>objects\obj_Window_Closed3</object>
+            <object>objects\obj_Window_Open3</object>
+            <object>objects\obj_Window_Closed4</object>
+            <object>objects\obj_Window_Open4</object>
+            <object>objects\obj_Window_Closed5</object>
+            <object>objects\obj_Window_Open5</object>
+            <object>objects\obj_Window_Closed6</object>
+            <object>objects\obj_Window_Open6</object>
+            <object>objects\obj_Window_Closed7</object>
+            <object>objects\obj_Window_Open7</object>
           </objects>
           <objects name="Paintings">
             <object>objects\obj_Painting1</object>
@@ -585,6 +613,7 @@
     <room>rooms\rm_TitleScreen</room>
     <rooms name="Main Story">
       <room>rooms\rm_MainWorld</room>
+      <room>rooms\rm_MainWorld_New</room>
       <room>rooms\rm_Tent</room>
       <rooms name="Houses">
         <rooms name="Home">
