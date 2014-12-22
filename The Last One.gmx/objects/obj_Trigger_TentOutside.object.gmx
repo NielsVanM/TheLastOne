@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>//Toggle tent room
 //Go inside
-if (room = rm_MainWorld)
+if (room = rm_MainWorld_New)
 {
     if (place_meeting(x,y,obj_Player) &amp;&amp; global.faceDirection = 90)
     {
@@ -41,9 +41,9 @@ if (room = rm_Tent)
 {
     if (place_meeting(x,y,obj_Player) &amp;&amp; global.faceDirection = 270)
     {
-        room_goto(rm_MainWorld);
-        obj_Player.x = 1088;
-        obj_Player.y = 672;
+        room_goto(rm_MainWorld_New);
+        obj_Player.x = 5850;
+        obj_Player.y = 360;
     }
 }
 </string>

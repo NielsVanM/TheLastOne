@@ -32,14 +32,14 @@ if (room = rm_Home_Downstairs)
     {
         if (keyboard_check(ord('S')))
         {
-            room_goto(rm_MainWorld);
+            room_goto(rm_MainWorld_New);
             obj_Player.x = 448;
             obj_Player.y = 288;
         }
     }
 }
 
-if (room = rm_MainWorld)
+if (room = rm_MainWorld_New)
 {
     if (place_meeting(x,y,obj_Player))
     {

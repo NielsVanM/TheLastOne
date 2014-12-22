@@ -217,6 +217,32 @@
       <sprites name="Water">
         <sprite>sprites\spr_Water1</sprite>
         <sprite>sprites\spr_Water2</sprite>
+        <sprites name="Left">
+          <sprite>sprites\spr_WaterLeft1</sprite>
+          <sprite>sprites\spr_WaterLeft2</sprite>
+        </sprites>
+        <sprites name="Right">
+          <sprite>sprites\spr_WaterRight1</sprite>
+          <sprite>sprites\spr_WaterRight2</sprite>
+        </sprites>
+        <sprites name="Up">
+          <sprite>sprites\spr_WaterUp1</sprite>
+          <sprite>sprites\spr_WaterUp2</sprite>
+          <sprite>sprites\spr_WaterUp3</sprite>
+          <sprite>sprites\spr_WaterUp4</sprite>
+        </sprites>
+        <sprites name="Down">
+          <sprite>sprites\spr_WaterDown1</sprite>
+          <sprite>sprites\spr_WaterDown2</sprite>
+          <sprite>sprites\spr_WaterDown3</sprite>
+          <sprite>sprites\spr_WaterDown4</sprite>
+        </sprites>
+        <sprites name="Corner">
+          <sprite>sprites\spr_WaterCorner1</sprite>
+          <sprite>sprites\spr_WaterCorner2</sprite>
+          <sprite>sprites\spr_WaterCorner3</sprite>
+          <sprite>sprites\spr_WaterCorner4</sprite>
+        </sprites>
       </sprites>
       <sprites name="Blood">
         <sprite>sprites\spr_BloodSpatter1</sprite>
@@ -538,6 +564,32 @@
       <objects name="Water">
         <object>objects\obj_Water1</object>
         <object>objects\obj_Water2</object>
+        <objects name="Left">
+          <object>objects\obj_WaterLeft1</object>
+          <object>objects\obj_WaterLeft2</object>
+        </objects>
+        <objects name="Right">
+          <object>objects\obj_WaterRight1</object>
+          <object>objects\obj_WaterRight2</object>
+        </objects>
+        <objects name="Up">
+          <object>objects\obj_WaterUp1</object>
+          <object>objects\obj_WaterUp2</object>
+          <object>objects\obj_WaterUp3</object>
+          <object>objects\obj_WaterUp4</object>
+        </objects>
+        <objects name="Down">
+          <object>objects\obj_WaterDown1</object>
+          <object>objects\obj_WaterDown2</object>
+          <object>objects\obj_WaterDown3</object>
+          <object>objects\obj_WaterDown4</object>
+        </objects>
+        <objects name="Corner">
+          <object>objects\obj_WaterCorner1</object>
+          <object>objects\obj_WaterCorner2</object>
+          <object>objects\obj_WaterCorner3</object>
+          <object>objects\obj_WaterCorner4</object>
+        </objects>
       </objects>
       <objects name="Blood">
         <object>objects\obj_BloodSpatter1</object>
