@@ -262,9 +262,6 @@
         <sprite>sprites\spr_BloodSpatter2</sprite>
         <sprite>sprites\spr_BloodSpatter3</sprite>
       </sprites>
-      <sprites name="Food &amp; Drinks">
-        <sprite>sprites\spr_Bottle_Wine</sprite>
-      </sprites>
     </sprites>
     <sprites name="Entities">
       <sprites name="Living">
@@ -361,6 +358,9 @@
     <sprites name="Items">
       <sprites name="Weaponary">
         <sprite>sprites\spr_USP</sprite>
+      </sprites>
+      <sprites name="Food &amp; Drinks">
+        <sprite>sprites\spr_Bottle_Wine</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -639,9 +639,6 @@
         <object>objects\obj_BloodSpatter2</object>
         <object>objects\obj_BloodSpatter3</object>
       </objects>
-      <objects name="Food &amp; Drinks">
-        <object>objects\obj_Bottle_Wine</object>
-      </objects>
     </objects>
     <objects name="Entities">
       <objects name="Living">
@@ -715,6 +712,11 @@
       <object>objects\obj_Collision</object>
       <object>objects\obj_MasterController</object>
     </objects>
+    <objects name="Items">
+      <objects name="Food &amp; Drinks">
+        <object>objects\obj_Bottle_Wine</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_TitleScreen</room>
@@ -733,6 +735,7 @@
         </rooms>
         <rooms name="Normal House">
           <room>rooms\rm_Normal_House1</room>
+          <room>rooms\rm_Normal_House2</room>
         </rooms>
         <rooms name="Crew House">
           <room>rooms\rm_CrewHouse</room>
