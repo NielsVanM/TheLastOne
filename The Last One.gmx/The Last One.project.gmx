@@ -694,6 +694,10 @@
         <objects name="Normal House">
           <object>objects\obj_Trigger_NormalHouse1Outside</object>
         </objects>
+        <objects name="Crewhouse">
+          <object>objects\obj_Trigger_CrewHouseOutside</object>
+          <object>objects\obj_Trigger_ShootingRange</object>
+        </objects>
       </objects>
       <objects name="Room Fading">
         <object>objects\obj_Room_FadeIn</object>
