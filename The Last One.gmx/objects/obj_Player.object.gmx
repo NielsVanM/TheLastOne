@@ -61,11 +61,6 @@ invArraySelected[2] = 0;
 invArraySelected[3] = 0;
 invArraySelected[4] = 0;
 
-invSlot[0] = 0;
-invSlot[1] = 0;
-invSlot[2] = 0;
-invSlot[3] = 0;
-
 //Console
 global.console = "";
 global.console_Selected = false
