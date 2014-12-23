@@ -8,6 +8,9 @@
     <sounds name="Music">
       <sound>sound\snd_Music_TitleScreen</sound>
     </sounds>
+    <sounds name="Sounds">
+      <sound>sound\snd_USPShot</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Environment">
@@ -357,8 +360,7 @@
     </sprites>
     <sprites name="Items">
       <sprites name="Weaponary">
-        <sprite>sprites\spr_MP5_Left</sprite>
-        <sprite>sprites\spr_MP5_Right</sprite>
+        <sprite>sprites\spr_USP</sprite>
       </sprites>
     </sprites>
   </sprites>
