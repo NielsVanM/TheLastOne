@@ -360,7 +360,10 @@
         <sprite>sprites\spr_USP</sprite>
       </sprites>
       <sprites name="Food &amp; Drinks">
-        <sprite>sprites\spr_Bottle_Wine</sprite>
+        <sprite>sprites\spr_Bread</sprite>
+        <sprite>sprites\spr_Apple</sprite>
+        <sprite>sprites\spr_Berries</sprite>
+        <sprite>sprites\spr_Orange</sprite>
       </sprites>
     </sprites>
   </sprites>
