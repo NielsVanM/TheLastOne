@@ -368,6 +368,7 @@
       <font>fonts\fnt_TitleScreen</font>
     </fonts>
     <font>fonts\fnt_Instructions</font>
+    <font>fonts\fnt_Instructions2</font>
   </fonts>
   <objects name="objects">
     <objects name="Environment">
@@ -645,6 +646,7 @@
         <objects name="Secret Lab">
           <object>objects\obj_Trigger_LabOutside</object>
         </objects>
+        <object>objects\obj_Trigger_LockedHouse</object>
       </objects>
       <objects name="Room Fading">
         <object>objects\obj_Room_FadeIn</object>
