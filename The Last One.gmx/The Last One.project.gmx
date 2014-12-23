@@ -364,6 +364,8 @@
         <sprite>sprites\spr_Apple</sprite>
         <sprite>sprites\spr_Berries</sprite>
         <sprite>sprites\spr_Orange</sprite>
+        <sprite>sprites\spr_WaterBottle_Full</sprite>
+        <sprite>sprites\spr_WaterBottle_Empty</sprite>
       </sprites>
     </sprites>
   </sprites>

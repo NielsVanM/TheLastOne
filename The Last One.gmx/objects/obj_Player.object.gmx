@@ -557,6 +557,8 @@ if (invArraySelected[0] = 2){draw_sprite_ext(spr_Berries,0,1888-32,540-256,4,4,0
 if (invArraySelected[0] = 3){draw_sprite_ext(spr_Apple,0,1888-32,540-256,4,4,0,c_white,1);}
 
 //Second array
+if (invArraySelected[1] = 0){draw_sprite_ext(spr_WaterBottle_Empty,0,1888-32,540-128,2,2,0,c_white,1);}
+if (invArraySelected[1] = 1){draw_sprite_ext(spr_WaterBottle_Full,0,1888-32,540-128,2,2,0,c_white,1);}
 
 //Draw feedback for slots
 if (invSelected = 0){
@@ -612,7 +614,8 @@ if (invExtended = true){
         draw_sprite_ext(spr_InvSlot,0,1888-32-256,540-128,2,2,0,c_white,1);
         
         //Draw items in slots
-        
+        draw_sprite_ext(spr_WaterBottle_Empty,0,1888-32-256,540-128,2,2,0,c_white,1);
+        draw_sprite_ext(spr_WaterBottle_Full,0,1888-32-128,540-128,2,2,0,c_white,1);
         
         //Draw feedback
         if (invArraySelected[1] = 0){
