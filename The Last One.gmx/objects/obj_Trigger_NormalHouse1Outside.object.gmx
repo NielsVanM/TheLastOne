@@ -31,19 +31,19 @@ if (room = rm_MainWorld_New)
 {
     if (place_meeting(x,y,obj_Player) &amp;&amp; global.faceDirection = 90)
     {
-        room_goto(rm_House_SecretLab);
-        obj_Player.x = 416;
-        obj_Player.y = 544;
+        room_goto(rm_Normal_House1);
+        obj_Player.x = 480;
+        obj_Player.y = 570;
     }
 }
 //Go inside
-if (room = rm_House_SecretLab)
+if (room = rm_Normal_House1)
 {
     if (place_meeting(x,y,obj_Player) &amp;&amp; global.faceDirection = 270)
     {
         room_goto(rm_MainWorld_New);
-        obj_Player.x = 943;
-        obj_Player.y = 1793;
+        obj_Player.x = 1334;
+        obj_Player.y = 622;
     }
 }
 </string>

@@ -261,6 +261,26 @@
           <sprite>sprites\spr_Player_Right</sprite>
           <sprite>sprites\spr_Player_Up</sprite>
         </sprites>
+        <sprites name="Human">
+          <sprites name="Human 1">
+            <sprite>sprites\spr_Human_Down</sprite>
+            <sprite>sprites\spr_Human_Left</sprite>
+            <sprite>sprites\spr_Human_Right</sprite>
+            <sprite>sprites\spr_Human_Up</sprite>
+          </sprites>
+          <sprites name="Human 2">
+            <sprite>sprites\spr_Human2_Down</sprite>
+            <sprite>sprites\spr_Human2_Left</sprite>
+            <sprite>sprites\spr_Human2_Right</sprite>
+            <sprite>sprites\spr_Human2_Up</sprite>
+          </sprites>
+          <sprites name="Human 3">
+            <sprite>sprites\spr_Human3_Down</sprite>
+            <sprite>sprites\spr_Human3_Left</sprite>
+            <sprite>sprites\spr_Human3_Right</sprite>
+            <sprite>sprites\spr_Human3_Up</sprite>
+          </sprites>
+        </sprites>
       </sprites>
       <sprites name="Dead">
         <sprites name="Zombie">
@@ -604,6 +624,9 @@
     <objects name="Entities">
       <objects name="Living">
         <object>objects\obj_Player</object>
+        <object>objects\obj_Human</object>
+        <object>objects\obj_Human2</object>
+        <object>objects\obj_Human3</object>
       </objects>
       <objects name="Dead">
         <objects name="With Path">
@@ -645,8 +668,12 @@
         </objects>
         <objects name="Secret Lab">
           <object>objects\obj_Trigger_LabOutside</object>
+          <object>objects\obj_Trigger_SecretLabOutside</object>
         </objects>
         <object>objects\obj_Trigger_LockedHouse</object>
+        <objects name="Normal House">
+          <object>objects\obj_Trigger_NormalHouse1Outside</object>
+        </objects>
       </objects>
       <objects name="Room Fading">
         <object>objects\obj_Room_FadeIn</object>
