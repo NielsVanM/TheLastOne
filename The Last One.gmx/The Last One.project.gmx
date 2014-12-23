@@ -46,6 +46,9 @@
             <sprite>sprites\spr_Closet2</sprite>
             <sprite>sprites\spr_Box1</sprite>
             <sprite>sprites\spr_Box2</sprite>
+            <sprite>sprites\spr_AmmoBox</sprite>
+            <sprite>sprites\spr_AmmoBox_Small</sprite>
+            <sprite>sprites\spr_AmmoBox_Small2</sprite>
           </sprites>
           <sprites name="Table">
             <sprite>sprites\spr_Table</sprite>
@@ -63,6 +66,7 @@
             <sprite>sprites\spr_Stair_Up</sprite>
             <sprite>sprites\spr_Stair_Up_Small</sprite>
             <sprite>sprites\spr_Stair1</sprite>
+            <sprite>sprites\spr_Stair3</sprite>
           </sprites>
           <sprites name="TV">
             <sprite>sprites\spr_TV</sprite>
@@ -118,6 +122,7 @@
             <sprite>sprites\spr_Window_Open6</sprite>
             <sprite>sprites\spr_Window_Closed7</sprite>
             <sprite>sprites\spr_Window_Open7</sprite>
+            <sprite>sprites\spr_GlassWindow</sprite>
           </sprites>
           <sprites name="Paintings">
             <sprite>sprites\spr_Painting1</sprite>
@@ -161,6 +166,8 @@
           <sprite>sprites\sprite_House5_SecretLab</sprite>
           <sprites name="Doors">
             <sprite>sprites\spr_Door_Closed1</sprite>
+            <sprite>sprites\spr_Door_Closed2</sprite>
+            <sprite>sprites\spr_Door_Open2</sprite>
           </sprites>
         </sprites>
         <sprites name="Cars">
@@ -194,6 +201,9 @@
           <sprite>sprites\spr_Tree5</sprite>
           <sprite>sprites\spr_Tent1</sprite>
           <sprite>sprites\spr_Campfire1</sprite>
+          <sprite>sprites\spr_Flower1</sprite>
+          <sprite>sprites\spr_Flower2</sprite>
+          <sprite>sprites\spr_Flower3</sprite>
         </sprites>
         <sprites name="Misc">
           <sprite>sprites\spr_Fence1</sprite>
@@ -408,6 +418,7 @@
           <object>objects\obj_Stairs_Up_Small</object>
           <object>objects\obj_Stair_Up</object>
           <object>objects\obj_Stair1</object>
+          <object>objects\obj_Stair3</object>
         </objects>
         <objects name="Closet">
           <object>objects\obj_Closet_Wood</object>
@@ -416,6 +427,9 @@
           <object>objects\obj_Closet2</object>
           <object>objects\obj_Box1</object>
           <object>objects\obj_Box2</object>
+          <object>objects\obj_AmmoBox</object>
+          <object>objects\obj_AmmoBox_Small1</object>
+          <object>objects\obj_AmmoBox_Small2</object>
         </objects>
         <objects name="Chair">
           <object>objects\obj_Chair</object>
@@ -479,6 +493,7 @@
             <object>objects\obj_Window_Open6</object>
             <object>objects\obj_Window_Closed7</object>
             <object>objects\obj_Window_Open7</object>
+            <object>objects\obj_GlassWindow</object>
           </objects>
           <objects name="Paintings">
             <object>objects\obj_Painting1</object>
@@ -528,6 +543,8 @@
           <object>objects\obj_House5_SecretLab</object>
           <objects name="Doors">
             <object>objects\obj_Door_Closed1</object>
+            <object>objects\obj_Door_Closed2</object>
+            <object>objects\obj_Door_Open2</object>
           </objects>
         </objects>
         <objects name="Cars">
@@ -561,6 +578,9 @@
           <object>objects\obj_Tree5</object>
           <object>objects\obj_Tent1</object>
           <object>objects\obj_Campfire1</object>
+          <object>objects\obj_Flower1</object>
+          <object>objects\obj_Flower2</object>
+          <object>objects\obj_Flower3</object>
         </objects>
         <objects name="Misc">
           <object>objects\obj_Fence1</object>
@@ -707,6 +727,10 @@
         </rooms>
         <rooms name="Normal House">
           <room>rooms\rm_Normal_House1</room>
+        </rooms>
+        <rooms name="Crew House">
+          <room>rooms\rm_CrewHouse</room>
+          <room>rooms\rm_ShootingRange</room>
         </rooms>
       </rooms>
     </rooms>
