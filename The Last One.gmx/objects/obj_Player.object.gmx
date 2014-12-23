@@ -61,6 +61,13 @@ invArraySelected[2] = 0;
 invArraySelected[3] = 0;
 invArraySelected[4] = 0;
 
+invAmount[0,1] = 2;
+invAmount[0,2] = 2;
+invAmount[0,3] = 2;
+invAmount[0,4] = 2;
+invAmount[1,1] = 2;
+invAmount[1,2] = 2;
+
 //Console
 global.console = "";
 global.console_Selected = false
