@@ -16,22 +16,6 @@
     <sprites name="Environment">
       <sprites name="Indoors">
         <sprites name="Furniture">
-          <sprites name="Locker">
-            <sprite>sprites\spr_Locker1</sprite>
-            <sprite>sprites\spr_Locker1_Hide</sprite>
-            <sprite>sprites\spr_Locker2</sprite>
-            <sprite>sprites\spr_Locker2_Hide</sprite>
-            <sprite>sprites\spr_Locker3</sprite>
-            <sprite>sprites\spr_Locker3_Hide</sprite>
-          </sprites>
-          <sprites name="Bed">
-            <sprite>sprites\spr_Bed_Blood</sprite>
-            <sprite>sprites\spr_Bed_Dirty</sprite>
-            <sprite>sprites\spr_Bed_Empty</sprite>
-            <sprite>sprites\spr_Bed_New</sprite>
-            <sprite>sprites\spr_Bed_NoMatrass</sprite>
-            <sprite>sprites\spr_Bed_Used</sprite>
-          </sprites>
           <sprites name="Chair">
             <sprite>sprites\spr_Chair_Up</sprite>
             <sprite>sprites\spr_Chair_Down</sprite>
@@ -73,6 +57,22 @@
           </sprites>
           <sprites name="TV">
             <sprite>sprites\spr_TV</sprite>
+          </sprites>
+          <sprites name="Bed">
+            <sprite>sprites\spr_Bed_Blood</sprite>
+            <sprite>sprites\spr_Bed_Dirty</sprite>
+            <sprite>sprites\spr_Bed_Empty</sprite>
+            <sprite>sprites\spr_Bed_New</sprite>
+            <sprite>sprites\spr_Bed_NoMatrass</sprite>
+            <sprite>sprites\spr_Bed_Used</sprite>
+          </sprites>
+          <sprites name="Locker">
+            <sprite>sprites\spr_Locker1</sprite>
+            <sprite>sprites\spr_Locker1_Hide</sprite>
+            <sprite>sprites\spr_Locker2</sprite>
+            <sprite>sprites\spr_Locker2_Hide</sprite>
+            <sprite>sprites\spr_Locker3</sprite>
+            <sprite>sprites\spr_Locker3_Hide</sprite>
           </sprites>
         </sprites>
         <sprites name="Misc">
