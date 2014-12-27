@@ -61,16 +61,12 @@ invArraySelected[2] = 0;
 invArraySelected[3] = 0;
 invArraySelected[4] = 0;
 
-invAmount[0,1] = 2;
+invAmount[0,1] = 1;
 invAmount[0,2] = 2;
-invAmount[0,3] = 2;
-invAmount[0,4] = 2;
+invAmount[0,3] = 3;
+invAmount[0,4] = 4;
 invAmount[1,1] = 2;
-invAmount[1,2] = 2;
-
-//Console
-global.console = "";
-global.console_Selected = false
+invAmount[1,2] = 0;
 </string>
           </argument>
         </arguments>
@@ -458,6 +454,28 @@ if (invExtended = true){
 }
 
 //Use item that is selected
+if (keyboard_check_pressed(ord('E'))){
+    //Check wich item is selected
+    if (invSelected = 0){
+        if (invArraySelected[0] = 0) &amp;&amp; invAmount[0,1] &gt; 0{
+            invAmount[0,1] -= 1;
+            pFood += 10;
+        }
+        if (invArraySelected[0] = 1) &amp;&amp; invAmount[0,2] &gt; 0{
+            invAmount[0,2] -= 1;
+            pFood += 50;
+        }
+        if (invArraySelected[0] = 2) &amp;&amp; invAmount[0,3] &gt; 0{
+            invAmount[0,3] -= 1;
+            pFood += 10;
+        }
+        if (invArraySelected[0] = 3) &amp;&amp; invAmount[0,4] &gt; 0{
+            invAmount[0,4] -= 1;
+            pFood += 30;
+        }
+    }
+}
+
 </string>
           </argument>
         </arguments>
@@ -551,16 +569,37 @@ draw_sprite_ext(spr_InvSlot,0,1888-32,540,2,2,0,c_white,1);
 draw_sprite_ext(spr_InvSlot,0,1888-32,540+128,2,2,0,c_white,1);
 draw_sprite_ext(spr_InvSlot,0,1888-32,540+256,2,2,0,c_white,1);
 
-//Draw items in slots
+//Set font
+draw_set_font(fnt_ItemCount);
+
+//Draw items &amp; amount in slots
 //First array
-if (invArraySelected[0] = 0){draw_sprite_ext(spr_Orange,0,1888-32,540-256,4,4,0,c_white,1);}
-if (invArraySelected[0] = 1){draw_sprite_ext(spr_Bread,0,1888-32,540-256,4,4,0,c_white,1);}
-if (invArraySelected[0] = 2){draw_sprite_ext(spr_Berries,0,1888-32,540-256,4,4,0,c_white,1);}
-if (invArraySelected[0] = 3){draw_sprite_ext(spr_Apple,0,1888-32,540-256,4,4,0,c_white,1);}
+if (invArraySelected[0] = 0){
+    draw_sprite_ext(spr_Orange,0,1888-32,540-256,4,4,0,c_white,1);
+    draw_text(1900,540-220,invAmount[0,1]);
+}
+if (invArraySelected[0] = 1){
+    draw_sprite_ext(spr_Bread,0,1888-32,540-256,4,4,0,c_white,1);
+    draw_text(1900,540-220,invAmount[0,2]);
+}
+if (invArraySelected[0] = 2){
+    draw_sprite_ext(spr_Berries,0,1888-32,540-256,4,4,0,c_white,1);
+    draw_text(1900,540-220,invAmount[0,3]);
+}
+if (invArraySelected[0] = 3){
+    draw_sprite_ext(spr_Apple,0,1888-32,540-256,4,4,0,c_white,1);
+    draw_text(1900,540-220,invAmount[0,4]);
+}
 
 //Second array
-if (invArraySelected[1] = 0){draw_sprite_ext(spr_WaterBottle_Empty,0,1888-32,540-128,2,2,0,c_white,1);}
-if (invArraySelected[1] = 1){draw_sprite_ext(spr_WaterBottle_Full,0,1888-32,540-128,2,2,0,c_white,1);}
+if (invArraySelected[1] = 0){
+    draw_sprite_ext(spr_WaterBottle_Empty,0,1888-32,540-128,2,2,0,c_white,1);
+    draw_text(1900,540-220+128,invAmount[1,1]);
+}
+if (invArraySelected[1] = 1){
+    draw_sprite_ext(spr_WaterBottle_Full,0,1888-32,540-128,2,2,0,c_white,1);
+    draw_text(1900,540-220+128,invAmount[1,2]);
+}
 
 //Draw feedback for slots
 if (invSelected = 0){
@@ -595,6 +634,12 @@ if (invExtended = true){
         draw_sprite_ext(spr_Bread,0,1888-32-384,540-256,4,4,0,c_white,1);
         draw_sprite_ext(spr_Orange,0,1888-32-512,540-256,4,4,0,c_white,1);
         
+        //Draw amounts
+        draw_text(1900-512,540-220,invAmount[0,1]);
+        draw_text(1900-384,540-220,invAmount[0,2]);
+        draw_text(1900-256,540-220,invAmount[0,3]);
+        draw_text(1900-128,540-220,invAmount[0,4]);
+        
         //Draw feedback
         if (invArraySelected[0] = 0){
             draw_sprite_ext(spr_InvFeedback2,0,1888-32-512,540-256,2,2,0,c_white,1);
@@ -618,6 +663,10 @@ if (invExtended = true){
         //Draw items in slots
         draw_sprite_ext(spr_WaterBottle_Empty,0,1888-32-256,540-128,2,2,0,c_white,1);
         draw_sprite_ext(spr_WaterBottle_Full,0,1888-32-128,540-128,2,2,0,c_white,1);
+        
+        //Draw amounts
+        draw_text(1900-256,540-220+128,invAmount[1,1]);
+        draw_text(1900-128,540-220+128,invAmount[1,2]);
         
         //Draw feedback
         if (invArraySelected[1] = 0){
