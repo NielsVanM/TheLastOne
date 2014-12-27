@@ -720,7 +720,11 @@
     </objects>
     <objects name="Items">
       <objects name="Food &amp; Drinks">
-        <object>objects\obj_Bottle_Wine</object>
+        <object>objects\obj_Bread</object>
+        <object>objects\obj_Apple</object>
+        <object>objects\obj_Berries</object>
+        <object>objects\obj_Orange</object>
+        <object>objects\obj_WaterBottle_Empty</object>
       </objects>
     </objects>
   </objects>

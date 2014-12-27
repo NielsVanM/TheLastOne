@@ -54,6 +54,7 @@ testHealth = 100;
 //Inventory System
 invSelected = 0;
 invExtended = false;
+pickupRange = 16;
 
 invArraySelected[0] = 0;
 invArraySelected[1] = 0;
@@ -61,10 +62,10 @@ invArraySelected[2] = 0;
 invArraySelected[3] = 0;
 invArraySelected[4] = 0;
 
-invAmount[0,1] = 1;
-invAmount[0,2] = 2;
-invAmount[0,3] = 3;
-invAmount[0,4] = 4;
+invAmount[0,1] = 0;
+invAmount[0,2] = 0;
+invAmount[0,3] = 0;
+invAmount[0,4] = 0;
 invAmount[1,1] = 2;
 invAmount[1,2] = 0;
 </string>
@@ -472,6 +473,46 @@ if (keyboard_check_pressed(ord('E'))){
         if (invArraySelected[0] = 3) &amp;&amp; invAmount[0,4] &gt; 0{
             invAmount[0,4] -= 1;
             pFood += 30;
+        }
+    }
+}
+
+//Pickup items
+if (keyboard_check_pressed(vk_space)){
+    //Bread
+    if (distance_to_object(obj_Bread) &lt; pickupRange){
+        invAmount[0,2] += 1;
+        with(obj_Bread){
+            if (distance_to_object(obj_Player) &lt; obj_Player.pickupRange){
+                instance_destroy();
+            }
+        }
+    }
+    //Apples
+    if (distance_to_object(obj_Apple) &lt; pickupRange){
+        invAmount[0,4] += 1;
+        with(obj_Apple){
+            if (distance_to_object(obj_Player) &lt; obj_Player.pickupRange){
+                instance_destroy();
+            }
+        }
+    }
+    //Berries
+    if (distance_to_object(obj_Berries) &lt; pickupRange){
+        invAmount[0,3] += 1;
+        with(obj_Berries){
+            if (distance_to_object(obj_Player) &lt; obj_Player.pickupRange){
+                instance_destroy();
+            }
+        }
+    }
+    //Oranges
+    if (distance_to_object(obj_Orange) &lt; pickupRange){
+        invAmount[0,1] += 1;
+        with(obj_Orange){
+            if (distance_to_object(obj_Player) &lt; obj_Player.pickupRange){
+                instance_destroy();
+            }
         }
     }
 }
