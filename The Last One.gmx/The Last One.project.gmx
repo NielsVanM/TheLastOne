@@ -208,6 +208,7 @@
           <sprite>sprites\spr_Flower1</sprite>
           <sprite>sprites\spr_Flower2</sprite>
           <sprite>sprites\spr_Flower3</sprite>
+          <sprite>sprites\spr_Tree6</sprite>
         </sprites>
         <sprites name="Misc">
           <sprite>sprites\spr_Fence1</sprite>
@@ -594,6 +595,7 @@
           <object>objects\obj_Flower1</object>
           <object>objects\obj_Flower2</object>
           <object>objects\obj_Flower3</object>
+          <object>objects\obj_Tree6</object>
         </objects>
         <objects name="Misc">
           <object>objects\obj_Fence1</object>
