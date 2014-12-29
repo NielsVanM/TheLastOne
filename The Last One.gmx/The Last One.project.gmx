@@ -367,6 +367,9 @@
         <sprite>sprites\spr_WaterBottle_Full</sprite>
         <sprite>sprites\spr_WaterBottle_Empty</sprite>
       </sprites>
+      <sprites name="Misc">
+        <sprite>sprites\spr_Battery</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -725,6 +728,9 @@
         <object>objects\obj_Berries</object>
         <object>objects\obj_Orange</object>
         <object>objects\obj_WaterBottle_Empty</object>
+      </objects>
+      <objects name="Misc">
+        <object>objects\obj_Battery</object>
       </objects>
     </objects>
   </objects>

@@ -51,7 +51,6 @@ nightVision = true;
           <argument>
             <kind>1</kind>
             <string>///Drawing light to surface
-/*
 //Set position
 x = obj_Player.x
 y = obj_Player.y

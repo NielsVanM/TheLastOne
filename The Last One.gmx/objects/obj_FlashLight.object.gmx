@@ -98,6 +98,9 @@ else if (flashLightOn = true &amp;&amp; global.hide = true){global.flashLightBat
 if (global.flashLightBattery &lt; 0){global.flashLightBattery = 0;}
 if (global.flashLightBattery = 0){flashLightWorking = false;}
 if (global.flashLightBattery &gt; 0){flashLightWorking = true;}
+
+//Battery cannot pass 100
+if (global.flashLightBattery &gt; 100){global.flashLightBattery = 100;}
 </string>
           </argument>
         </arguments>
