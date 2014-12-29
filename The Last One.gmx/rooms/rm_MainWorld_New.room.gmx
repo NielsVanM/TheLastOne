@@ -1632,6 +1632,19 @@
     <instance objName="obj_Trigger_LockedHouse" x="6257" y="1903" name="inst_3F1AEA1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="7089" y="1875" name="inst_76B0E31E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="7085" y="1283" name="inst_BBBF2714" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_House6" x="2016" y="5920" name="inst_4CF4E32F" locked="0" code="" scaleX="1.64285719394684" scaleY="1.60869562625885" colour="4294967295" rotation="0"/>
+    <instance objName="obj_House6" x="5472" y="5920" name="inst_26F5D0A0" locked="0" code="" scaleX="1.64285719394684" scaleY="1.61739134788513" colour="4294967295" rotation="0"/>
+    <instance objName="obj_House6" x="10144" y="5920" name="inst_544B4601" locked="0" code="" scaleX="1.64285719394684" scaleY="1.61739134788513" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_World2_1" x="2016" y="5837" name="inst_51B24984" locked="0" code="" scaleX="1.93548381328583" scaleY="0.9375" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_World2_2" x="5473" y="5835" name="inst_1CAB03C7" locked="0" code="" scaleX="2.09375" scaleY="0.875" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_World2_3" x="10145" y="5836" name="inst_CB56BE75" locked="0" code="" scaleX="1.875" scaleY="1.03125" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="1947" y="5834" name="inst_707ACEF8" locked="0" code="" scaleX="4.35483884811401" scaleY="5.15625" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="5403" y="5836" name="inst_977413E0" locked="0" code="" scaleX="4.35483884811401" scaleY="5.21875" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="10074" y="5835" name="inst_785AE81C" locked="0" code="" scaleX="4.30999994277954" scaleY="5.22580623626709" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="8992" y="-32" name="inst_7452C627" locked="0" code="" scaleX="94" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="12000" y="-32" name="inst_CC964704" locked="0" code="" scaleX="1" scaleY="189" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="1" y="6000" name="inst_C6693CC4" locked="0" code="" scaleX="375.709686279297" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="-32" y="2048" name="inst_82BF975F" locked="0" code="" scaleX="1" scaleY="124" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_Tileset_Random" x="448" y="192" w="32" h="32" xo="128" yo="32" id="10003811" name="inst_071ADE23" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

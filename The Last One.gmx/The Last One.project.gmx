@@ -167,6 +167,7 @@
           <sprite>sprites\spr_House3</sprite>
           <sprite>sprites\spr_House4</sprite>
           <sprite>sprites\sprite_House5_SecretLab</sprite>
+          <sprite>sprites\spr_House6</sprite>
           <sprites name="Doors">
             <sprite>sprites\spr_Door_Closed1</sprite>
             <sprite>sprites\spr_Door_Closed2</sprite>
@@ -557,6 +558,7 @@
             <object>objects\obj_Door_Closed2</object>
             <object>objects\obj_Door_Open2</object>
           </objects>
+          <object>objects\obj_House6</object>
         </objects>
         <objects name="Cars">
           <object>objects\obj_Car1_Broken</object>
@@ -706,6 +708,11 @@
           <object>objects\obj_Trigger_CrewHouseOutside</object>
           <object>objects\obj_Trigger_ShootingRange</object>
         </objects>
+        <objects name="World 2">
+          <object>objects\obj_Trigger_World2_1</object>
+          <object>objects\obj_Trigger_World2_2</object>
+          <object>objects\obj_Trigger_World2_3</object>
+        </objects>
       </objects>
       <objects name="Room Fading">
         <object>objects\obj_Room_FadeIn</object>
@@ -739,6 +746,7 @@
     <rooms name="Main Story">
       <room>rooms\rm_MainWorld</room>
       <room>rooms\rm_MainWorld_New</room>
+      <room>rooms\rm_MainWorld_2</room>
       <room>rooms\rm_Tent</room>
       <rooms name="Houses">
         <rooms name="Home">
