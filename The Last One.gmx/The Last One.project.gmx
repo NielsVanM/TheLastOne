@@ -168,6 +168,7 @@
           <sprite>sprites\spr_House4</sprite>
           <sprite>sprites\sprite_House5_SecretLab</sprite>
           <sprite>sprites\spr_House6</sprite>
+          <sprite>sprites\spr_House7</sprite>
           <sprites name="Doors">
             <sprite>sprites\spr_Door_Closed1</sprite>
             <sprite>sprites\spr_Door_Closed2</sprite>
@@ -209,6 +210,7 @@
           <sprite>sprites\spr_Flower2</sprite>
           <sprite>sprites\spr_Flower3</sprite>
           <sprite>sprites\spr_Tree6</sprite>
+          <sprite>sprites\spr_Grass</sprite>
         </sprites>
         <sprites name="Misc">
           <sprite>sprites\spr_Fence1</sprite>
@@ -560,6 +562,7 @@
             <object>objects\obj_Door_Open2</object>
           </objects>
           <object>objects\obj_House6</object>
+          <object>objects\obj_House7</object>
         </objects>
         <objects name="Cars">
           <object>objects\obj_Car1_Broken</object>
@@ -596,6 +599,7 @@
           <object>objects\obj_Flower2</object>
           <object>objects\obj_Flower3</object>
           <object>objects\obj_Tree6</object>
+          <object>objects\obj_Grass</object>
         </objects>
         <objects name="Misc">
           <object>objects\obj_Fence1</object>
