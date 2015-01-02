@@ -61,14 +61,12 @@ batteryDrain = 0.3 //Per second
 if (global.pause = true){exit;}
 
 //Toggle flashlight
-if (keyboard_check_pressed(ord('L')))
-{
+if (keyboard_check_pressed(ord('L'))){
     if (flashLightOn = true){flashLightOn = false;}else{flashLightOn = true;}
 }
 
 //If flashlight is on draw ellipse
-if (flashLightOn = true &amp;&amp; flashLightWorking = true)
-{
+if (flashLightOn = true &amp;&amp; flashLightWorking = true){
 
     //Set size
     global.size = sizeNormal;

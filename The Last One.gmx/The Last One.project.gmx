@@ -373,6 +373,7 @@
       </sprites>
       <sprites name="Misc">
         <sprite>sprites\spr_Battery</sprite>
+        <sprite>sprites\spr_Grenade</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -744,6 +745,8 @@
       </objects>
       <objects name="Misc">
         <object>objects\obj_Battery</object>
+        <object>objects\obj_Grenade</object>
+        <object>objects\obj_PrimedGrenade</object>
       </objects>
     </objects>
   </objects>
