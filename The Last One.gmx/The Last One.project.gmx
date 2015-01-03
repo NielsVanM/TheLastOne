@@ -374,6 +374,7 @@
       <sprites name="Misc">
         <sprite>sprites\spr_Battery</sprite>
         <sprite>sprites\spr_Grenade</sprite>
+        <sprite>sprites\spr_LandMine</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -656,6 +657,7 @@
         <object>objects\obj_BloodSpatter1</object>
         <object>objects\obj_BloodSpatter2</object>
         <object>objects\obj_BloodSpatter3</object>
+        <object>objects\obj_ZombieBlood</object>
       </objects>
     </objects>
     <objects name="Entities">
@@ -747,6 +749,7 @@
         <object>objects\obj_Battery</object>
         <object>objects\obj_Grenade</object>
         <object>objects\obj_PrimedGrenade</object>
+        <object>objects\obj_LandMine</object>
       </objects>
     </objects>
   </objects>

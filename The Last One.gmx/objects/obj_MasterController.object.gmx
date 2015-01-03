@@ -48,6 +48,44 @@ global.zombieHurt = false;
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Particle system
+
+global.explosion = part_system_create()
+
+global.expPart = part_type_create();
+part_type_shape(global.expPart,pt_shape_cloud);
+part_type_size(global.expPart,0.10,0.10,0,0);
+part_type_scale(global.expPart,1,1);
+part_type_color3(global.expPart,65535,33023,255);
+part_type_alpha3(global.expPart,1,1,1);
+part_type_speed(global.expPart,0,3,0,0);
+part_type_direction(global.expPart,0,359,0,0);
+part_type_gravity(global.expPart,0,270);
+part_type_orientation(global.expPart,0,270,0,0,1);
+part_type_blend(global.expPart,1);
+part_type_life(global.expPart,15,35);
+
+global.emitExplosion = part_emitter_create(global.explosion);
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>

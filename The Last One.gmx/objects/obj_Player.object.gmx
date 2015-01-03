@@ -69,8 +69,8 @@ invAmount[0,3] = 0;
 invAmount[0,4] = 0;
 invAmount[1,1] = 2;
 invAmount[1,2] = 0;
-invAmount[2,1] = 1;
-invAmount[2,2] = 0;
+invAmount[2,1] = 50;
+invAmount[2,2] = 1;
 invAmount[2,3] = 0;
 </string>
           </argument>
@@ -503,6 +503,11 @@ if (keyboard_check_pressed(ord('E'))){
             invAmount[2,1] -= 1;
             action_create_object_motion(obj_PrimedGrenade,x,y,10,global.faceDirection);
         }
+        //Landime
+        if (invArraySelected[2] = 1) &amp;&amp; (invAmount[2,2] &gt; 0){
+            invAmount[2,2] -= 1;
+            instance_create(x,y,obj_LandMine);
+        }
     }
 }
 
@@ -574,6 +579,15 @@ if (keyboard_check_pressed(vk_space)){
     if (distance_to_object(obj_Grenade) &lt; pickupRange){
         invAmount[2,1] += 1;
         with(obj_Grenade){
+            if (distance_to_object(obj_Player) &lt; obj_Player.pickupRange){
+                instance_destroy();
+            }
+        }
+    }
+    //Landmine
+    if (distance_to_object(obj_LandMine) &lt; pickupRange){
+        invAmount[2,2] += 1;
+        with(obj_LandMine){
             if (distance_to_object(obj_Player) &lt; obj_Player.pickupRange){
                 instance_destroy();
             }
@@ -707,14 +721,16 @@ if (invArraySelected[1] = 1){
 
 //Third array
 if (invArraySelected[2] = 0){
-    
+    draw_sprite_ext(spr_Grenade,0,1888-32,540,2,2,0,c_white,1);
+    draw_text(1900,540-220+256,invAmount[2,1]);
 }
 if (invArraySelected[2] = 1){
-    
+    draw_sprite_ext(spr_LandMine,0,1888-32,540,3,3,0,c_white,1);
+    draw_text(1900,540-220+256,invAmount[2,2]);
 }
 if (invArraySelected[2] = 2){
     draw_sprite_ext(spr_Battery,0,1888-32,540,3,3,0,c_white,1);
-    draw_text(1900,540-220+256,invAmount[2,1])
+    draw_text(1900,540-220+256,invAmount[2,3]);
 }
 
 //Draw feedback for slots
@@ -801,6 +817,7 @@ if (invExtended = true){
         
         //Draw items
         draw_sprite_ext(spr_Grenade,0,1888-32-384,540,2,2,0,c_white,1);
+        draw_sprite_ext(spr_LandMine,0,1888-32-256,540,3,3,0,c_white,1);
         draw_sprite_ext(spr_Battery,0,1888-32-128,540,3,3,0,c_white,1);
         
         //Draw amounts

@@ -267,3 +267,9 @@ if (instance_exists(obj_Player)){
 //Changing x and y
 x += hSpeed;
 y += vSpeed;
+
+//Zombie health
+if (zHealth <= 0){
+    instance_create(x,y,obj_ZombieBlood);
+    instance_destroy();
+}

@@ -21,3 +21,6 @@ hSpeed = 0;
 vSpeed = 0;
 image_speed = 0;
 imgSpeed = 0.1;
+
+//Zombie health
+zHealth = 100;
