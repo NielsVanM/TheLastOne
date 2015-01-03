@@ -398,6 +398,7 @@
         <sprite>sprites\spr_ShotGun</sprite>
         <sprite>sprites\spr_AK47</sprite>
         <sprite>sprites\spr_LMG</sprite>
+        <sprite>sprites\spr_Bullet</sprite>
       </sprites>
       <sprites name="Food &amp; Drinks">
         <sprite>sprites\spr_Bread</sprite>
@@ -790,6 +791,9 @@
       <object>objects\obj_MasterController</object>
     </objects>
     <objects name="Items">
+      <objects name="Weaponary">
+        <object>objects\obj_Bullet</object>
+      </objects>
       <objects name="Food &amp; Drinks">
         <object>objects\obj_Bread</object>
         <object>objects\obj_Apple</object>

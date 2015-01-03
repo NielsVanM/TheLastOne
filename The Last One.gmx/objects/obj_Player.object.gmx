@@ -74,33 +74,40 @@ invAmount[2,2] = 1;
 invAmount[2,3] = 0;
 
 //Guns
+bulletDelay = 0;
+reloadTime = 0;
+
 //Handgun
-gun[1,1] = 12; //Clip size
+gun[1,1] = 12; //Max clip size
 gun[1,2] = 60; //Max ammo
-gun[1,3] = 0.1; //Bullet delay
+gun[1,3] = 0.5; //Bullet delay
 gun[1,4] = 1; //Reload time
-gun[1,5] = 1; //auto or semi auto
+gun[1,5] = 12 //Ammo in magazine
+gun[1,6] = 24 //Total ammo
 
 //Shotgun
 gun[2,1] = 4;
 gun[2,2] = 12;
-gun[2,3] = 0.5;
+gun[2,3] = 0.7;
 gun[2,4] = 3;
-gun[2,5] = 1;
+gun[2,5] = 4;
+gun[2,6] = 12;
 
 //AK47
 gun[3,1] = 30;
 gun[3,2] = 120;
 gun[3,3] = 0.1;
 gun[3,4] = 1;
-gun[3,5] = 0;
+gun[3,5] = 30;
+gun[3,6] = 120;
 
 //LMG
-gun[4,1] = 100;
+gun[4,1] = 50;
 gun[4,2] = 300;
-gun[4,3] = 0.03;
+gun[4,3] = 0.05;
 gun[4.4] = 5;
-gun[4,5] = 1;
+gun[4,5] = 100;
+gun[4,6] = 300;
 </string>
           </argument>
         </arguments>
@@ -624,20 +631,62 @@ if (keyboard_check_pressed(vk_space)){
     }
 }
 
-//Shooting
+///Shooting
 //Check selected gun
-if (invArraySelected[1] = 0){gunSelected = 1}
-if (invArraySelected[1] = 1){gunSelected = 2}
-if (invArraySelected[1] = 2){gunSelected = 3}
-if (invArraySelected[1] = 3){gunSelected = 4}
+if (invArraySelected[3] = 0){gunSelected = 1}
+if (invArraySelected[3] = 1){gunSelected = 2}
+if (invArraySelected[3] = 2){gunSelected = 3}
+if (invArraySelected[3] = 3){gunSelected = 4}
 
 //Use guns
-if (gun[gunSelected,5] = 1){
-    if (mouse_check_button_pressed(mb_left)){
-        
+if (mouse_check_button(mb_left)){
+    if (gun[gunSelected,5] &gt; 0) &amp;&amp; (bulletDelay = 0) &amp;&amp; (reloadTime = 0){
+        action_create_object_motion(obj_Bullet,x,y,10,global.faceDirection);
+        bulletDelay = gun[gunSelected,3] * room_speed;
+        gun[gunSelected,5] -= 1;
     }
-} else if (gun[gunSelected,5] = 0){
-    
+}
+
+//Reloading
+if (gun[gunSelected,5] = 0) &amp;&amp; reloadTime = 0{
+    if (gun[gunSelected,6] &gt;= gun[gunSelected,1]){
+        gun[gunSelected,5] += gun[gunSelected,1];
+        gun[gunSelected,6] -= gun[gunSelected,1];
+        reloadTime = gun[gunSelected,4] * room_speed;
+    }else{
+        if (gun[gunSelected,6] &lt; gun[gunSelected,1]){
+            gun[gunSelected,5] = gun[gunSelected,6];
+            gun[gunSelected,6] = 0;
+            reloadTime = gun[gunSelected,4] * room_speed;
+        }
+    }
+}
+if (keyboard_check_pressed(ord('R'))) &amp;&amp; (reloadTime = 0){
+    transferAmount = gun[gunSelected,1] - gun[gunSelected,5];
+    if (gun[gunSelected,6] &gt;= transferAmount){
+        gun[gunSelected,5] += transferAmount;
+        gun[gunSelected,6] -= transferAmount;
+        reloadTime = gun[gunSelected,4] * room_speed;
+    }else if (gun[gunSelected,6] &lt; transferAmount){
+        gun[gunSelected,5] += gun[gunSelected,6];
+        gun[gunSelected,6] = 0;
+        reloadTime = gun[gunSelected,4] * room_speed;
+    }
+}
+
+//Make sure a ammo amount isn't too high
+if (gun[gunSelected,6] &gt; gun[gunSelected,2]){
+    gun[gunSelected,6] = gun[gunSelected,2];
+}
+
+//Count delay
+if (bulletDelay &gt; 0){
+    bulletDelay -= 1;
+}
+
+//Reload time
+if (reloadTime &gt; 0){
+    reloadTime -= 1;
 }
 </string>
           </argument>
@@ -661,8 +710,6 @@ if (gun[gunSelected,5] = 1){
             <kind>1</kind>
             <string>///Depth correction
 depth = y * -1;
-if (mouse_check_button_pressed(mb_left)){pHealth -= 5;}
-if (mouse_check_button_pressed(mb_right)){pHealth += 5;}
 </string>
           </argument>
         </arguments>
