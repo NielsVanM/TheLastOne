@@ -84,6 +84,7 @@
           <sprite>sprites\spr_Carpet</sprite>
           <sprite>sprites\spr_Plant1</sprite>
           <sprite>sprites\spr_Clock</sprite>
+          <sprite>sprites\spr_HitTarget</sprite>
         </sprites>
         <sprites name="Air Shaft">
           <sprite>sprites\spr_AirShaft1</sprite>
@@ -174,6 +175,9 @@
             <sprite>sprites\spr_Door_Closed2</sprite>
             <sprite>sprites\spr_Door_Open2</sprite>
           </sprites>
+          <sprite>sprites\spr_House8</sprite>
+          <sprite>sprites\spr_House9</sprite>
+          <sprite>sprites\spr_House10</sprite>
         </sprites>
         <sprites name="Cars">
           <sprite>sprites\spr_Car1_Broken</sprite>
@@ -293,6 +297,32 @@
             <sprite>sprites\spr_Human3_Left</sprite>
             <sprite>sprites\spr_Human3_Right</sprite>
             <sprite>sprites\spr_Human3_Up</sprite>
+          </sprites>
+        </sprites>
+        <sprites name="Soldier">
+          <sprites name="Soldier 1">
+            <sprite>sprites\spr_Soldier1_Down</sprite>
+            <sprite>sprites\spr_Soldier1_Left</sprite>
+            <sprite>sprites\spr_Soldier1_Right</sprite>
+            <sprite>sprites\spr_Soldier1_Up</sprite>
+          </sprites>
+          <sprites name="Soldier 2">
+            <sprite>sprites\spr_Soldier2_Down</sprite>
+            <sprite>sprites\spr_Soldier2_Left</sprite>
+            <sprite>sprites\spr_Soldier2_Right</sprite>
+            <sprite>sprites\spr_Soldier2_Up</sprite>
+          </sprites>
+          <sprites name="Soldier 3">
+            <sprite>sprites\spr_Soldier3_Down</sprite>
+            <sprite>sprites\spr_Soldier3_Left</sprite>
+            <sprite>sprites\spr_Soldier3_Right</sprite>
+            <sprite>sprites\spr_Soldier3_Up</sprite>
+          </sprites>
+          <sprites name="Soldier 4">
+            <sprite>sprites\spr_Soldier4_Down</sprite>
+            <sprite>sprites\spr_Soldier4_Left</sprite>
+            <sprite>sprites\spr_Soldier4_Right</sprite>
+            <sprite>sprites\spr_Soldier4_Up</sprite>
           </sprites>
         </sprites>
       </sprites>
@@ -607,6 +637,7 @@
           <object>objects\obj_Fence1</object>
           <object>objects\obj_Fence_Broken1</object>
           <object>objects\obj_Wall_Tent</object>
+          <object>objects\obj_HitTarget</object>
         </objects>
         <objects name="Barrier">
           <object>objects\obj_Barrier1</object>
@@ -662,10 +693,18 @@
     </objects>
     <objects name="Entities">
       <objects name="Living">
-        <object>objects\obj_Player</object>
-        <object>objects\obj_Human</object>
-        <object>objects\obj_Human2</object>
-        <object>objects\obj_Human3</object>
+        <objects name="Human">
+          <object>objects\obj_Player</object>
+          <object>objects\obj_Human</object>
+          <object>objects\obj_Human2</object>
+          <object>objects\obj_Human3</object>
+        </objects>
+        <objects name="Soldier">
+          <object>objects\obj_Soldier1</object>
+          <object>objects\obj_Soldier2</object>
+          <object>objects\obj_Soldier3</object>
+          <object>objects\obj_Soldier4</object>
+        </objects>
       </objects>
       <objects name="Dead">
         <objects name="With Path">
@@ -712,6 +751,7 @@
         <object>objects\obj_Trigger_LockedHouse</object>
         <objects name="Normal House">
           <object>objects\obj_Trigger_NormalHouse1Outside</object>
+          <object>objects\obj_Trigger_NormalHouse2Outside</object>
         </objects>
         <objects name="Crewhouse">
           <object>objects\obj_Trigger_CrewHouseOutside</object>
