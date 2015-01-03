@@ -361,7 +361,10 @@
     </sprites>
     <sprites name="Items">
       <sprites name="Weaponary">
-        <sprite>sprites\spr_USP</sprite>
+        <sprite>sprites\spr_HandGun</sprite>
+        <sprite>sprites\spr_ShotGun</sprite>
+        <sprite>sprites\spr_AK47</sprite>
+        <sprite>sprites\spr_LMG</sprite>
       </sprites>
       <sprites name="Food &amp; Drinks">
         <sprite>sprites\spr_Bread</sprite>

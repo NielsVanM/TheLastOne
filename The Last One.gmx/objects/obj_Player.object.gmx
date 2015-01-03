@@ -63,7 +63,7 @@ invArraySelected[2] = 0;
 invArraySelected[3] = 0;
 invArraySelected[4] = 0;
 
-invAmount[0,1] = 0;
+invAmount[0,1] = 0; 
 invAmount[0,2] = 0;
 invAmount[0,3] = 0;
 invAmount[0,4] = 0;
@@ -72,6 +72,35 @@ invAmount[1,2] = 0;
 invAmount[2,1] = 50;
 invAmount[2,2] = 1;
 invAmount[2,3] = 0;
+
+//Guns
+//Handgun
+gun[1,1] = 12; //Clip size
+gun[1,2] = 60; //Max ammo
+gun[1,3] = 0.1; //Bullet delay
+gun[1,4] = 1; //Reload time
+gun[1,5] = 1; //auto or semi auto
+
+//Shotgun
+gun[2,1] = 4;
+gun[2,2] = 12;
+gun[2,3] = 0.5;
+gun[2,4] = 3;
+gun[2,5] = 1;
+
+//AK47
+gun[3,1] = 30;
+gun[3,2] = 120;
+gun[3,3] = 0.1;
+gun[3,4] = 1;
+gun[3,5] = 0;
+
+//LMG
+gun[4,1] = 100;
+gun[4,2] = 300;
+gun[4,3] = 0.03;
+gun[4.4] = 5;
+gun[4,5] = 1;
 </string>
           </argument>
         </arguments>
@@ -443,7 +472,7 @@ if (invExtended = true){
         if (mouse_wheel_down()){invArraySelected[3] += 1;}
         
         //Max selection
-        if (invArraySelected[3] &gt; 2){invArraySelected[3] = 2;}
+        if (invArraySelected[3] &gt; 3){invArraySelected[3] = 3;}
         if (invArraySelected[3] &lt; 0){invArraySelected[3] = 0;}
     }
     //Fith array
@@ -594,6 +623,22 @@ if (keyboard_check_pressed(vk_space)){
         }
     }
 }
+
+//Shooting
+//Check selected gun
+if (invArraySelected[1] = 0){gunSelected = 1}
+if (invArraySelected[1] = 1){gunSelected = 2}
+if (invArraySelected[1] = 2){gunSelected = 3}
+if (invArraySelected[1] = 3){gunSelected = 4}
+
+//Use guns
+if (gun[gunSelected,5] = 1){
+    if (mouse_check_button_pressed(mb_left)){
+        
+    }
+} else if (gun[gunSelected,5] = 0){
+    
+}
 </string>
           </argument>
         </arguments>
@@ -733,6 +778,20 @@ if (invArraySelected[2] = 2){
     draw_text(1900,540-220+256,invAmount[2,3]);
 }
 
+//Fourth array
+if (invArraySelected[3] = 0){
+    draw_sprite_ext(spr_HandGun,0,1888-32,540+128,2,2,0,c_white,1);
+}
+if (invArraySelected[3] = 1){
+    draw_sprite_ext(spr_ShotGun,0,1888-32,540+128,1,1,0,c_white,1);
+}
+if (invArraySelected[3] = 2){
+    draw_sprite_ext(spr_AK47,0,1888-32,540+128,1,1,0,c_white,1);
+}
+if (invArraySelected[3] = 3){
+    draw_sprite_ext(spr_LMG,0,1888-32,540+128,1,1,0,c_white,1);
+}
+
 //Draw feedback for slots
 if (invSelected = 0){
     draw_sprite_ext(spr_InvFeedback,0,1888-32,540-256,2,2,0,c_white,1);
@@ -842,15 +901,25 @@ if (invExtended = true){
         draw_sprite_ext(spr_InvSlot,0,1888-32-128,540+128,2,2,0,c_white,1);
         draw_sprite_ext(spr_InvSlot,0,1888-32-256,540+128,2,2,0,c_white,1);
         draw_sprite_ext(spr_InvSlot,0,1888-32-384,540+128,2,2,0,c_white,1);
+        draw_sprite_ext(spr_InvSlot,0,1888-32-512,540+128,2,2,0,c_white,1);
+        
+        //Draw items
+        draw_sprite_ext(spr_HandGun,0,1888-32-512,540+128,2,2,0,c_white,1);
+        draw_sprite_ext(spr_ShotGun,0,1888-32-384,540+128,1,1,0,c_white,1);
+        draw_sprite_ext(spr_AK47,0,1888-32-256,540+128,1,1,0,c_white,1);
+        draw_sprite_ext(spr_LMG,0,1888-32-128,540+128,1,1,0,c_white,1);
         
         //Draw feedback
         if (invArraySelected[3] = 0){
-            draw_sprite_ext(spr_InvFeedback2,0,1888-32-384,540+128,2,2,0,c_white,1);
+            draw_sprite_ext(spr_InvFeedback2,0,1888-32-512,540+128,2,2,0,c_white,1);
         }
         if (invArraySelected[3] = 1){
-            draw_sprite_ext(spr_InvFeedback2,0,1888-32-256,540+128,2,2,0,c_white,1);
+            draw_sprite_ext(spr_InvFeedback2,0,1888-32-384,540+128,2,2,0,c_white,1);
         }
         if (invArraySelected[3] = 2){
+            draw_sprite_ext(spr_InvFeedback2,0,1888-32-256,540+128,2,2,0,c_white,1);
+        }
+        if (invArraySelected[3] = 3){
             draw_sprite_ext(spr_InvFeedback2,0,1888-32-128,540+128,2,2,0,c_white,1);
         }
     }
