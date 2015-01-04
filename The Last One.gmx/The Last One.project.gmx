@@ -453,6 +453,7 @@
     <font>fonts\fnt_Instructions</font>
     <font>fonts\fnt_Instructions2</font>
     <font>fonts\fnt_ItemCount</font>
+    <font>fonts\fnt_ItemCount_Small</font>
   </fonts>
   <objects name="objects">
     <objects name="Environment">

@@ -136,6 +136,7 @@ if (global.pause = true)
     draw_set_alpha(1);
     
     //Draw Game Paused text
+    draw_set_halign(fa_center);
     draw_set_font(fnt_GameTitle);
     draw_text(960,230,'Game Paused');
     

@@ -31,19 +31,11 @@ global.music = true;
 global.sound = true;
 global.particles = true;
 
-//Player global variables
-global.hide = false;
-global.faceDirection = 0;
-
 //Light gloabl variables
 global.dark = true;
 
 //DEBUG
 global.debug = false;
-
-//Hurt tick
-zombieHurtCooldown = 0;
-global.zombieHurt = false;
 </string>
           </argument>
         </arguments>

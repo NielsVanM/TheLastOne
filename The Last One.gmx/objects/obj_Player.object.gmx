@@ -26,6 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>///Variables
+//Global variables
+global.hide = false;
+global.faceDirection = 270;
+
 //Movement
 normalMoveSpeed = 2;
 runMoveSpeed = 4;
@@ -82,8 +86,10 @@ gun[1,1] = 12; //Max clip size
 gun[1,2] = 60; //Max ammo
 gun[1,3] = 0.5; //Bullet delay
 gun[1,4] = 1; //Reload time
-gun[1,5] = 12 //Ammo in magazine
-gun[1,6] = 24 //Total ammo
+gun[1,5] = 12; //Ammo in magazine
+gun[1,6] = 24; //Total ammo
+gun[1,7] = 12; //Horizontal offset inpixels
+gun[1,8] = 5; //Vertical offset inpixels
 
 //Shotgun
 gun[2,1] = 4;
@@ -92,6 +98,8 @@ gun[2,3] = 0.7;
 gun[2,4] = 3;
 gun[2,5] = 4;
 gun[2,6] = 12;
+gun[2,7] = 12;
+gun[2,8] = 12;
 
 //AK47
 gun[3,1] = 30;
@@ -100,14 +108,18 @@ gun[3,3] = 0.1;
 gun[3,4] = 1;
 gun[3,5] = 30;
 gun[3,6] = 120;
+gun[3,7] = 12;
+gun[3,8] = 12;
 
 //LMG
-gun[4,1] = 50;
+gun[4,1] = 100;
 gun[4,2] = 300;
 gun[4,3] = 0.05;
-gun[4.4] = 5;
+gun[4,4] = 5;
 gun[4,5] = 100;
 gun[4,6] = 300;
+gun[4,7] = 12;
+gun[4,8] = 12;
 </string>
           </argument>
         </arguments>
@@ -826,18 +838,28 @@ if (invArraySelected[2] = 2){
 }
 
 //Fourth array
+//Set font
+draw_set_font(fnt_ItemCount_Small);
+draw_set_halign(fa_right);
 if (invArraySelected[3] = 0){
     draw_sprite_ext(spr_HandGun,0,1888-32,540+128,2,2,0,c_white,1);
+    draw_text(1900,540-220+384,string(gun[1,5]) + '/' + string(gun[1,6]));
 }
 if (invArraySelected[3] = 1){
     draw_sprite_ext(spr_ShotGun,0,1888-32,540+128,1,1,0,c_white,1);
+    draw_text(1900,540-220+384,string(gun[2,5]) + '/' + string(gun[2,6]));
 }
 if (invArraySelected[3] = 2){
     draw_sprite_ext(spr_AK47,0,1888-32,540+128,1,1,0,c_white,1);
+    draw_text(1900,540-220+384,string(gun[3,5]) + '/' + string(gun[3,6]));
 }
 if (invArraySelected[3] = 3){
     draw_sprite_ext(spr_LMG,0,1888-32,540+128,1,1,0,c_white,1);
+    draw_text(1900,540-220+384,string(gun[4,5]) + '/' + string(gun[4,6]));
 }
+//Reset font
+draw_set_font(fnt_ItemCount);
+draw_set_halign(fa_center);
 
 //Draw feedback for slots
 if (invSelected = 0){
@@ -956,6 +978,15 @@ if (invExtended = true){
         draw_sprite_ext(spr_AK47,0,1888-32-256,540+128,1,1,0,c_white,1);
         draw_sprite_ext(spr_LMG,0,1888-32-128,540+128,1,1,0,c_white,1);
         
+        //Draw ammo
+        draw_set_font(fnt_ItemCount_Small);
+        draw_set_halign(fa_right);
+        draw_text(1900-512,540-220+384,string(gun[1,5]) + '/' + string(gun[1,6]));
+        draw_text(1900-384,540-220+384,string(gun[2,5]) + '/' + string(gun[2,6]));
+        draw_text(1900-256,540-220+384,string(gun[3,5]) + '/' + string(gun[3,6]));
+        draw_text(1900-128,540-220+384,string(gun[4,5]) + '/' + string(gun[4,6]));
+        draw_set_font(fnt_ItemCount);
+        draw_set_halign(fa_center);
         //Draw feedback
         if (invArraySelected[3] = 0){
             draw_sprite_ext(spr_InvFeedback2,0,1888-32-512,540+128,2,2,0,c_white,1);
@@ -975,7 +1006,6 @@ if (invExtended = true){
         //Draw slots
         draw_sprite_ext(spr_InvSlot,0,1888-32-128,540+256,2,2,0,c_white,1);
         draw_sprite_ext(spr_InvSlot,0,1888-32-256,540+256,2,2,0,c_white,1);
-        draw_sprite_ext(spr_InvSlot,0,1888-32-384,540+256,2,2,0,c_white,1);
         
         //Draw feedback
         if (invArraySelected[4] = 0){
@@ -983,9 +1013,6 @@ if (invExtended = true){
         }
         if (invArraySelected[4] = 1){
             draw_sprite_ext(spr_InvFeedback2,0,1888-32-256,540+256,2,2,0,c_white,1);
-        }
-        if (invArraySelected[4] = 2){
-            draw_sprite_ext(spr_InvFeedback2,0,1888-32-128,540+256,2,2,0,c_white,1);
         }
     }
 }
@@ -1011,8 +1038,43 @@ if (invExtended = true){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Draw player
-if (global.hide = false){draw_self();}
+            <string>///Draw player &amp; guns
+if (global.hide = false){
+    draw_self();
+    
+    //Draw guns
+    if (global.faceDirection = 0){
+        direct = 0;
+        hOffSet = gun[gunSelected,7];
+        vOffSet = gun[gunSelected,8];
+        canDraw = true;
+    }
+    if (global.faceDirection = 180){
+        direct = 1;
+        hOffSet = -gun[gunSelected,7];
+        vOffSet = gun[gunSelected,8];
+        canDraw = true;
+    }
+    if (global.faceDirection = 90 or global.faceDirection = 270){
+        direct = 2;
+        canDraw = false;
+    }
+    
+    if (invSelected = 3) &amp;&amp; canDraw = true{
+        if (invArraySelected[3] = 0){
+                draw_sprite_ext(spr_HandGun,direct,x+hOffSet,y+vOffSet,0.25,0.25,0,c_white,1);
+        }
+        if (invArraySelected[3] = 1){
+                draw_sprite_ext(spr_ShotGun,direct,x+hOffSet,y+vOffSet,0.25,0.25,0,c_white,1);
+        }
+        if (invArraySelected[3] = 2){
+                draw_sprite_ext(spr_AK47,direct,x+hOffSet,y+vOffSet,0.25,0.25,0,c_white,1);
+        }
+        if (invArraySelected[3] = 3){
+                draw_sprite_ext(spr_LMG,direct,x+hOffSet,y+vOffSet,0.25,0.25,0,c_white,1);
+        }
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -1044,6 +1106,7 @@ if (global.debug = true){
     draw_text(x,y+60,pStamina);
     draw_text(x,y+70,global.flashLightBattery);
     draw_text(x,y+80,global.size);
+    draw_text(x,y+90,reloadTime);
 }
 </string>
           </argument>
