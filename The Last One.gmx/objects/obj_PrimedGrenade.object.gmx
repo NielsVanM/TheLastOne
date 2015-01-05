@@ -64,23 +64,23 @@ if (speed &lt; 0){
 }
 //Collision
 if (global.faceDirection = 0){
-    if (place_meeting(x+speed,y,obj_Collision)){
-        speed = 0;
+    if (place_meeting(x,y,obj_Collision)){
+        speed = -speed;
     }   
 }
 if (global.faceDirection = 90){
-    if (place_meeting(x,y-speed,obj_Collision)){
-        speed = 0;
+    if (place_meeting(x,y,obj_Collision)){
+        speed = -speed;
     }   
 }
 if (global.faceDirection = 180){
-    if (place_meeting(x-speed,y,obj_Collision)){
-        speed = 0;
+    if (place_meeting(x,y,obj_Collision)){
+        speed = -speed;
     }   
 }
 if (global.faceDirection = 270){
-    if (place_meeting(x,y+speed,obj_Collision)){
-        speed = 0;
+    if (place_meeting(x,y,obj_Collision)){
+        speed = -speed;
     }   
 }
 
@@ -92,42 +92,7 @@ if (speed = 0){
         part_emitter_stream(global.explosion,global.emitExplosion,global.expPart,40);
         //Hurt Zombies
         if (explosionCountDown = 29){
-            with (obj_Zombie1_AI){
-                if (distance_to_object(obj_PrimedGrenade) &lt; obj_PrimedGrenade.grenadeRange){
-                    zHealth -= 100;
-                }
-            }
-            with (obj_Zombie2_AI){
-                if (distance_to_object(obj_PrimedGrenade) &lt; obj_PrimedGrenade.grenadeRange){
-                    zHealth -= 100;
-                }
-            }
-            with (obj_Zombie3_AI){
-                if (distance_to_object(obj_PrimedGrenade) &lt; obj_PrimedGrenade.grenadeRange){
-                    zHealth -= 100;
-                }
-            }
-            with (obj_Zombie4_AI){
-                if (distance_to_object(obj_PrimedGrenade) &lt; obj_PrimedGrenade.grenadeRange){
-                    zHealth -= 100;
-                }
-            }
-            with (obj_Zombie5_AI){
-                if (distance_to_object(obj_PrimedGrenade) &lt; obj_PrimedGrenade.grenadeRange){
-                    zHealth -= 100;
-                }
-            }
-            with (obj_Zombie6_AI){
-                if (distance_to_object(obj_PrimedGrenade) &lt; obj_PrimedGrenade.grenadeRange){
-                    zHealth -= 100;
-                }
-            }
-            with (obj_Zombie7_AI){
-                if (distance_to_object(obj_PrimedGrenade) &lt; obj_PrimedGrenade.grenadeRange){
-                    zHealth -= 100;
-                }
-            }
-            with (obj_Zombie8_AI){
+            with (obj_Zombie_AI){
                 if (distance_to_object(obj_PrimedGrenade) &lt; obj_PrimedGrenade.grenadeRange){
                     zHealth -= 100;
                 }

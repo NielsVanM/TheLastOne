@@ -54,21 +54,7 @@ landMineRange = 64;
             <kind>1</kind>
             <string>///Landmine code
 //Check if landmine is stepped on
-if (distance_to_object(obj_Zombie1_AI) &lt; explodeRange){
-    explosion = true;
-} else if (distance_to_object(obj_Zombie2_AI) &lt; explodeRange){
-    explosion = true;
-} else if (distance_to_object(obj_Zombie3_AI) &lt; explodeRange){
-    explosion = true;
-} else if (distance_to_object(obj_Zombie4_AI) &lt; explodeRange){
-    explosion = true;
-} else if (distance_to_object(obj_Zombie5_AI) &lt; explodeRange){
-    explosion = true;
-} else if (distance_to_object(obj_Zombie6_AI) &lt; explodeRange){
-    explosion = true;
-} else if (distance_to_object(obj_Zombie7_AI) &lt; explodeRange){
-    explosion = true;
-} else if (distance_to_object(obj_Zombie8_AI) &lt; explodeRange){
+if (distance_to_object(obj_Zombie_AI) &lt; explodeRange){
     explosion = true;
 }
 
@@ -80,42 +66,7 @@ if (explosion = true){
         explosionCountdown -= 1;
         //Hurt zombies
         if (explosionCountdown = 29){
-            with (obj_Zombie1_AI){
-                if (distance_to_object(obj_LandMine) &lt; obj_LandMine.landMineRange){
-                    zHealth -= 100;
-                }
-            }
-            with (obj_Zombie2_AI){
-                if (distance_to_object(obj_LandMine) &lt; obj_LandMine.landMineRange){
-                    zHealth -= 100;
-                }
-            }
-            with (obj_Zombie3_AI){
-                if (distance_to_object(obj_LandMine) &lt; obj_LandMine.landMineRange){
-                    zHealth -= 100;
-                }
-            }
-            with (obj_Zombie4_AI){
-                if (distance_to_object(obj_LandMine) &lt; obj_LandMine.landMineRange){
-                    zHealth -= 100;
-                }
-            }
-            with (obj_Zombie5_AI){
-                if (distance_to_object(obj_LandMine) &lt; obj_LandMine.landMineRange){
-                    zHealth -= 100;
-                }
-            }
-            with (obj_Zombie6_AI){
-                if (distance_to_object(obj_LandMine) &lt; obj_LandMine.landMineRange){
-                    zHealth -= 100;
-                }
-            }
-            with (obj_Zombie7_AI){
-                if (distance_to_object(obj_LandMine) &lt; obj_LandMine.landMineRange){
-                    zHealth -= 100;
-                }
-            }
-            with (obj_Zombie8_AI){
+            with (obj_Zombie_AI){
                 if (distance_to_object(obj_LandMine) &lt; obj_LandMine.landMineRange){
                     zHealth -= 100;
                 }

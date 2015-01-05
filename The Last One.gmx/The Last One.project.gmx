@@ -434,10 +434,6 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <scripts name="AI">
-      <script>scripts\scr_Zombie_AI_Create.gml</script>
-      <script>scripts\scr_Zombie_AI_Step.gml</script>
-    </scripts>
     <scripts name="Save">
       <script>scripts\scr_SaveSettings.gml</script>
       <script>scripts\scr_SaveGame.gml</script>
@@ -727,15 +723,11 @@
       <objects name="Dead">
         <objects name="With Path">
           <objects name="Zombies">
-            <object>objects\obj_Zombie_Path</object>
             <object>objects\obj_Zombie2_BetweenCars</object>
           </objects>
         </objects>
         <objects name="With AI">
-          <objects name="Zombies">
-            <object>objects\obj_Zombie_AI</object>
-            <object>objects\obj_ZombieMain</object>
-          </objects>
+          <object>objects\obj_Zombie_AI</object>
         </objects>
       </objects>
     </objects>

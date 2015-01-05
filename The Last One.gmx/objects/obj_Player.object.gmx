@@ -675,7 +675,7 @@ if (invSelected = 3){
     }
     
     //Reloading
-    if (gun[gunSelected,5] = 0) &amp;&amp; reloadTime = 0{
+    if (gun[gunSelected,5] = 0) &amp;&amp; (gun[gunSelected,6] &gt; 0) &amp;&amp; (reloadTime = 0){
         if (gun[gunSelected,6] &gt;= gun[gunSelected,1]){
             gun[gunSelected,5] += gun[gunSelected,1];
             gun[gunSelected,6] -= gun[gunSelected,1];
@@ -688,7 +688,7 @@ if (invSelected = 3){
             }
         }
     }
-    if (keyboard_check_pressed(ord('R'))) &amp;&amp; (reloadTime = 0){
+    if (keyboard_check_pressed(ord('R'))) &amp;&amp; (gun[gunSelected,6]) &amp;&amp; (reloadTime = 0){
         transferAmount = gun[gunSelected,1] - gun[gunSelected,5];
         if (gun[gunSelected,6] &gt;= transferAmount){
             gun[gunSelected,5] += transferAmount;
