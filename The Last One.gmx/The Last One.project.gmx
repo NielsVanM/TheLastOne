@@ -22,6 +22,7 @@
             <sprite>sprites\spr_Chair_Right</sprite>
             <sprite>sprites\spr_Chair_Left</sprite>
             <sprite>sprites\spr_Stool</sprite>
+            <sprite>sprites\spr_WoodenBench</sprite>
           </sprites>
           <sprites name="Bureau">
             <sprite>sprites\spr_Bureau</sprite>
@@ -180,6 +181,7 @@
           <sprite>sprites\spr_House10</sprite>
           <sprite>sprites\spr_House11</sprite>
           <sprite>sprites\spr_House12</sprite>
+          <sprite>sprites\spr_Hospital</sprite>
         </sprites>
         <sprites name="Cars">
           <sprite>sprites\spr_Car1_Broken</sprite>
@@ -489,6 +491,7 @@
         <objects name="Chair">
           <object>objects\obj_Chair</object>
           <object>objects\obj_Stool</object>
+          <object>objects\obj_WoodenBench</object>
         </objects>
         <objects name="Bureau">
           <object>objects\obj_Bureau</object>
@@ -608,6 +611,7 @@
             <object>objects\obj_Door_Open2</object>
           </objects>
           <object>objects\obj_House12</object>
+          <object>objects\obj_Hospital</object>
         </objects>
         <objects name="Cars">
           <object>objects\obj_Car1_Broken</object>
@@ -827,6 +831,9 @@
         <rooms name="Crew House">
           <room>rooms\rm_CrewHouse</room>
           <room>rooms\rm_ShootingRange</room>
+        </rooms>
+        <rooms name="Hospital">
+          <room>rooms\rm_Hospital</room>
         </rooms>
       </rooms>
     </rooms>

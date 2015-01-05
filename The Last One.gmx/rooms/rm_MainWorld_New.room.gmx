@@ -466,7 +466,7 @@
     <instance objName="obj_Tree2" x="6464" y="608" name="inst_BCF34657" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree2" x="6272" y="736" name="inst_F2FF25A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_TentOutside" x="5856" y="327" name="inst_19E66AFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Trigger_LockedHouse" x="850" y="252" name="inst_82604CA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_LockedHouse" x="851" y="253" name="inst_82604CA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Table" x="6400" y="-7648" name="inst_D332E8C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Table" x="9888" y="-7648" name="inst_8205D98B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_BloodSpatter3" x="4256" y="256" name="inst_8F07817D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1619,9 +1619,9 @@
     <instance objName="obj_Tree3" x="7456" y="2368" name="inst_29E22E0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree3" x="7456" y="2144" name="inst_2C81393D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree3" x="7456" y="2400" name="inst_99CCFE9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_House3" x="7008" y="1152" name="inst_A1F0903E" locked="0" code="" scaleX="1.7529411315918" scaleY="1.7529411315918" colour="4294967295" rotation="0"/>
-    <instance objName="obj_House3" x="6176" y="1760" name="inst_667721EE" locked="0" code="" scaleX="1.90476191043854" scaleY="1.90476191043854" colour="4294967295" rotation="0"/>
-    <instance objName="obj_House3" x="7013" y="1742" name="inst_F50F6520" locked="0" code="" scaleX="1.7619047164917" scaleY="1.7619047164917" colour="4294967295" rotation="0"/>
+    <instance objName="obj_House3" x="7083" y="1226" name="inst_A1F0903E" locked="0" code="" scaleX="1.75" scaleY="1.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_House3" x="6256" y="1840" name="inst_667721EE" locked="0" code="" scaleX="1.89999997615814" scaleY="1.89999997615814" colour="4294967295" rotation="0"/>
+    <instance objName="obj_House3" x="7087" y="1817" name="inst_F50F6520" locked="0" code="" scaleX="1.75999999046326" scaleY="1.75999999046326" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="6257" y="1903" name="inst_3F1AEA1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="7089" y="1875" name="inst_76B0E31E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="7085" y="1283" name="inst_BBBF2714" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -5602,6 +5602,10 @@
     <instance objName="obj_CampFireLight" x="11360" y="5440" name="inst_C419E435" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CampFireLight" x="9664" y="5408" name="inst_21008D44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CampFireLight" x="11328" y="4256" name="inst_F674FBDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WoodenBench" x="768" y="448" name="inst_3665DEE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WoodenBench" x="6592" y="1472" name="inst_65D0AE4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WoodenBench" x="480" y="5056" name="inst_A762844E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WoodenBench" x="2016" y="5056" name="inst_3E4D64FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_Tileset_Random" x="448" y="192" w="32" h="32" xo="128" yo="32" id="10003811" name="inst_071ADE23" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
