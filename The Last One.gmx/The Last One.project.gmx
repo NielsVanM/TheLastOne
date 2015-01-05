@@ -729,14 +729,8 @@
         </objects>
         <objects name="With AI">
           <objects name="Zombies">
-            <object>objects\obj_Zombie1_AI</object>
-            <object>objects\obj_Zombie2_AI</object>
-            <object>objects\obj_Zombie3_AI</object>
-            <object>objects\obj_Zombie4_AI</object>
-            <object>objects\obj_Zombie5_AI</object>
-            <object>objects\obj_Zombie6_AI</object>
-            <object>objects\obj_Zombie7_AI</object>
-            <object>objects\obj_Zombie8_AI</object>
+            <object>objects\obj_Zombie_AI</object>
+            <object>objects\obj_ZombieMain</object>
           </objects>
         </objects>
       </objects>

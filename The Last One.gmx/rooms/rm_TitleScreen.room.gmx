@@ -172,7 +172,7 @@
     <instance objName="obj_Collision" x="1920" y="0" name="inst_4DC26D20" locked="0" code="" scaleX="1" scaleY="29" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="0" y="-32" name="inst_48242E8F" locked="0" code="" scaleX="60" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_BloodSpatter3" x="343" y="815" name="inst_5501C03D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie1_AI" x="128" y="576" name="inst_4FDBCAEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Zombie_AI" x="128" y="576" name="inst_4FDBCAEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CampFireLight" x="256" y="288" name="inst_4582CAE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="0" y="256" name="inst_70FE823D" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="64" y="224" name="inst_9226ADCE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -212,7 +212,6 @@
     <instance objName="obj_Stool" x="83" y="415" name="inst_CCB25722" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Stool" x="144" y="416" name="inst_65038AFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Stool" x="144" y="380" name="inst_76209E03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie6_AI" x="288" y="544" name="inst_EF73E72E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_BloodSpatter1" x="129" y="755" name="inst_B940CF47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_BloodSpatter1" x="319" y="685" name="inst_017E0743" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_BloodSpatter1" x="213" y="613" name="inst_7D808BEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -450,11 +449,6 @@
     <instance objName="obj_Tent1" x="1280" y="320" name="inst_D646E84E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CampFireLight" x="1312" y="432" name="inst_4B781D40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Campfire1" x="1312" y="432" name="inst_C66AA745" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie5_AI" x="992" y="768" name="inst_61984F9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie5_AI" x="1408" y="496" name="inst_E23C1BE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie3_AI" x="1392" y="704" name="inst_FA71F421" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie8_AI" x="1152" y="176" name="inst_FC4D6506" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie4_AI" x="1536" y="192" name="inst_C9102A7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="768" y="608" name="inst_CDC70CF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="800" y="640" name="inst_B882BEC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="832" y="656" name="inst_12DDFCF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -54,7 +54,6 @@
     <instance objName="obj_Wall_Tent" x="2272" y="1856" name="inst_9C6A523A" locked="0" code="" scaleX="5.94000005722046" scaleY="3.94000005722046" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="2304" y="1888" name="inst_0E84695E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Doormat2" x="2255" y="2192" name="inst_BF73C60A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie2_AI" x="2272" y="1952" name="inst_B3A8C09A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_TentOutside" x="2271" y="2208" name="inst_CA7FD90A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="2272" y="1888" name="inst_646A1D77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="2144" y="2048" name="inst_287B7766" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

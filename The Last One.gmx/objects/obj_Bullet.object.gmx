@@ -25,9 +25,57 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Rotate sprite
-if (global.faceDirection = 90) or (global.faceDirection = 270){
+            <string>///Rotate sprite &amp; variables
+if (global.faceDirection = 90) || (global.faceDirection = 270){
     image_angle = 90;
+}
+
+//Give variables
+bulletDamage = obj_Player.gun[obj_Player.gunSelected,9];
+
+//Variables
+hasTravelled = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Bullet Code
+//Hit zombie &amp; delete instance
+hasTravelled += 0.05;
+
+if (hasTravelled &gt;= bulletDamage){
+    instance_destroy();
+}
+
+if (place_meeting(x,y,obj_Collision)){
+    instance_destroy();
+}
+
+if (place_meeting(x,y,obj_Zombie_AI)){
+    with(obj_Zombie_AI){
+        if (distance_to_object(obj_Bullet) &lt; 2){
+            zHealth -= (obj_Bullet.bulletDamage - obj_Bullet.hasTravelled);
+        }
+    }   
+    instance_destroy();
 }
 </string>
           </argument>
@@ -46,5 +94,8 @@ if (global.faceDirection = 90) or (global.faceDirection = 270){
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>8,4</point>
+    <point>4,4</point>
+  </PhysicsShapePoints>
 </object>

@@ -88,8 +88,9 @@ gun[1,3] = 0.5; //Bullet delay
 gun[1,4] = 1; //Reload time
 gun[1,5] = 12; //Ammo in magazine
 gun[1,6] = 24; //Total ammo
-gun[1,7] = 12; //Horizontal offset inpixels
-gun[1,8] = 5; //Vertical offset inpixels
+gun[1,7] = 8; //Horizontal offset inpixels
+gun[1,8] = 7; //Vertical offset inpixels
+gun[1,9] = 30; //Damage the weapon does
 
 //Shotgun
 gun[2,1] = 4;
@@ -100,6 +101,7 @@ gun[2,5] = 4;
 gun[2,6] = 12;
 gun[2,7] = 12;
 gun[2,8] = 12;
+gun[2,9] = 101;
 
 //AK47
 gun[3,1] = 30;
@@ -110,6 +112,7 @@ gun[3,5] = 30;
 gun[3,6] = 120;
 gun[3,7] = 12;
 gun[3,8] = 12;
+gun[3,9] = 20;
 
 //LMG
 gun[4,1] = 100;
@@ -120,6 +123,7 @@ gun[4,5] = 100;
 gun[4,6] = 300;
 gun[4,7] = 12;
 gun[4,8] = 12;
+gun[4,9] = 10;
 </string>
           </argument>
         </arguments>
@@ -540,6 +544,14 @@ if (keyboard_check_pressed(ord('E'))){
             invAmount[1,2] -= 1;
         }
     }
+    if (invSelected = 2){
+        //Battery
+        if (invArraySelected[2] = 2) &amp;&amp; (invAmount[2,3] &gt; 0){
+            global.flashLightBattery += 100;
+        }
+    }
+}
+if (mouse_check_button_pressed(mb_left)){
     //Misc items
     if (invSelected = 2){
         //Battery
@@ -650,39 +662,43 @@ if (invArraySelected[3] = 1){gunSelected = 2}
 if (invArraySelected[3] = 2){gunSelected = 3}
 if (invArraySelected[3] = 3){gunSelected = 4}
 
-//Use guns
-if (mouse_check_button(mb_left)){
-    if (gun[gunSelected,5] &gt; 0) &amp;&amp; (bulletDelay = 0) &amp;&amp; (reloadTime = 0){
-        action_create_object_motion(obj_Bullet,x,y,10,global.faceDirection);
-        bulletDelay = gun[gunSelected,3] * room_speed;
-        gun[gunSelected,5] -= 1;
-    }
-}
+//Check if gun
 
-//Reloading
-if (gun[gunSelected,5] = 0) &amp;&amp; reloadTime = 0{
-    if (gun[gunSelected,6] &gt;= gun[gunSelected,1]){
-        gun[gunSelected,5] += gun[gunSelected,1];
-        gun[gunSelected,6] -= gun[gunSelected,1];
-        reloadTime = gun[gunSelected,4] * room_speed;
-    }else{
-        if (gun[gunSelected,6] &lt; gun[gunSelected,1]){
-            gun[gunSelected,5] = gun[gunSelected,6];
+if (invSelected = 3){
+    //Use guns
+    if (mouse_check_button(mb_left)){
+        if (gun[gunSelected,5] &gt; 0) &amp;&amp; (bulletDelay = 0) &amp;&amp; (reloadTime = 0){
+            action_create_object_motion(obj_Bullet,x,y,10,global.faceDirection);
+            bulletDelay = gun[gunSelected,3] * room_speed;
+            gun[gunSelected,5] -= 1;
+        }
+    }
+    
+    //Reloading
+    if (gun[gunSelected,5] = 0) &amp;&amp; reloadTime = 0{
+        if (gun[gunSelected,6] &gt;= gun[gunSelected,1]){
+            gun[gunSelected,5] += gun[gunSelected,1];
+            gun[gunSelected,6] -= gun[gunSelected,1];
+            reloadTime = gun[gunSelected,4] * room_speed;
+        }else{
+            if (gun[gunSelected,6] &lt; gun[gunSelected,1]){
+                gun[gunSelected,5] = gun[gunSelected,6];
+                gun[gunSelected,6] = 0;
+                reloadTime = gun[gunSelected,4] * room_speed;
+            }
+        }
+    }
+    if (keyboard_check_pressed(ord('R'))) &amp;&amp; (reloadTime = 0){
+        transferAmount = gun[gunSelected,1] - gun[gunSelected,5];
+        if (gun[gunSelected,6] &gt;= transferAmount){
+            gun[gunSelected,5] += transferAmount;
+            gun[gunSelected,6] -= transferAmount;
+            reloadTime = gun[gunSelected,4] * room_speed;
+        }else if (gun[gunSelected,6] &lt; transferAmount){
+            gun[gunSelected,5] += gun[gunSelected,6];
             gun[gunSelected,6] = 0;
             reloadTime = gun[gunSelected,4] * room_speed;
         }
-    }
-}
-if (keyboard_check_pressed(ord('R'))) &amp;&amp; (reloadTime = 0){
-    transferAmount = gun[gunSelected,1] - gun[gunSelected,5];
-    if (gun[gunSelected,6] &gt;= transferAmount){
-        gun[gunSelected,5] += transferAmount;
-        gun[gunSelected,6] -= transferAmount;
-        reloadTime = gun[gunSelected,4] * room_speed;
-    }else if (gun[gunSelected,6] &lt; transferAmount){
-        gun[gunSelected,5] += gun[gunSelected,6];
-        gun[gunSelected,6] = 0;
-        reloadTime = gun[gunSelected,4] * room_speed;
     }
 }
 

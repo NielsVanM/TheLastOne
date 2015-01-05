@@ -434,7 +434,7 @@
     <instance objName="obj_Tree2" x="5664" y="64" name="inst_6CDCF84C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree2" x="5568" y="192" name="inst_96473AD7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree2" x="5440" y="288" name="inst_F32CBE91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie1_AI" x="416" y="416" name="inst_5108A8F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Zombie_AI" x="416" y="416" name="inst_5108A8F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Human2" x="1184" y="1856" name="inst_9EE4278A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tent1" x="5856" y="256" name="inst_25DD3CC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Campfire1" x="6112" y="224" name="inst_340E1765" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
@@ -465,13 +465,6 @@
     <instance objName="obj_Tree2" x="6560" y="448" name="inst_AA670F9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree2" x="6464" y="608" name="inst_BCF34657" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree2" x="6272" y="736" name="inst_F2FF25A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie6_AI" x="4224" y="224" name="inst_A7023B99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie6_AI" x="4448" y="1088" name="inst_5BF55394" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie3_AI" x="4160" y="1248" name="inst_D46E0D9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie3_AI" x="3840" y="64" name="inst_7C4B807D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie3_AI" x="5568" y="544" name="inst_8CFB6004" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie3_AI" x="2144" y="704" name="inst_2F58974D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie3_AI" x="2624" y="608" name="inst_E13E87AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_TentOutside" x="5856" y="327" name="inst_19E66AFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="850" y="252" name="inst_82604CA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Table" x="6400" y="-7648" name="inst_D332E8C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -2701,21 +2694,8 @@
     <instance objName="obj_BloodSpatter3" x="8064" y="1568" name="inst_94F9C924" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_BloodSpatter3" x="7968" y="1248" name="inst_710B636A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_BloodSpatter3" x="7648" y="1248" name="inst_FB8FE004" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie1_AI" x="7680" y="192" name="inst_BD5BB618" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie1_AI" x="8704" y="256" name="inst_8BB3EC4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie2_AI" x="8096" y="512" name="inst_6E122D61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie2_AI" x="8768" y="736" name="inst_6574E6A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie3_AI" x="7776" y="864" name="inst_E7EED9D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie3_AI" x="8864" y="1504" name="inst_891DFA81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie4_AI" x="7936" y="1248" name="inst_B1E5CC4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie4_AI" x="8736" y="832" name="inst_407CA059" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie5_AI" x="8544" y="512" name="inst_A5451F68" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie5_AI" x="8160" y="192" name="inst_2C103FB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie6_AI" x="8672" y="1120" name="inst_ED35E6B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie7_AI" x="8960" y="192" name="inst_D2F4242E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie7_AI" x="8576" y="1536" name="inst_C7F3546E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie8_AI" x="7776" y="1568" name="inst_6559BCA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie8_AI" x="7936" y="608" name="inst_F90CB75B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Zombie_AI" x="7680" y="192" name="inst_BD5BB618" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Zombie_AI" x="8704" y="256" name="inst_8BB3EC4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree2" x="9376" y="64" name="inst_E1884017" locked="0" code="" scaleX="2.7421875" scaleY="2.46081495285034" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree2" x="9856" y="128" name="inst_775AF539" locked="0" code="" scaleX="2.3671875" scaleY="2.26018810272217" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree2" x="9440" y="448" name="inst_4C35709F" locked="0" code="" scaleX="2.6171875" scaleY="2.66144204139709" colour="4294967295" rotation="0"/>
@@ -4403,10 +4383,6 @@
     <instance objName="obj_Tree2" x="4832" y="4128" name="inst_D48955FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree2" x="4992" y="4128" name="inst_9E08E456" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree2" x="5152" y="4096" name="inst_252FCAFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie5_AI" x="9600" y="4160" name="inst_E7FAA0ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie5_AI" x="9504" y="5344" name="inst_4AAF0BC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie8_AI" x="11072" y="4160" name="inst_EFC90725" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Zombie8_AI" x="10560" y="5088" name="inst_20D04A6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree2" x="3232" y="3456" name="inst_F0B5F5CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree2" x="3104" y="3360" name="inst_DA6E2042" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree2" x="2976" y="3360" name="inst_B02C5832" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
