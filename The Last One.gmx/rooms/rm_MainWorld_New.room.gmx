@@ -5609,6 +5609,14 @@
     <instance objName="obj_Zombie_AI" x="512" y="416" name="inst_83350C5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Zombie_AI" x="416" y="480" name="inst_10FF97C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Zombie_AI" x="544" y="480" name="inst_BFB4905C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_LockedHouse" x="1470" y="4209" name="inst_5A0E8FDE" locked="0" code="" scaleX="1.6875" scaleY="1.125" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_LockedHouse" x="1034" y="4210" name="inst_84B46B1E" locked="0" code="" scaleX="1.45161294937134" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_LockedHouse" x="555" y="4209" name="inst_D59BF1F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_LockedHouse" x="723" y="4985" name="inst_9C5588E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_LockedHouse" x="1096" y="4987" name="inst_D4746BEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_LockedHouse" x="1300" y="5008" name="inst_29AAE893" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_LockedHouse" x="1452" y="5009" name="inst_41721C2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_LockedHouse" x="1794" y="4990" name="inst_915B1AEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_Tileset_Random" x="448" y="192" w="32" h="32" xo="128" yo="32" id="10003811" name="inst_071ADE23" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
