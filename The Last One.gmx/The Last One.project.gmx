@@ -401,6 +401,8 @@
         <sprite>sprites\spr_AK47</sprite>
         <sprite>sprites\spr_LMG</sprite>
         <sprite>sprites\spr_Bullet</sprite>
+        <sprite>sprites\spr_CrowBar</sprite>
+        <sprite>sprites\spr_FireAxe</sprite>
       </sprites>
       <sprites name="Food &amp; Drinks">
         <sprite>sprites\spr_Bread</sprite>
@@ -413,6 +415,7 @@
       <sprites name="Misc">
         <sprite>sprites\spr_Battery</sprite>
         <sprite>sprites\spr_Grenade</sprite>
+        <sprite>sprites\spr_PrimedGrenade</sprite>
         <sprite>sprites\spr_LandMine</sprite>
       </sprites>
     </sprites>

@@ -505,7 +505,7 @@ if (invExtended = true){
         if (mouse_wheel_down()){invArraySelected[4] += 1;}
         
         //Max selection
-        if (invArraySelected[4] &gt; 2){invArraySelected[4] = 2;}
+        if (invArraySelected[4] &gt; 1){invArraySelected[4] = 1;}
         if (invArraySelected[4] &lt; 0){invArraySelected[4] = 0;}
     }
 }
@@ -662,8 +662,7 @@ if (invArraySelected[3] = 1){gunSelected = 2}
 if (invArraySelected[3] = 2){gunSelected = 3}
 if (invArraySelected[3] = 3){gunSelected = 4}
 
-//Check if gun
-
+//Check if gun is selected
 if (invSelected = 3){
     //Use guns
     if (mouse_check_button(mb_left)){
@@ -1023,12 +1022,15 @@ if (invExtended = true){
         draw_sprite_ext(spr_InvSlot,0,1888-32-128,540+256,2,2,0,c_white,1);
         draw_sprite_ext(spr_InvSlot,0,1888-32-256,540+256,2,2,0,c_white,1);
         
+        //Draw items
+        draw_sprite_ext(spr_CrowBar,0,1888-32-128,540+256,2,2,0,c_white,1);
+        
         //Draw feedback
         if (invArraySelected[4] = 0){
-            draw_sprite_ext(spr_InvFeedback2,0,1888-32-384,540+256,2,2,0,c_white,1);
+            draw_sprite_ext(spr_InvFeedback2,0,1888-32-256,540+256,2,2,0,c_white,1);
         }
         if (invArraySelected[4] = 1){
-            draw_sprite_ext(spr_InvFeedback2,0,1888-32-256,540+256,2,2,0,c_white,1);
+            draw_sprite_ext(spr_InvFeedback2,0,1888-32-128,540+256,2,2,0,c_white,1);
         }
     }
 }
