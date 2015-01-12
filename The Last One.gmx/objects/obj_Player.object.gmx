@@ -91,6 +91,7 @@ gun[1,6] = 24; //Total ammo
 gun[1,7] = 8; //Horizontal offset inpixels
 gun[1,8] = 7; //Vertical offset inpixels
 gun[1,9] = 30; //Damage the weapon does
+gun[5,1] = true; //If gun is locked
 
 //Shotgun
 gun[2,1] = 4;
@@ -102,6 +103,7 @@ gun[2,6] = 12;
 gun[2,7] = 12;
 gun[2,8] = 12;
 gun[2,9] = 101;
+gun[6,1] = true;
 
 //AK47
 gun[3,1] = 30;
@@ -113,6 +115,7 @@ gun[3,6] = 120;
 gun[3,7] = 12;
 gun[3,8] = 12;
 gun[3,9] = 20;
+gun[7,1] = true;
 
 //LMG
 gun[4,1] = 100;
@@ -124,6 +127,20 @@ gun[4,6] = 300;
 gun[4,7] = 12;
 gun[4,8] = 12;
 gun[4,9] = 10;
+gun[8,1] = true;
+
+//Melee
+hitRange = 32;
+hitDelay = 0;
+
+//FireAxe
+melee[1,1] = true; //Unlocked
+melee[1,2] = 100; //Damage
+melee[1,3] = 1; //Swing time in seconds
+
+melee[2,1] = true;
+melee[2,2] = 40;
+melee[2,3] = 0.5;
 </string>
           </argument>
         </arguments>
@@ -662,8 +679,8 @@ if (invArraySelected[3] = 1){gunSelected = 2}
 if (invArraySelected[3] = 2){gunSelected = 3}
 if (invArraySelected[3] = 3){gunSelected = 4}
 
-//Check if gun is selected
-if (invSelected = 3){
+//Check if gun is selected &amp; unlocked
+if (invSelected = 3) &amp;&amp; gun[gunSelected+4,1,] = true{
     //Use guns
     if (mouse_check_button(mb_left)){
         if (gun[gunSelected,5] &gt; 0) &amp;&amp; (bulletDelay = 0) &amp;&amp; (reloadTime = 0){
@@ -714,6 +731,27 @@ if (bulletDelay &gt; 0){
 //Reload time
 if (reloadTime &gt; 0){
     reloadTime -= 1;
+}
+
+//Melee
+//Select weapon
+if (invArraySelected[4] = 0){meleeSelected = 1;}
+if (invArraySelected[4] = 1){meleeSelected = 2;}
+
+if (mouse_check_button_pressed(mb_left)) &amp;&amp; (hitDelay = 0){
+    if (invSelected = 4) &amp;&amp; (melee[meleeSelected,1] = true){
+        if (distance_to_object(obj_Zombie_AI) &lt; hitRange){
+            with(obj_Zombie_AI){
+                if (distance_to_object(obj_Player) &lt; obj_Player.hitRange){
+                    zHealth -= obj_Player.melee[obj_Player.meleeSelected,2];
+                }
+            }
+            hitDelay = melee[meleeSelected,3] * room_speed;
+        }
+    }
+}
+if (hitDelay &gt; 0){
+    hitDelay -= 1;
 }
 </string>
           </argument>
@@ -876,6 +914,14 @@ if (invArraySelected[3] = 3){
 draw_set_font(fnt_ItemCount);
 draw_set_halign(fa_center);
 
+//Fifth array
+if (invArraySelected[4] = 0){
+    draw_sprite_ext(spr_FireAxe,0,1888-32,540+256,1.7,1.7,0,c_white,1);
+}
+if (invArraySelected[4] = 1){
+    draw_sprite_ext(spr_CrowBar,0,1888-32,540+256,2,2,0,c_white,1);
+}
+
 //Draw feedback for slots
 if (invSelected = 0){
     draw_sprite_ext(spr_InvFeedback,0,1888-32,540-256,2,2,0,c_white,1);
@@ -1024,6 +1070,7 @@ if (invExtended = true){
         
         //Draw items
         draw_sprite_ext(spr_CrowBar,0,1888-32-128,540+256,2,2,0,c_white,1);
+        draw_sprite_ext(spr_FireAxe,0,1888-32-256,540+256,1.7,1.7,0,c_white,1);
         
         //Draw feedback
         if (invArraySelected[4] = 0){
@@ -1050,7 +1097,7 @@ if (invExtended = true){
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
@@ -1078,7 +1125,7 @@ if (global.hide = false){
         canDraw = false;
     }
     
-    if (invSelected = 3) &amp;&amp; canDraw = true{
+    if (invSelected = 3) &amp;&amp; (canDraw = true) &amp;&amp; (gun[gunSelected+4,1] = true){
         if (invArraySelected[3] = 0){
                 draw_sprite_ext(spr_HandGun,direct,x+hOffSet,y+vOffSet,0.25,0.25,0,c_white,1);
         }
