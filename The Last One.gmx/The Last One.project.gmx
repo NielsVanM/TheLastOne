@@ -736,12 +736,8 @@
     </objects>
     <objects name="Game Mechanics">
       <objects name="Controllers">
-        <objects name="Rooms">
-          <object>objects\obj_Missions</object>
-          <object>objects\obj_Controller_TitleScreen</object>
-          <object>objects\obj_Controller_Home</object>
-        </objects>
         <object>objects\obj_Controller_PauseMenu</object>
+        <object>objects\obj_Controller_TitleScreen</object>
       </objects>
       <objects name="Triggers">
         <objects name="Own Home">
@@ -817,7 +813,6 @@
       </objects>
     </objects>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\rm_TitleScreen</room>
     <rooms name="Main Story">

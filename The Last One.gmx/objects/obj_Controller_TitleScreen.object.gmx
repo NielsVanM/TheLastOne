@@ -71,18 +71,17 @@ if (optionMenu = false &amp;&amp; survivalMenu = false)
     if (keyboard_check_pressed(vk_down)){mainSelected += 1;}
     
     //If mainSelected becomes to big select first option
-    if (mainSelected &gt; 4){mainSelected = 0;}
-    if (mainSelected &lt; 0){mainSelected = 4;}
+    if (mainSelected &gt; 3){mainSelected = 0;}
+    if (mainSelected &lt; 0){mainSelected = 3;}
     
     //If enter is pressed execute button
     if (keyboard_check_pressed(vk_enter) &amp;&amp; enterLock = 0)
     {
         enterLock = 2;
-        if (mainSelected = 0){room_goto(rm_Home_Upstairs);}
-        if (mainSelected = 1){/*Load game*/}
-        if (mainSelected = 2){survivalMenu = true;}
-        if (mainSelected = 3){optionMenu = true;}
-        if (mainSelected = 4){game_end();}
+        if (mainSelected = 0){/*Start new survival*/}
+        if (mainSelected = 1){/*Load Survival*/}
+        if (mainSelected = 2){optionMenu = true;}
+        if (mainSelected = 3){game_end();}
     }
 }
 
@@ -107,28 +106,6 @@ if (optionMenu = true)
         if (optionSelected = 3){script_execute(scr_SaveSettings); optionMenu = false;}
     }
 }
-
-//Survival menu
-if (survivalMenu = true)
-{
-    //User input
-    if (keyboard_check_pressed(vk_up)){survivalSelected -= 1;}
-    if (keyboard_check_pressed(vk_down)){survivalSelected += 1;}
-    
-    //If optionSelected becomes to big select first option
-    if (survivalSelected &gt; 2){survivalSelected = 0;}
-    if (survivalSelected &lt; 0){survivalSelected = 2;}
-    
-    //If enter is pressed execute button
-    if (keyboard_check_pressed(vk_enter) &amp;&amp; enterLock = 0)
-    {
-        enterLock = 2;
-        if (survivalSelected = 0){}
-        if (survivalSelected = 1){}
-        if (survivalSelected = 2){survivalMenu = false;}
-    }
-}
-
 
 //Resetting enterLock
 if (enterLock &gt; 0)
@@ -228,18 +205,16 @@ if (optionMenu = false &amp;&amp; survivalMenu = false)
 {
     //Draw menu text &amp; setting font
     draw_set_font(fnt_TitleScreen);
-    draw_text(960,405,'Start New Story');
-    draw_text(960,540,'Load Story');
-    draw_text(960,675,'Survival');
-    draw_text(960,810,'Options');
-    draw_text(960,945,'Exit');
+    draw_text(960,405,'Start New Survival');
+    draw_text(960,540,'Load Survival');
+    draw_text(960,675,'Options');
+    draw_text(960,810,'Exit');
     
     //Draw selection bar
-    if (mainSelected = 0){draw_text(960,405,'_______________')}
-    if (mainSelected = 1){draw_text(960,540,'__________')}
-    if (mainSelected = 2){draw_text(960,675,'________')}
-    if (mainSelected = 3){draw_text(960,810,'_______')}
-    if (mainSelected = 4){draw_text(960,945,'____')}
+    if (mainSelected = 0){draw_text(960,405,'__________________')}
+    if (mainSelected = 1){draw_text(960,540,'_____________')}
+    if (mainSelected = 2){draw_text(960,675,'______')}
+    if (mainSelected = 3){draw_text(960,810,'____')}
 }
 
 //Option Menu
@@ -257,21 +232,6 @@ if (optionMenu = true)
     if (optionSelected = 1){draw_text(960,675,'_________')}
     if (optionSelected = 2){draw_text(960,810,'_____________')}
     if (optionSelected = 3){draw_text(960,945,'____')}
-}
-
-//Surival menu
-if (survivalMenu = true)
-{
-    //Draw menu text &amp; setting font
-    draw_set_font(fnt_TitleScreen);
-    draw_text(960,540,'New Survial');
-    draw_text(960,675,'Load Survival');
-    draw_text(960,810,'Back');
-    
-    //Draw selection bar
-    if (survivalSelected = 0){draw_text(960,540,'____________')}
-    if (survivalSelected = 1){draw_text(960,675,'_____________')}
-    if (survivalSelected = 2){draw_text(960,810,'____')}
 }
 </string>
           </argument>
