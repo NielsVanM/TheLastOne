@@ -751,7 +751,6 @@
           <object>objects\obj_Trigger_LabOutside</object>
           <object>objects\obj_Trigger_SecretLabOutside</object>
         </objects>
-        <object>objects\obj_Trigger_LockedHouse</object>
         <objects name="Normal House">
           <object>objects\obj_Trigger_NormalHouse1Outside</object>
           <object>objects\obj_Trigger_NormalHouse2Outside</object>
@@ -765,10 +764,7 @@
           <object>objects\obj_Trigger_World2_2</object>
           <object>objects\obj_Trigger_World2_3</object>
         </objects>
-      </objects>
-      <objects name="Room Fading">
-        <object>objects\obj_Room_FadeIn</object>
-        <object>objects\obj_Room_FadeOut</object>
+        <object>objects\obj_Trigger_LockedHouse</object>
       </objects>
       <objects name="Lighting">
         <object>objects\obj_LightMaster</object>

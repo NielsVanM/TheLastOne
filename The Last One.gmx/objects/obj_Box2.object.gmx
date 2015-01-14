@@ -25,8 +25,91 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Depth Correction
+            <string>///Depth Correction &amp; variables
 depth = y * -1;
+lootTimer = 0;
+looted = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Generating loot
+if (distance_to_object(obj_Player) &lt; 32) &amp;&amp; (looted = false){
+    if (keyboard_check_pressed(vk_space)){
+        //Random loot
+        loot = choose(1,2,3,4);
+        if (loot = 1){
+            obj_Player.invAmount[1,1] += 1; //Add empty bottle
+            obj_Player.invAmount[2,2] += 1; //Add bread
+        }
+        if (loot = 2){
+            obj_Player.invAmount[2,4] += 2; //Add appple
+        }
+        if (loot = 3){
+            
+        }
+        if (loot = 4){
+            
+        }
+        
+        //Set loot respawn delay
+        lootTimer = 4 * 60 * room_speed;
+        looted = true
+    }
+}
+
+if (lootTimer &gt; 0){
+    lootTimer -= 1;
+    if (lootTimer = 1){
+        looted = false;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Draw sprite &amp; text
+draw_self();
+draw_set_font(fnt_Instructions);
+if (distance_to_object(obj_Player) &lt; 32) &amp;&amp; looted = false{
+    draw_text(x,y-30,'Loot Box')
+}
 </string>
           </argument>
         </arguments>

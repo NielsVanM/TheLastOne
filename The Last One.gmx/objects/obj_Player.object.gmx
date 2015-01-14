@@ -71,10 +71,10 @@ invAmount[0,1] = 0;
 invAmount[0,2] = 0;
 invAmount[0,3] = 0;
 invAmount[0,4] = 0;
-invAmount[1,1] = 2;
+invAmount[1,1] = 0;
 invAmount[1,2] = 0;
-invAmount[2,1] = 50;
-invAmount[2,2] = 1;
+invAmount[2,1] = 0;
+invAmount[2,2] = 0;
 invAmount[2,3] = 0;
 
 //Guns
@@ -86,59 +86,60 @@ gun[1,1] = 12; //Max clip size
 gun[1,2] = 60; //Max ammo
 gun[1,3] = 0.5; //Bullet delay
 gun[1,4] = 1; //Reload time
-gun[1,5] = 12; //Ammo in magazine
-gun[1,6] = 24; //Total ammo
+gun[1,5] = 0; //Ammo in magazine
+gun[1,6] = 0; //Total ammo
 gun[1,7] = 8; //Horizontal offset inpixels
 gun[1,8] = 7; //Vertical offset inpixels
 gun[1,9] = 30; //Damage the weapon does
-gun[5,1] = true; //If gun is locked
+gun[5,1] = false; //If gun is unlocked
 
 //Shotgun
 gun[2,1] = 4;
 gun[2,2] = 12;
 gun[2,3] = 0.7;
 gun[2,4] = 3;
-gun[2,5] = 4;
-gun[2,6] = 12;
+gun[2,5] = 0;
+gun[2,6] = 0;
 gun[2,7] = 12;
 gun[2,8] = 12;
 gun[2,9] = 101;
-gun[6,1] = true;
+gun[6,1] = false;
 
 //AK47
 gun[3,1] = 30;
 gun[3,2] = 120;
 gun[3,3] = 0.1;
 gun[3,4] = 1;
-gun[3,5] = 30;
-gun[3,6] = 120;
+gun[3,5] = 0;
+gun[3,6] = 0;
 gun[3,7] = 12;
 gun[3,8] = 12;
 gun[3,9] = 20;
-gun[7,1] = true;
+gun[7,1] = false;
 
 //LMG
 gun[4,1] = 100;
 gun[4,2] = 300;
 gun[4,3] = 0.05;
 gun[4,4] = 5;
-gun[4,5] = 100;
-gun[4,6] = 300;
+gun[4,5] = 0;
+gun[4,6] = 0;
 gun[4,7] = 12;
 gun[4,8] = 12;
 gun[4,9] = 10;
-gun[8,1] = true;
+gun[8,1] = false;
 
 //Melee
 hitRange = 32;
 hitDelay = 0;
 
 //FireAxe
-melee[1,1] = true; //Unlocked
+melee[1,1] = false; //Unlocked
 melee[1,2] = 100; //Damage
 melee[1,3] = 1; //Swing time in seconds
 
-melee[2,1] = true;
+//Crowbar
+melee[2,1] = false;
 melee[2,2] = 40;
 melee[2,3] = 0.5;
 </string>
@@ -565,16 +566,13 @@ if (keyboard_check_pressed(ord('E'))){
         //Battery
         if (invArraySelected[2] = 2) &amp;&amp; (invAmount[2,3] &gt; 0){
             global.flashLightBattery += 100;
+            invAmount[2,3] -= 1;
         }
     }
 }
 if (mouse_check_button_pressed(mb_left)){
     //Misc items
     if (invSelected = 2){
-        //Battery
-        if (invArraySelected[2] = 2) &amp;&amp; (invAmount[2,3] &gt; 0){
-            global.flashLightBattery += 100;
-        }
         //Grenade
         if (invArraySelected[2] = 0) &amp;&amp; (invAmount[2,1] &gt; 0){
             invAmount[2,1] -= 1;
@@ -680,7 +678,7 @@ if (invArraySelected[3] = 2){gunSelected = 3}
 if (invArraySelected[3] = 3){gunSelected = 4}
 
 //Check if gun is selected &amp; unlocked
-if (invSelected = 3) &amp;&amp; gun[gunSelected+4,1,] = true{
+if (invSelected = 3) &amp;&amp; gun[gunSelected+4,1,] = false{
     //Use guns
     if (mouse_check_button(mb_left)){
         if (gun[gunSelected,5] &gt; 0) &amp;&amp; (bulletDelay = 0) &amp;&amp; (reloadTime = 0){

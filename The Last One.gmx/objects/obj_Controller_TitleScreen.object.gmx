@@ -78,7 +78,7 @@ if (optionMenu = false &amp;&amp; survivalMenu = false)
     if (keyboard_check_pressed(vk_enter) &amp;&amp; enterLock = 0)
     {
         enterLock = 2;
-        if (mainSelected = 0){/*Start new survival*/}
+        if (mainSelected = 0){room_goto(rm_MainWorld_New);}
         if (mainSelected = 1){/*Load Survival*/}
         if (mainSelected = 2){optionMenu = true;}
         if (mainSelected = 3){game_end();}
