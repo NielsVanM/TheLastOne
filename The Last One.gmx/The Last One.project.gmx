@@ -802,7 +802,22 @@
         <object>objects\obj_LandMine</object>
       </objects>
     </objects>
+    <objects name="StoryLine">
+      <objects name="Day 1">
+        <object>objects\obj_StoryHandler</object>
+        <object>objects\obj_Story_Day1</object>
+        <object>objects\obj_Story_Day2</object>
+        <object>objects\obj_Story_Day3</object>
+        <object>objects\obj_Story_Day4</object>
+        <object>objects\obj_Story_Day5</object>
+        <object>objects\obj_Story_Day6</object>
+        <object>objects\obj_Story_Day7</object>
+        <object>objects\obj_Story_Day8</object>
+        <object>objects\obj_Story_Day9</object>
+      </objects>
+    </objects>
   </objects>
+  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\rm_TitleScreen</room>
     <rooms name="Main Story">
