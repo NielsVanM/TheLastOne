@@ -7,7 +7,7 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>14</bbox_left>
+  <bbox_left>11</bbox_left>
   <bbox_right>68</bbox_right>
   <bbox_top>12</bbox_top>
   <bbox_bottom>60</bbox_bottom>
@@ -21,5 +21,6 @@
   <height>80</height>
   <frames>
     <frame index="0">images\spr_FireAxe_0.png</frame>
+    <frame index="1">images\spr_FireAxe_1.png</frame>
   </frames>
 </sprite>

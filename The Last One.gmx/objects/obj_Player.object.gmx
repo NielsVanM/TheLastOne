@@ -134,14 +134,18 @@ hitRange = 32;
 hitDelay = 0;
 
 //FireAxe
-melee[1,1] = false; //Unlocked
+melee[1,1] = true; //Unlocked
 melee[1,2] = 100; //Damage
 melee[1,3] = 1; //Swing time in seconds
+melee[1,4] = 0;
+melee[1,5] = 0;
 
 //Crowbar
-melee[2,1] = false;
+melee[2,1] = true;
 melee[2,2] = 40;
 melee[2,3] = 0.5;
+melee[1,4] = 0;
+melee[1,5] = 0;
 </string>
           </argument>
         </arguments>
@@ -678,7 +682,7 @@ if (invArraySelected[3] = 2){gunSelected = 3}
 if (invArraySelected[3] = 3){gunSelected = 4}
 
 //Check if gun is selected &amp; unlocked
-if (invSelected = 3) &amp;&amp; gun[gunSelected+4,1,] = false{
+if (invSelected = 3) &amp;&amp; gun[gunSelected+4,1,] = true{
     //Use guns
     if (mouse_check_button(mb_left)){
         if (gun[gunSelected,5] &gt; 0) &amp;&amp; (bulletDelay = 0) &amp;&amp; (reloadTime = 0){
@@ -1135,6 +1139,26 @@ if (global.hide = false){
         }
         if (invArraySelected[3] = 3){
                 draw_sprite_ext(spr_LMG,direct,x+hOffSet,y+vOffSet,0.25,0.25,0,c_white,1);
+        }
+    }
+    
+    //Set offset
+    if (global.faceDirection = 0){
+        hOffset = melee[meleeSelected,4];
+        vOffSet = melee[meleeSelected,5];
+    }
+    if (global.faceDirection = 180){
+        hOffSet = -melee[meleeSelected,4];
+        vOffSet = melee[meleeSelected,5];
+    }
+    
+    //Draw melee
+    if (invSelected = 4) &amp;&amp; (canDraw = true) &amp;&amp; (melee[meleeSelected,1] = true){
+        if (invArraySelected[4] = 0){
+            draw_sprite_ext(spr_FireAxe,direct,x+hOffSet,y+vOffSet,0.5,0.5,0,c_white,1);
+        }        
+        if (invArraySelected[4] = 1){
+            draw_sprite_ext(spr_CrowBar,direct,x+hOffSet,y+OffSet,0.5,0.5,0,c_white,1);
         }
     }
 }
