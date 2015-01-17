@@ -775,6 +775,7 @@
       </objects>
       <object>objects\obj_Collision</object>
       <object>objects\obj_MasterController</object>
+      <object>objects\obj_ZombieSpawnHandler</object>
     </objects>
     <objects name="Items">
       <objects name="Weaponary">
