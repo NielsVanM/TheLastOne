@@ -166,7 +166,7 @@ if (global.music = true &amp;&amp; !sound_isplaying(snd_Music_TitleScreen))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Load settings
+            <string>///Load settings &amp; start music
 script_execute(scr_LoadSettings);
 </string>
           </argument>

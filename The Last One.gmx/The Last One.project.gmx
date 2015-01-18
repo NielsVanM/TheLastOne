@@ -9,7 +9,10 @@
       <sound>sound\snd_Music_TitleScreen</sound>
     </sounds>
     <sounds name="Sounds">
-      <sound>sound\snd_USPShot</sound>
+      <sound>sound\snd_Handgun_Fire</sound>
+      <sound>sound\snd_Shotgun_Fire</sound>
+      <sound>sound\snd_AK47_Fire</sound>
+      <sound>sound\snd_MachineGun_Fire</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
