@@ -787,8 +787,26 @@
           <object>objects\obj_Trigger_SecretLabOutside</object>
         </objects>
         <objects name="Normal House">
-          <object>objects\obj_Trigger_NormalHouse1Outside</object>
-          <object>objects\obj_Trigger_NormalHouse2Outside</object>
+          <objects name="World 1">
+            <object>objects\obj_Trigger_NormalHouse1Outside</object>
+            <object>objects\obj_Trigger_NormalHouse2Outside</object>
+            <objects name="Dark City">
+              <object>objects\obj_Trigger_NH_DarkCity1</object>
+              <object>objects\obj_Trigger_NH_DarkCity2</object>
+            </objects>
+            <objects name="YP City">
+              <object>objects\obj_Trigger_NH_YPCity1</object>
+              <object>objects\obj_Trigger_NH_YPCity2</object>
+              <object>objects\obj_Trigger_NH_YPCity3</object>
+            </objects>
+          </objects>
+          <objects name="World 2">
+            <objects name="A1">
+              <object>objects\obj_Trigger_NH_A1_1</object>
+              <object>objects\obj_Trigger_NH_A1_2</object>
+              <object>objects\obj_Trigger_NH_A1_3</object>
+            </objects>
+          </objects>
         </objects>
         <objects name="Crewhouse">
           <object>objects\obj_Trigger_CrewHouseOutside</object>
@@ -863,8 +881,26 @@
           <room>rooms\rm_SecretLab</room>
         </rooms>
         <rooms name="Normal House">
-          <room>rooms\rm_Normal_House1</room>
-          <room>rooms\rm_Normal_House2</room>
+          <rooms name="World 1">
+            <room>rooms\rm_Normal_House1</room>
+            <room>rooms\rm_Normal_House2</room>
+            <rooms name="Dark City">
+              <room>rooms\rm_NormalHouse_DarkCity1</room>
+              <room>rooms\rm_NormalHouse_DarkCity2</room>
+            </rooms>
+            <rooms name="YP City">
+              <room>rooms\rm_NormalHouse_YPCity1</room>
+              <room>rooms\rm_NormalHouse_YPCity2</room>
+              <room>rooms\rm_NormalHouse_YPCity3</room>
+            </rooms>
+          </rooms>
+          <rooms name="World 2">
+            <rooms name="A1">
+              <room>rooms\rm_NormalHouse_A1_1</room>
+              <room>rooms\rm_NormalHouse_A1_2</room>
+              <room>rooms\rm_NormalHouse_A1_3</room>
+            </rooms>
+          </rooms>
         </rooms>
         <rooms name="Crew House">
           <room>rooms\rm_CrewHouse</room>

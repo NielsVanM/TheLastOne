@@ -65,9 +65,9 @@
     <instance objName="obj_Painting1" x="674" y="243" name="inst_C260F4D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Painting2" x="354" y="240" name="inst_8D574F86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Doormat" x="449" y="559" name="inst_92AD43A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Trigger_NormalHouse2Outside" x="465" y="575" name="inst_941BD33D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_AmmoBox" x="287" y="559" name="inst_4E693937" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Box2" x="562" y="279" name="inst_A25F5F35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_AmmoBox" x="287" y="559" name="inst_4E693937" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_NormalHouse2Outside" x="465" y="575" name="inst_748A4709" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_TileSet_Floor" x="640" y="544" w="32" h="32" xo="192" yo="64" id="10004666" name="inst_BFC9CD90" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

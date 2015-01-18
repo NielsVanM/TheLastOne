@@ -68,7 +68,7 @@
     <instance objName="obj_Closet2" x="397" y="448" name="inst_CE6F8061" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Closet2" x="563" y="463" name="inst_ED70E089" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Closet2" x="563" y="513" name="inst_FAAAF185" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Trigger_NormalHouse1Outside" x="494" y="607" name="inst_277A9191" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_AmmoBox_Small2" x="270" y="419" name="inst_1CACE9DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="256" y="320" name="inst_49F608CC" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="544" y="384" name="inst_D689B136" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="224" y="224" name="inst_EDB9D69C" locked="0" code="" scaleX="1" scaleY="12" colour="4294967295" rotation="0"/>
@@ -78,7 +78,7 @@
     <instance objName="obj_TV" x="637" y="261" name="inst_52303946" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Couch_Back" x="640" y="384" name="inst_C9E0133E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_AmmoBox" x="288" y="288" name="inst_A13B8AD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_AmmoBox_Small2" x="270" y="419" name="inst_1CACE9DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_NH_YPCity1" x="494" y="605" name="inst_F2BED6C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_TileSet_Floor" x="416" y="352" w="32" h="32" xo="224" yo="96" id="10003278" name="inst_1962103B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
