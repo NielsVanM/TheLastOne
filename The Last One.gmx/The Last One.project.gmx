@@ -779,9 +779,11 @@
         <object>objects\obj_CampFireLight</object>
         <object>objects\obj_NightVision</object>
       </objects>
-      <object>objects\obj_Collision</object>
+      <objects name="Zombie Spawning">
+        <object>objects\obj_ZombieSpawnHandler</object>
+      </objects>
       <object>objects\obj_MasterController</object>
-      <object>objects\obj_ZombieSpawnHandler</object>
+      <object>objects\obj_Collision</object>
     </objects>
     <objects name="Items">
       <objects name="Weaponary">
@@ -819,7 +821,6 @@
   <rooms name="rooms">
     <room>rooms\rm_TitleScreen</room>
     <rooms name="Main Story">
-      <room>rooms\rm_MainWorld</room>
       <room>rooms\rm_MainWorld_New</room>
       <room>rooms\rm_MainWorld_2</room>
       <room>rooms\rm_Tent</room>

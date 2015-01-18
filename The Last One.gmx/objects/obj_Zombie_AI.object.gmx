@@ -25,8 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Variables
+            <string>///Variables
 tag = choose(1,2,3,4,5,6,7,8);
+despawnRange = 700;
+zHealth = 100;
 
 //Wandering around
 isWalking = false;
@@ -341,6 +343,21 @@ if (instance_exists(obj_Player)){
 //Changing x and y
 x += hSpeed;
 y += vSpeed;
+
+//Zombie death
+if (zHealth &lt;= 0){
+    instance_create(x,y,obj_ZombieBlood);
+    obj_ZombieSpawnHandler.zombieAmount -= 1;
+}
+if (keyboard_check_pressed(ord('V'))){instance_destroy();}
+/*
+//Despawn zombies
+if (instance_exists(obj_Player)){
+    if (distance_to_object(obj_Player) &gt; despawnRange){
+        obj_ZombieSpawnHandler.zombieAmount -= 1;
+        instance_destroy();
+    }
+}
 
 </string>
           </argument>
