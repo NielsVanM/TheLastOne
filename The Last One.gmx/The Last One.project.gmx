@@ -9,10 +9,24 @@
       <sound>sound\snd_Music_TitleScreen</sound>
     </sounds>
     <sounds name="Sounds">
-      <sound>sound\snd_Handgun_Fire</sound>
-      <sound>sound\snd_Shotgun_Fire</sound>
-      <sound>sound\snd_AK47_Fire</sound>
-      <sound>sound\snd_MachineGun_Fire</sound>
+      <sounds name="Weapons">
+        <sounds name="Handgun">
+          <sound>sound\snd_Handgun_Fire</sound>
+          <sound>sound\snd_Handgun_Reload</sound>
+        </sounds>
+        <sounds name="Shotgun">
+          <sound>sound\snd_Shotgun_Fire</sound>
+          <sound>sound\snd_Shotgun_Reload</sound>
+        </sounds>
+        <sounds name="AK47">
+          <sound>sound\snd_AK47_Fire</sound>
+          <sound>sound\snd_AK47_Reload</sound>
+        </sounds>
+        <sounds name="Machinegun">
+          <sound>sound\snd_MachineGun_Fire</sound>
+          <sound>sound\snd_MachineGun_Reload</sound>
+        </sounds>
+      </sounds>
     </sounds>
   </sounds>
   <sprites name="sprites">

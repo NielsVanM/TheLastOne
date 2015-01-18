@@ -26,8 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Variables
-
-spawnRate = 30;
+spawnRate = 2000; //Higher = less chance of spawning
 maxSpawned = 20;
 spawnXMarge = 0;
 spawnYMarge = 0;
@@ -68,25 +67,16 @@ x = obj_Player.x;
 y = obj_Player.y;
 
 zombieAmount = instance_number(obj_Zombie_AI);
-spawnChange = irandom(spawnRate);
-if (spawnChange = 1){
-    canSpawn = true;
-}
+canSpawn = irandom(spawnRate);
 
 //Calculate spawnmarge
 spawnXSide = choose(-1,1);
 spawnYSide = choose(-1,1);
-spawnXMarge = random(maxRange);
-spawnYMarge = random(maxRange);
-while(spawnXMarge &lt; minRange){
-    spawnXMarge = random(maxRange);
-}
-while(spawnYMarge &lt; minRange){
-    spawnYMarge = random(maxRange);
-}
+spawnXMarge = irandom(maxRange);
+spawnYMarge = irandom(maxRange);
 
 //Checking circumstances
-if(zombieAmount &lt; maxSpawned) &amp;&amp; (canSpawn = true){
+if(zombieAmount &lt; maxSpawned) &amp;&amp; (canSpawn = 1){
     if (place_meeting(spawnXMarge,spawnYMarge,obj_Collision)){
         while(place_meeting(spawnXMarge,spawnYMarge,obj_Collision)){
             while(spawnXMarge &lt; minRange){
@@ -98,7 +88,7 @@ if(zombieAmount &lt; maxSpawned) &amp;&amp; (canSpawn = true){
         }
     } else {
         instance_create(x + (spawnXMarge * spawnXSide),y + (spawnYMarge * spawnYSide),obj_Zombie_AI);
-        canSpawn = false;
+        canSpawn = 0;
     }
 }
 </string>

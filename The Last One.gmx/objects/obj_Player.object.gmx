@@ -85,25 +85,29 @@ reloadTime = 0;
 gun[1,1] = 12; //Max clip size
 gun[1,2] = 60; //Max ammo
 gun[1,3] = 0.5; //Bullet delay
-gun[1,4] = 1; //Reload time
+gun[1,4] = 2.2; //Reload time
 gun[1,5] = 0; //Ammo in magazine
 gun[1,6] = 0; //Total ammo
 gun[1,7] = 8; //Horizontal offset inpixels
 gun[1,8] = 7; //Vertical offset inpixels
 gun[1,9] = 30; //Damage the weapon does
-gun[5,1] = false; //If gun is unlocked
+gun[5,1] = true; //If gun is unlocked
+gun[5,2] = snd_Handgun_Fire; // Gun Shoot sound
+gun[5,3] = snd_Handgun_Reload; //Reload sound
 
 //Shotgun
 gun[2,1] = 4;
 gun[2,2] = 12;
-gun[2,3] = 0.7;
+gun[2,3] = 1.7;
 gun[2,4] = 3;
 gun[2,5] = 0;
 gun[2,6] = 0;
 gun[2,7] = 12;
 gun[2,8] = 12;
 gun[2,9] = 101;
-gun[6,1] = false;
+gun[6,1] = true;
+gun[6,2] = snd_Shotgun_Fire;
+gun[6,3] = snd_Shotgun_Reload;
 
 //AK47
 gun[3,1] = 30;
@@ -115,7 +119,9 @@ gun[3,6] = 0;
 gun[3,7] = 12;
 gun[3,8] = 12;
 gun[3,9] = 20;
-gun[7,1] = false;
+gun[7,1] = true;
+gun[7,2] = snd_AK47_Fire;
+gun[7,3] = snd_AK47_Reload;
 
 //LMG
 gun[4,1] = 100;
@@ -127,7 +133,9 @@ gun[4,6] = 0;
 gun[4,7] = 12;
 gun[4,8] = 12;
 gun[4,9] = 10;
-gun[8,1] = false;
+gun[8,1] = true;
+gun[8,2] = snd_MachineGun_Fire;
+gun[8,3] = snd_MachineGun_Reload;
 
 //Melee
 hitRange = 32;
@@ -687,6 +695,7 @@ if (invSelected = 3) &amp;&amp; gun[gunSelected+4,1,] = true{
     if (mouse_check_button(mb_left)){
         if (gun[gunSelected,5] &gt; 0) &amp;&amp; (bulletDelay = 0) &amp;&amp; (reloadTime = 0){
             action_create_object_motion(obj_Bullet,x,y,10,global.faceDirection);
+            audio_play_sound(gun[gunSelected+4,2],1,false);
             bulletDelay = gun[gunSelected,3] * room_speed;
             gun[gunSelected,5] -= 1;
         }
@@ -697,11 +706,13 @@ if (invSelected = 3) &amp;&amp; gun[gunSelected+4,1,] = true{
         if (gun[gunSelected,6] &gt;= gun[gunSelected,1]){
             gun[gunSelected,5] += gun[gunSelected,1];
             gun[gunSelected,6] -= gun[gunSelected,1];
+            audio_play_sound(gun[gunSelected+4,3],1,false);
             reloadTime = gun[gunSelected,4] * room_speed;
         }else{
             if (gun[gunSelected,6] &lt; gun[gunSelected,1]){
                 gun[gunSelected,5] = gun[gunSelected,6];
                 gun[gunSelected,6] = 0;
+                audio_play_sound(gun[gunSelected+4,3],1,false);
                 reloadTime = gun[gunSelected,4] * room_speed;
             }
         }
@@ -711,10 +722,12 @@ if (invSelected = 3) &amp;&amp; gun[gunSelected+4,1,] = true{
         if (gun[gunSelected,6] &gt;= transferAmount){
             gun[gunSelected,5] += transferAmount;
             gun[gunSelected,6] -= transferAmount;
+            audio_play_sound(gun[gunSelected+4,3],1,false);
             reloadTime = gun[gunSelected,4] * room_speed;
         }else if (gun[gunSelected,6] &lt; transferAmount){
             gun[gunSelected,5] += gun[gunSelected,6];
             gun[gunSelected,6] = 0;
+            audio_play_sound(gun[gunSelected+4,3],1,false);
             reloadTime = gun[gunSelected,4] * room_speed;
         }
     }
@@ -1161,39 +1174,6 @@ if (global.hide = false){
             draw_sprite_ext(spr_CrowBar,direct,x+hOffSet,y+OffSet,0.5,0.5,0,c_white,1);
         }
     }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///DEBUG DELETE WHEN COMPILING
-draw_set_font(fnt_Instructions);
-if (global.debug = true){
-    draw_text(x,y+10,x);
-    draw_text(x,y+20,y);
-    draw_text(x,y+30,pWater);
-    draw_text(x,y+40,pFood);
-    draw_text(x,y+50,pHealth);
-    draw_text(x,y+60,pStamina);
-    draw_text(x,y+70,global.flashLightBattery);
-    draw_text(x,y+80,global.size);
-    draw_text(x,y+90,reloadTime);
 }
 </string>
           </argument>
