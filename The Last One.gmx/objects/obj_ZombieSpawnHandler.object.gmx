@@ -76,7 +76,6 @@ if (spawnChange = 1){
 //Calculate spawnmarge
 spawnXSide = choose(-1,1);
 spawnYSide = choose(-1,1);
-<<<<<<< HEAD
 spawnXMarge = random(maxRange);
 spawnYMarge = random(maxRange);
 while(spawnXMarge &lt; minRange){
@@ -85,10 +84,6 @@ while(spawnXMarge &lt; minRange){
 while(spawnYMarge &lt; minRange){
     spawnYMarge = random(maxRange);
 }
-=======
-spawnXMarge = irandom(maxRange);
-spawnYMarge = irandom(maxRange);
->>>>>>> origin/master
 
 //Checking circumstances
 if(zombieAmount &lt; maxSpawned) &amp;&amp; (canSpawn = true){
