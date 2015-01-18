@@ -63,9 +63,6 @@
     <instance objName="obj_Stool" x="608" y="480" name="inst_668E77FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Stool" x="704" y="480" name="inst_602D5B52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Table" x="672" y="480" name="inst_5D9C50AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="752" y="436" name="inst_5B8D054A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="593" y="431" name="inst_6D85FD17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="753" y="493" name="inst_75D61FA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Doormat2" x="462" y="750" name="inst_72E1F2E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="256" y="352" name="inst_80DDDED9" locked="0" code="" scaleX="16" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="544" y="544" name="inst_69457BE4" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>

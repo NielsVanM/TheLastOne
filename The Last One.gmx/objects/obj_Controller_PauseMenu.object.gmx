@@ -28,8 +28,8 @@
             <string>///Variables
 global.pause = false;
 pauseSelected = 0;
-optionSelected = 0;
-optionMenu = false;
+helpSelected = 0;
+helpMenu = false;
 enterLock = 0;
 </string>
           </argument>
@@ -56,14 +56,12 @@ enterLock = 0;
             <string>///Pause menu code
 
 //Toggle menu
-if (keyboard_check_pressed(vk_escape))
-{
-    if (global.pause = false){global.pause = true;}else{global.pause = false; optionMenu = false;}
+if (keyboard_check_pressed(vk_escape)){
+    if (global.pause = false){global.pause = true;}else{global.pause = false; helpMenu = false;}
 }
 
 //Acutual menu
-if (global.pause = true) &amp;&amp; (optionMenu = false)
-{
+if (global.pause = true) &amp;&amp; (helpMenu = false) &amp;&amp; (enterLock = 0){
     //User input
     if (keyboard_check_pressed(vk_up)){pauseSelected -= 1;}
     if (keyboard_check_pressed(vk_down)){pauseSelected += 1;}
@@ -73,38 +71,23 @@ if (global.pause = true) &amp;&amp; (optionMenu = false)
     if (pauseSelected &lt; 0){pauseSelected = 2;}
     
     //If enter is pressed execute button
-    if (keyboard_check_pressed(vk_enter) &amp;&amp; enterLock = 0)
-    {
+    if (keyboard_check_pressed(vk_enter) &amp;&amp; enterLock = 0){
         if (pauseSelected = 0){global.pause = false;}
-        if (pauseSelected = 1){optionMenu = true; enterlock = 2;}
+        if (pauseSelected = 1){helpMenu = true; enterlock = 2;}
         if (pauseSelected = 2){game_end();}
     }
 }
 
-//Option menu
-if (optionMenu = true)
-{
-    //User input
-    if (keyboard_check_pressed(vk_up)){optionSelected -= 1;}
-    if (keyboard_check_pressed(vk_down)){optionSelected += 1;}
-    
-    //If optionSelected becomes to big select first option
-    if (optionSelected &gt; 3){optionSelected = 0;}
-    if (optionSelected &lt; 0){optionSelected = 3;}
-    
-    //If enter is pressed execute button
-    if (keyboard_check_pressed(vk_enter) &amp;&amp; enterLock = 0)
-    {
-        if (optionSelected = 0){if (global.music = true){global.music = false;}else{global.music = true;}}
-        if (optionSelected = 1){if (global.sound = true){global.sound = false;}else{global.sound = true;}}
-        if (optionSelected = 2){if (global.particles = true){global.particles = false;}else{global.particles = true;}}
-        if (optionSelected = 3){script_execute(scr_SaveSettings); optionMenu = false; enterLock = 2;}
+//Help Menu
+if (helpMenu = true){
+    if (keyboard_check_pressed(vk_enter)) &amp;&amp; (enterlock = 0){
+        helpMenu = false;
+        enterlock = 2;
     }
 }
 
 //Enterlock
-if (enterLock &gt; 0){enterLock -= 1;}
-if (enterLock &lt; 0){enterLock = 0;}
+if (enterLock != 0){enterLock -= 1;}
 </string>
           </argument>
         </arguments>
@@ -140,37 +123,39 @@ if (global.pause = true)
     draw_set_font(fnt_GameTitle);
     draw_text(960,230,'Game Paused');
     
-    //Check if optionMenu isn't selected
-    if (optionMenu = false)
+    //Check if helpMenu isn't selected
+    if (helpMenu = false)
     {
-        //Draw options
+        //Draw helps
         draw_set_font(fnt_TitleScreen);
         draw_text(960,405,'Resume Game');
-        draw_text(960,540,'Options');
+        draw_text(960,540,'Help');
         draw_text(960,675,'Exit');
         
         //Draw feedback
         if (pauseSelected = 0){draw_text(960,405,'___________');}
-        if (pauseSelected = 1){draw_text(960,540,'_______');}
+        if (pauseSelected = 1){draw_text(960,540,'____');}
         if (pauseSelected = 2){draw_text(960,675,'____');}
     }
 }
 
 //Option menu
-if (optionMenu = true)
+if (helpMenu = true)
 {
     //Setting font &amp; drawing text
     draw_set_font(fnt_TitleScreen);
-    if (global.music = true){draw_text(960,540,'Music: On');}else{draw_text(960,540,'Music: Off');}
-    if (global.sound = true){draw_text(960,675,'Sound: On');}else{draw_text(960,675,'Sound: Off');}
-    if (global.particles = true){draw_text(960,810,'Particles: On');}else{draw_text(960,810,'Particles: Off');}
-    draw_text(960,945,'Back')
-    
-    //Draw selection bar
-    if (optionSelected = 0){draw_text(960,540,'_________')}
-    if (optionSelected = 1){draw_text(960,675,'_________')}
-    if (optionSelected = 2){draw_text(960,810,'_____________')}
-    if (optionSelected = 3){draw_text(960,945,'____')}
+    draw_text(960,400,'Use WASD to move around');
+    draw_text(960,460,'Expand your inventory using TAB');
+    draw_text(960,520,'Scroll through your inventory using SCROLL WHEEL');
+    draw_text(960,580,'Use items out of your inventory with E');
+    draw_text(960,640,'Use weapons with your LEFT MOUSE BUTTON');
+    draw_text(960,700,'Reload using R');
+    draw_text(960,760,'Toggle flashlight with L');
+    draw_text(960,820,'Pickup items and world interaction with SPACE');
+    draw_text(960,880,'Use SHIFT to sprint')
+    draw_text(960,940,'Use CONTROL to sneak')
+    draw_text(960,1000,'Back')
+    draw_text(960,1000,'____')
 }
 </string>
           </argument>

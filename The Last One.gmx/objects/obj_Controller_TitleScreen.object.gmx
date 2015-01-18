@@ -149,6 +149,30 @@ if (global.music = true &amp;&amp; !sound_isplaying(snd_Music_TitleScreen))
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Stop music
+audio_sound_gain(snd_Music_TitleScreen,0,1000);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="4">
       <action>
         <libid>1</libid>
@@ -168,6 +192,8 @@ if (global.music = true &amp;&amp; !sound_isplaying(snd_Music_TitleScreen))
             <kind>1</kind>
             <string>///Load settings &amp; start music
 script_execute(scr_LoadSettings);
+
+audio_play_sound(snd_Music_TitleScreen,1,true);
 </string>
           </argument>
         </arguments>

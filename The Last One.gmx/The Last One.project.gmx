@@ -27,6 +27,10 @@
           <sound>sound\snd_MachineGun_Reload</sound>
         </sounds>
       </sounds>
+      <sounds name="Ambient">
+        <sound>sound\snd_Ambient_Local</sound>
+        <sound>sound\snd_Ambient_Fire</sound>
+      </sounds>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -768,6 +772,7 @@
       <objects name="Controllers">
         <object>objects\obj_Controller_PauseMenu</object>
         <object>objects\obj_Controller_TitleScreen</object>
+        <object>objects\obj_WorldController</object>
       </objects>
       <objects name="Triggers">
         <objects name="Own Home">

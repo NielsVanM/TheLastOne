@@ -52,7 +52,7 @@ pFoodDecay = 0.3; //Per Second
 pStaminaDecay = 26 / room_speed; //Per second
 pWaterDamage = 1; //Per Second
 pFoodDamage = 1; //Per Second
-
+pRegen = 1;
 testHealth = 100;
 
 //Inventory System
@@ -420,6 +420,11 @@ if (global.pause = true){exit;}
 //Hurt by water and food
 if (pWater = 0){pHealth -= pWaterDamage / room_speed;}
 if (pFood = 0){pHealth -= pFoodDamage / room_speed;}
+
+//Regeneration
+if (pHealth &lt; 100){
+    pHealth += pRegen / room_speed;
+}
 
 //Death
 if (pHealth &lt;= 0){/*Death animation*/}

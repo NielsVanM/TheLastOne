@@ -76,7 +76,7 @@ spawnXMarge = irandom(maxRange);
 spawnYMarge = irandom(maxRange);
 
 //Checking circumstances
-if (room = rm_MainWorld_New){
+if (room = rm_MainWorld_New) || (room = rm_MainWorld_2){
     if(zombieAmount &lt; maxSpawned) &amp;&amp; (canSpawn = 1){
         if (place_meeting(spawnXMarge,spawnYMarge,obj_Collision)){
             while(place_meeting(spawnXMarge,spawnYMarge,obj_Collision)){
