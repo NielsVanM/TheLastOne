@@ -161,6 +161,14 @@
           <sprite>sprites\spr_SurgeryTable2</sprite>
           <sprite>sprites\spr_SurgeryTable3</sprite>
         </sprites>
+        <sprites name="Hospital Items">
+          <sprite>sprites\spr_Hospital_Bed</sprite>
+          <sprite>sprites\spr_BloodSack1</sprite>
+          <sprite>sprites\spr_BloodSack2</sprite>
+          <sprite>sprites\spr_BloodSack3</sprite>
+          <sprite>sprites\spr_BloodSack4</sprite>
+          <sprite>sprites\spr_HiddenBed</sprite>
+        </sprites>
       </sprites>
       <sprites name="Outdoors">
         <sprites name="Houses">
@@ -592,6 +600,14 @@
         </objects>
         <objects name="Misc">
           <object>objects\obj_Clock</object>
+        </objects>
+        <objects name="Hospital Items">
+          <object>objects\obj_Hospital_Bed</object>
+          <object>objects\obj_BloodSack1</object>
+          <object>objects\obj_BloodSack2</object>
+          <object>objects\obj_BloodSack3</object>
+          <object>objects\obj_BloodSack4</object>
+          <object>objects\obj_HiddenBed</object>
         </objects>
       </objects>
       <objects name="Outdoors">

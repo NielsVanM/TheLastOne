@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Variables
+            <string>///Variables
 tag = choose(1,2,3,4,5,6,7,8);
 
 //Wandering around
@@ -38,7 +38,7 @@ moveLength = 128;
 //Tracking player
 lockedOn = false;
 trackRange = 200;
-hitRange = 2;
+hitRange = 16;
 toggleCoor = 0;
 hurtTick = 0;
 hurtPlayer = false;
@@ -51,6 +51,8 @@ vSpeed = 0;
 image_speed = 0;
 imgSpeed = 0.1;
 
+//Zombie health
+zHealth = 100;
 </string>
           </argument>
         </arguments>
@@ -74,6 +76,7 @@ imgSpeed = 0.1;
           <argument>
             <kind>1</kind>
             <string>///Zombie AI
+
 if (instance_exists(obj_Controller_PauseMenu))
 {
     if (global.pause = true){image_speed = 0; exit;}
@@ -232,13 +235,6 @@ if (instance_exists(obj_Player)){
     if (lockedOn = true){ 
         //Moving on to player
         if (distance_to_object(obj_Player) &lt; trackRange &amp;&amp; distance_to_object(obj_Player) &gt; hitRange){
-            //Lockedon
-            lockedOn = true
-            
-            //Stopping zombie
-            hSpeed = 0;
-            vSpeed = 0;
-            image_speed = 0;
             
             //Moving to player
             if (!collision_line(x,y,obj_Player.x,obj_Player.y,obj_Collision,false,true)){
@@ -341,6 +337,12 @@ if (instance_exists(obj_Player)){
 //Changing x and y
 x += hSpeed;
 y += vSpeed;
+
+//Zombie death
+if (zHealth &lt;= 0){
+    instance_create(x,y,obj_ZombieBlood);
+    instance_destroy();
+}
 
 </string>
           </argument>

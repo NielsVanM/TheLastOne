@@ -52,6 +52,44 @@
   </views>
   <instances>
     <instance objName="obj_Doormat" x="300" y="558" name="inst_24B94896" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_HiddenBed" x="448" y="32" name="inst_A12D30EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Hospital_Bed" x="576" y="32" name="inst_3C4E47F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_HiddenBed" x="192" y="32" name="inst_5F6F9441" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_BloodSack4" x="544" y="0" name="inst_80890B4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Closet2" x="480" y="384" name="inst_B2A901EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Closet2" x="512" y="384" name="inst_D91B8B39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Closet2" x="192" y="384" name="inst_440E8A6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Closet2" x="224" y="384" name="inst_99320451" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Closet2" x="256" y="384" name="inst_46FEE805" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Closet2" x="288" y="384" name="inst_441CBB86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Closet2" x="320" y="384" name="inst_E602A77C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Closet2" x="352" y="384" name="inst_D530F069" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Closet2" x="384" y="384" name="inst_E92A923B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Closet2" x="416" y="384" name="inst_1F6355D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Closet2" x="448" y="384" name="inst_23B88251" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Closet2" x="160" y="384" name="inst_40E298FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Closet2" x="128" y="384" name="inst_A97B7091" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Closet2" x="96" y="384" name="inst_C0DA7C65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Closet2" x="544" y="384" name="inst_F185807C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cemetery_Wall3" x="437" y="464" name="inst_1AAABB53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cemetery_Wall3" x="390" y="464" name="inst_14D00357" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cemetery_Wall3" x="203" y="464" name="inst_8BE63CAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cemetery_Wall3" x="264" y="464" name="inst_E0F89A44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cemetery_Wall3" x="328" y="464" name="inst_B42D1DCF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cemetery_Wall2" x="472" y="448" name="inst_11043396" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cemetery_Wall2" x="163" y="448" name="inst_AE617076" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_BloodSack3" x="32" y="0" name="inst_E83AC567" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_BloodSack3" x="160" y="0" name="inst_C5D8A75B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_BloodSack4" x="416" y="0" name="inst_285C3F4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_HiddenBed" x="64" y="32" name="inst_5CCB68F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="-32" y="0" name="inst_63F63F9B" locked="0" code="" scaleX="1" scaleY="18" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="0" y="576" name="inst_5294BF93" locked="0" code="" scaleX="20" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="640" y="0" name="inst_54425D3F" locked="0" code="" scaleX="1" scaleY="18" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="0" y="-32" name="inst_A77E7C98" locked="0" code="" scaleX="20" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="0" y="192" name="inst_D51A3CC3" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="384" y="192" name="inst_727FC632" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="0" y="256" name="inst_5064E79F" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="384" y="256" name="inst_FA0DC37E" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_TileSet_Floor" x="192" y="288" w="32" h="32" xo="64" yo="0" id="10020535" name="inst_2C886F37" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

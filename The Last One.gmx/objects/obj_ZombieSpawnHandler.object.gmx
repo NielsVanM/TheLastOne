@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Variables
-spawnRate = 3000;
+spawnRate = 60;
 maxSpawned = 5;
 spawnXMarge = 0;
 spawnYMarge = 0;
@@ -70,13 +70,13 @@ draw_text(obj_Player.x,obj_Player.y,canSpawn)
 //Calculate spawnmarge
 spawnXSide = choose(-1,1);
 spawnYSide = choose(-1,1);
-spawnXMarge = irandom(maxRange);
-spawnYMarge = irandom(maxRange);
+spawnXMarge = random(maxRange);
+spawnYMarge = random(maxRange);
 while(spawnXMarge &lt; minRange){
-    spawnXMarge = irandom(maxRange);
+    spawnXMarge = random(maxRange);
 }
 while(spawnYMarge &lt; minRange){
-    spawnYMarge = irandom(maxRange);
+    spawnYMarge = random(maxRange);
 }
 
 //Checking circumstances
