@@ -182,6 +182,7 @@
           <sprite>sprites\spr_House11</sprite>
           <sprite>sprites\spr_House12</sprite>
           <sprite>sprites\spr_Hospital</sprite>
+          <sprite>sprites\spr_House13</sprite>
         </sprites>
         <sprites name="Cars">
           <sprite>sprites\spr_Car1_Broken</sprite>
@@ -611,6 +612,7 @@
           </objects>
           <object>objects\obj_House12</object>
           <object>objects\obj_Hospital</object>
+          <object>objects\obj_House13</object>
         </objects>
         <objects name="Cars">
           <object>objects\obj_Car1_Broken</object>
