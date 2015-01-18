@@ -152,8 +152,8 @@ melee[1,5] = 0;
 melee[2,1] = true;
 melee[2,2] = 40;
 melee[2,3] = 0.5;
-melee[1,4] = 0;
-melee[1,5] = 0;
+melee[2,4] = 0;
+melee[2,5] = 0;
 </string>
           </argument>
         </arguments>
@@ -695,7 +695,9 @@ if (invSelected = 3) &amp;&amp; gun[gunSelected+4,1,] = true{
     if (mouse_check_button(mb_left)){
         if (gun[gunSelected,5] &gt; 0) &amp;&amp; (bulletDelay = 0) &amp;&amp; (reloadTime = 0){
             action_create_object_motion(obj_Bullet,x,y,10,global.faceDirection);
-            audio_play_sound(gun[gunSelected+4,2],1,false);
+            if (global.sound = true){
+                audio_play_sound(gun[gunSelected+4,2],1,false);
+            }
             bulletDelay = gun[gunSelected,3] * room_speed;
             gun[gunSelected,5] -= 1;
         }
@@ -706,13 +708,17 @@ if (invSelected = 3) &amp;&amp; gun[gunSelected+4,1,] = true{
         if (gun[gunSelected,6] &gt;= gun[gunSelected,1]){
             gun[gunSelected,5] += gun[gunSelected,1];
             gun[gunSelected,6] -= gun[gunSelected,1];
-            audio_play_sound(gun[gunSelected+4,3],1,false);
+            if (global.sound = true){
+                audio_play_sound(gun[gunSelected+4,3],1,false);
+            }
             reloadTime = gun[gunSelected,4] * room_speed;
         }else{
             if (gun[gunSelected,6] &lt; gun[gunSelected,1]){
                 gun[gunSelected,5] = gun[gunSelected,6];
                 gun[gunSelected,6] = 0;
-                audio_play_sound(gun[gunSelected+4,3],1,false);
+                if (global.sound = true){
+                    audio_play_sound(gun[gunSelected+4,3],1,false);
+                }
                 reloadTime = gun[gunSelected,4] * room_speed;
             }
         }
@@ -722,12 +728,16 @@ if (invSelected = 3) &amp;&amp; gun[gunSelected+4,1,] = true{
         if (gun[gunSelected,6] &gt;= transferAmount){
             gun[gunSelected,5] += transferAmount;
             gun[gunSelected,6] -= transferAmount;
-            audio_play_sound(gun[gunSelected+4,3],1,false);
+            if (global.sound = true){
+                audio_play_sound(gun[gunSelected+4,3],1,false);
+            }
             reloadTime = gun[gunSelected,4] * room_speed;
         }else if (gun[gunSelected,6] &lt; transferAmount){
             gun[gunSelected,5] += gun[gunSelected,6];
             gun[gunSelected,6] = 0;
-            audio_play_sound(gun[gunSelected+4,3],1,false);
+            if (global.sound = true){
+                audio_play_sound(gun[gunSelected+4,3],1,false);
+            }
             reloadTime = gun[gunSelected,4] * room_speed;
         }
     }
@@ -1171,7 +1181,7 @@ if (global.hide = false){
             draw_sprite_ext(spr_FireAxe,direct,x+hOffSet,y+vOffSet,0.5,0.5,0,c_white,1);
         }        
         if (invArraySelected[4] = 1){
-            draw_sprite_ext(spr_CrowBar,direct,x+hOffSet,y+OffSet,0.5,0.5,0,c_white,1);
+            draw_sprite_ext(spr_CrowBar,direct,x+hOffSet,y+vOffSet,0.5,0.5,0,c_white,1);
         }
     }
 }

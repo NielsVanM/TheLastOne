@@ -729,10 +729,10 @@
     <instance objName="obj_Barrier7" x="1824" y="1024" name="inst_41D26CDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Barrier7" x="1824" y="1056" name="inst_BCE640E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Barrier7" x="1824" y="1120" name="inst_83109D75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Soldier1" x="1856" y="1088" name="inst_635DCFDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Soldier1" x="2048" y="928" name="inst_CC956F9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Soldier1" x="2048" y="928" name="inst_912F3403" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Soldier1" x="2048" y="1088" name="inst_D6AA9AB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="1856" y="1088" name="inst_635DCFDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="2048" y="928" name="inst_CC956F9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="2048" y="928" name="inst_912F3403" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="2048" y="1088" name="inst_D6AA9AB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Barrier1" x="1792" y="1088" name="inst_2F7F45E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Barrier1" x="1792" y="1024" name="inst_617D38C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Barrier1" x="1792" y="960" name="inst_5E90054B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -76,45 +76,23 @@ spawnXMarge = irandom(maxRange);
 spawnYMarge = irandom(maxRange);
 
 //Checking circumstances
-if(zombieAmount &lt; maxSpawned) &amp;&amp; (canSpawn = 1){
-    if (place_meeting(spawnXMarge,spawnYMarge,obj_Collision)){
-        while(place_meeting(spawnXMarge,spawnYMarge,obj_Collision)){
-            while(spawnXMarge &lt; minRange){
-                spawnXMarge = irandom(maxRange);
+if (room = rm_MainWorld_New){
+    if(zombieAmount &lt; maxSpawned) &amp;&amp; (canSpawn = 1){
+        if (place_meeting(spawnXMarge,spawnYMarge,obj_Collision)){
+            while(place_meeting(spawnXMarge,spawnYMarge,obj_Collision)){
+                while(spawnXMarge &lt; minRange){
+                    spawnXMarge = irandom(maxRange);
+                }
+                while(spawnYMarge &lt; minRange){
+                    spawnYMarge = irandom(maxRange);
+                }
             }
-            while(spawnYMarge &lt; minRange){
-                spawnYMarge = irandom(maxRange);
-            }
+        } else {
+            instance_create(x + (spawnXMarge * spawnXSide),y + (spawnYMarge * spawnYSide),obj_Zombie_AI);
+            canSpawn = 0;
         }
-    } else {
-        instance_create(x + (spawnXMarge * spawnXSide),y + (spawnYMarge * spawnYSide),obj_Zombie_AI);
-        canSpawn = 0;
     }
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_text(100,100,zombieAmount);
-draw_text(100,150,maxSpawned);
 </string>
           </argument>
         </arguments>

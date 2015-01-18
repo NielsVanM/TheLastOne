@@ -751,15 +751,6 @@
       <objects name="Living">
         <objects name="Human">
           <object>objects\obj_Player</object>
-          <object>objects\obj_Human</object>
-          <object>objects\obj_Human2</object>
-          <object>objects\obj_Human3</object>
-        </objects>
-        <objects name="Soldier">
-          <object>objects\obj_Soldier1</object>
-          <object>objects\obj_Soldier2</object>
-          <object>objects\obj_Soldier3</object>
-          <object>objects\obj_Soldier4</object>
         </objects>
       </objects>
       <objects name="Dead">
