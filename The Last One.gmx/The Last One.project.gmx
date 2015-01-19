@@ -32,6 +32,12 @@
         <sound>sound\snd_Ambient_Fire</sound>
       </sounds>
     </sounds>
+    <sounds name="Zombies">
+      <sound>sound\snd_Zombie_Death</sound>
+      <sound>sound\snd_Zombie_Hurt</sound>
+      <sound>sound\snd_Zombie_Say1</sound>
+      <sound>sound\snd_Zombie_Say2</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Environment">

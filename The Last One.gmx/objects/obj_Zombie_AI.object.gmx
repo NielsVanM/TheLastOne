@@ -343,9 +343,15 @@ if (instance_exists(obj_Player)){
 x += hSpeed;
 y += vSpeed;
 
+//Random sound
+playSound = irandom(500);
+if (playSound = 1){audio_play_sound(snd_Zombie_Say1,1,false);}
+if (playSound = 50){audio_play_sound(snd_Zombie_Say2,1,false);}
+
 //Zombie death
 if (zHealth &lt;= 0){
     instance_create(x,y,obj_ZombieBlood);
+    audio_play_sound(snd_Zombie_Death,1,false);
     instance_destroy();
 }
 

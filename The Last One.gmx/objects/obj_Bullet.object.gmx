@@ -73,6 +73,7 @@ if (place_meeting(x,y,obj_Zombie_AI)){
     with(obj_Zombie_AI){
         if (distance_to_object(obj_Bullet) &lt; 2){
             zHealth -= (obj_Bullet.bulletDamage - obj_Bullet.hasTravelled);
+            audio_play_sound(snd_Zombie_Hurt,1,false);
         }
     }   
     instance_destroy();
