@@ -122,8 +122,7 @@ if (keyboard_check_pressed(ord('Q'))){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with(obj_Zombie_AI){instance_destroy();}
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>

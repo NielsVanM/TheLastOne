@@ -95,6 +95,7 @@ part_emitter_stream(CampFire,Wood,Fire0,5);
             <string>if (distance_to_object(obj_Player) &lt; 500){
     if (!audio_is_playing(snd_Ambient_Fire)){
         audio_play_sound(snd_Ambient_Fire,1,true);
+        audio_sound_gain(snd_Ambient_Fire,100,1);
     }
 } else {
     audio_stop_sound(snd_Ambient_Fire);
