@@ -827,6 +827,27 @@
               <object>objects\obj_Trigger_NH_A3_1</object>
               <object>objects\obj_Trigger_NH_A3_2</object>
               <object>objects\obj_Trigger_NH_A3_3</object>
+              <object>objects\obj_Trigger_NH_A3_4</object>
+              <object>objects\obj_Trigger_NH_A3_5</object>
+              <object>objects\obj_Trigger_NH_A3_6</object>
+            </objects>
+            <objects name="B2">
+              <object>objects\obj_Trigger_NH_B2_1</object>
+              <object>objects\obj_Trigger_NH_B2_2</object>
+              <object>objects\obj_Trigger_NH_B2_3</object>
+              <object>objects\obj_Trigger_NH_B2_4</object>
+              <object>objects\obj_Trigger_NH_B2_5</object>
+            </objects>
+            <objects name="C2">
+              <object>objects\obj_Trigger_NH_C2_1</object>
+              <object>objects\obj_Trigger_NH_C2_2</object>
+              <object>objects\obj_Trigger_NH_C2_3</object>
+            </objects>
+            <objects name="C3">
+              <object>objects\obj_Trigger_NH_C3_1</object>
+              <object>objects\obj_Trigger_NH_C3_2</object>
+              <object>objects\obj_Trigger_NH_C3_3</object>
+              <object>objects\obj_Trigger_NH_C3_4</object>
             </objects>
           </objects>
         </objects>
@@ -942,6 +963,24 @@
               <room>rooms\rm_NormalHouse_A3_4</room>
               <room>rooms\rm_NormalHouse_A3_5</room>
               <room>rooms\rm_NormalHouse_A3_6</room>
+            </rooms>
+            <rooms name="B2">
+              <room>rooms\rm_NormalHouse_B2_1</room>
+              <room>rooms\rm_NormalHouse_B2_2</room>
+              <room>rooms\rm_NormalHouse_B2_3</room>
+              <room>rooms\rm_NormalHouse_B2_4</room>
+              <room>rooms\rm_NormalHouse_B2_5</room>
+            </rooms>
+            <rooms name="C2">
+              <room>rooms\rm_NormalHouse_C2_1</room>
+              <room>rooms\rm_NormalHouse_C2_2</room>
+              <room>rooms\rm_NormalHouse_C2_3</room>
+            </rooms>
+            <rooms name="C3">
+              <room>rooms\rm_NormalHouse_C3_1</room>
+              <room>rooms\rm_NormalHouse_C3_2</room>
+              <room>rooms\rm_NormalHouse_C3_3</room>
+              <room>rooms\rm_NormalHouse_C3_4</room>
             </rooms>
           </rooms>
         </rooms>

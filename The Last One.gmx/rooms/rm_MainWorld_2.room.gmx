@@ -2523,8 +2523,8 @@
     <instance objName="obj_House13" x="2208" y="4064" name="inst_15A1FE26" locked="0" code="" scaleX="2.82608699798584" scaleY="2.82608699798584" colour="4294967295" rotation="0"/>
     <instance objName="obj_House12" x="1408" y="5248" name="inst_39B4E2B4" locked="0" code="" scaleX="2.09999990463257" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_Hospital" x="832" y="4544" name="inst_EF216DF5" locked="0" code="" scaleX="2.40476179122925" scaleY="2.6986300945282" colour="4294967295" rotation="0"/>
-    <instance objName="obj_House5_SecretLab" x="2304" y="5280" name="inst_5E2CF08C" locked="0" code="" scaleX="2.83823537826538" scaleY="2.73076915740967" colour="4294967295" rotation="0"/>
-    <instance objName="obj_House7" x="1440" y="5568" name="inst_93418817" locked="0" code="" scaleX="2.90000009536743" scaleY="2.72222232818604" colour="4294967295" rotation="0"/>
+    <instance objName="obj_House5_SecretLab" x="2304" y="5280" name="inst_5E2CF08C" locked="0" code="" scaleX="2.83999991416931" scaleY="2.73000001907349" colour="4294967295" rotation="0"/>
+    <instance objName="obj_House7" x="1440" y="5568" name="inst_93418817" locked="0" code="" scaleX="2.90000009536743" scaleY="2.72000002861023" colour="4294967295" rotation="0"/>
     <instance objName="obj_House4" x="384" y="4704" name="inst_F5E9C9C0" locked="0" code="" scaleX="2.33333325386047" scaleY="2.6266667842865" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree3" x="320" y="4512" name="inst_EAF1992A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree3" x="480" y="4288" name="inst_7BE6AAFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -3600,7 +3600,7 @@
     <instance objName="obj_House15" x="8448" y="2720" name="inst_8DBB031A" locked="0" code="" scaleX="2.5" scaleY="2.23636364936829" colour="4294967295" rotation="0"/>
     <instance objName="obj_House15" x="8864" y="2720" name="inst_3A384B5C" locked="0" code="" scaleX="2.25" scaleY="2.27272725105286" colour="4294967295" rotation="0"/>
     <instance objName="obj_House15" x="9696" y="2272" name="inst_F32FDF53" locked="0" code="" scaleX="2.5" scaleY="2.23636364936829" colour="4294967295" rotation="0"/>
-    <instance objName="obj_House15" x="9888" y="2784" name="inst_96AE3CA1" locked="0" code="" scaleX="2.5" scaleY="2.23636364936829" colour="4294967295" rotation="0"/>
+    <instance objName="obj_House15" x="9888" y="2784" name="inst_96AE3CA1" locked="0" code="" scaleX="2.5" scaleY="2.24000000953674" colour="4294967295" rotation="0"/>
     <instance objName="obj_House15" x="10624" y="2432" name="inst_D9BF436E" locked="0" code="" scaleX="2.5" scaleY="2.23636364936829" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree1" x="8128" y="3008" name="inst_D4087784" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree1" x="8224" y="3008" name="inst_B1930428" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -4112,7 +4112,7 @@
     <instance objName="obj_Trigger_LockedHouse" x="4383" y="2248" name="inst_52103E54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="4574" y="2246" name="inst_6C73D7C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="4767" y="2246" name="inst_176C619D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Trigger_LockedHouse" x="4963" y="2248" name="inst_1B395351" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_NH_B2_4" x="5726" y="2659" name="inst_93DB0F5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="5405" y="2242" name="inst_17178843" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="5567" y="2244" name="inst_FAF95286" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="5723" y="2241" name="inst_051323ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -4120,12 +4120,12 @@
     <instance objName="obj_Trigger_LockedHouse" x="6045" y="2242" name="inst_86881069" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="6046" y="2659" name="inst_C3C48175" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="5886" y="2657" name="inst_C224038F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Trigger_LockedHouse" x="5726" y="2658" name="inst_2DAF1EF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_NH_B2_3" x="4384" y="2661" name="inst_030913D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="5567" y="2657" name="inst_2E4F77EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="5406" y="2658" name="inst_B1CFBE17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="4957" y="2662" name="inst_E27D2620" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="4766" y="2660" name="inst_982789DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Trigger_LockedHouse" x="4384" y="2662" name="inst_81403B80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_NH_B2_2" x="5552" y="3009" name="inst_8CF5EBFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="4578" y="2661" name="inst_FED0BECF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="4332" y="3007" name="inst_C2BFBDCC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="4461" y="3005" name="inst_3BF00AD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -4151,7 +4151,7 @@
     <instance objName="obj_Trigger_LockedHouse" x="5938" y="3007" name="inst_01990AFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="5807" y="3008" name="inst_AAB279D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="5680" y="3008" name="inst_8A4A6129" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Trigger_LockedHouse" x="5553" y="3009" name="inst_DD9E5F09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_NH_B2_1" x="4590" y="3455" name="inst_8DDEBB84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="5427" y="3008" name="inst_864CBFC1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="5296" y="3008" name="inst_65634D8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_NH_A1_3" x="637" y="755" name="inst_777DF14A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -4169,30 +4169,30 @@
     <instance objName="obj_Trigger_NH_C1_2" x="11201" y="295" name="inst_D0A51A65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="10582" y="2487" name="inst_D90E560B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="9914" y="2196" name="inst_627DD72F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Trigger_LockedHouse" x="9658" y="2320" name="inst_487D3DAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Trigger_LockedHouse" x="9846" y="2833" name="inst_A63BFB0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_NH_C2_2" x="8407" y="2771" name="inst_553F77DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_NH_B2_5" x="4961" y="2245" name="inst_EA814262" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="8828" y="2771" name="inst_9DD39FBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Trigger_LockedHouse" x="8409" y="2772" name="inst_61FAAC4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_NH_C2_1" x="9850" y="2837" name="inst_47158194" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="8250" y="2196" name="inst_95D072F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="8735" y="2197" name="inst_5FFE518D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Trigger_LockedHouse" x="9696" y="5028" name="inst_AFCCD6B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_NH_C2_3" x="9656" y="2324" name="inst_485E7B19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="10167" y="5026" name="inst_F4F95D35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="11150" y="5040" name="inst_94CC03CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Trigger_LockedHouse" x="11588" y="5071" name="inst_C5AAF19F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_NH_C3_3" x="11181" y="4100" name="inst_FC182E4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="9614" y="4292" name="inst_C82D6BFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="10127" y="4306" name="inst_CEC989F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Trigger_LockedHouse" x="11181" y="4102" name="inst_E5BE1E56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Trigger_LockedHouse" x="10834" y="4134" name="inst_AEB6CC56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_NH_C3_2" x="10834" y="4134" name="inst_FB0AB918" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_NH_C3_1" x="9696" y="5029" name="inst_435B5011" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_NH_A3_2" x="1327" y="4626" name="inst_DE0B0DEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="1832" y="4180" name="inst_11272932" locked="0" code="" scaleX="1.70967745780945" scaleY="1.06451618671417" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_NH_A3_1" x="349" y="4789" name="inst_6345DEE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_Hospital_C1" x="10047" y="799" name="inst_14213713" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="618" y="5201" name="inst_0261B73C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Trigger_LockedHouse" x="431" y="5507" name="inst_9A51A9A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_NH_A3_4" x="1440" y="5654" name="inst_F390404D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="882" y="5505" name="inst_B93365E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Trigger_LockedHouse" x="1437" y="5654" name="inst_2634C3C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_NH_A3_3" x="2187" y="4141" name="inst_322BF103" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="1373" y="5317" name="inst_4E2F592A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Trigger_LockedHouse" x="2279" y="5368" name="inst_EB698062" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_NH_A3_5" x="433" y="5506" name="inst_EEC3FA4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree2" x="352" y="-672" name="inst_7BE5D324" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree2" x="704" y="-1152" name="inst_3D0D891E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree2" x="832" y="-1408" name="inst_77BAB958" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -4333,7 +4333,8 @@
     <instance objName="obj_Trigger_NH_B1_4" x="6719" y="1460" name="inst_F54B2761" locked="0" code="" scaleX="1.71875" scaleY="1.02999997138977" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="1473" y="324" name="inst_A50B8CD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_NH_C1_4" x="11161" y="689" name="inst_8E2426B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Trigger_NH_A3_3" x="2187" y="4141" name="inst_322BF103" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_NH_A3_6" x="2282" y="5366" name="inst_3B2C24F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trigger_NH_C3_4" x="11592" y="5071" name="inst_A8C8707E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_Tileset_Random" x="416" y="320" w="32" h="32" xo="0" yo="0" id="10019905" name="inst_A02E641D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
