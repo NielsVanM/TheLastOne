@@ -71,7 +71,7 @@ invAmount[0,1] = 0;
 invAmount[0,2] = 0;
 invAmount[0,3] = 0;
 invAmount[0,4] = 0;
-invAmount[1,1] = 0;
+invAmount[1,1] = 1;
 invAmount[1,2] = 0;
 invAmount[2,1] = 0;
 invAmount[2,2] = 0;
@@ -91,7 +91,7 @@ gun[1,6] = 0; //Total ammo
 gun[1,7] = 8; //Horizontal offset inpixels
 gun[1,8] = 7; //Vertical offset inpixels
 gun[1,9] = 30; //Damage the weapon does
-gun[5,1] = true; //If gun is unlocked
+gun[5,1] = false; //If gun is unlocked
 gun[5,2] = snd_Handgun_Fire; // Gun Shoot sound
 gun[5,3] = snd_Handgun_Reload; //Reload sound
 
@@ -105,7 +105,7 @@ gun[2,6] = 0;
 gun[2,7] = 8;
 gun[2,8] = 8;
 gun[2,9] = 101;
-gun[6,1] = true;
+gun[6,1] = false;
 gun[6,2] = snd_Shotgun_Fire;
 gun[6,3] = snd_Shotgun_Reload;
 
@@ -119,7 +119,7 @@ gun[3,6] = 0;
 gun[3,7] = 5;
 gun[3,8] = 8;
 gun[3,9] = 20;
-gun[7,1] = true;
+gun[7,1] = false;
 gun[7,2] = snd_AK47_Fire;
 gun[7,3] = snd_AK47_Reload;
 
@@ -133,7 +133,7 @@ gun[4,6] = 0;
 gun[4,7] = 5;
 gun[4,8] = 8;
 gun[4,9] = 15;
-gun[8,1] = true;
+gun[8,1] = false;
 gun[8,2] = snd_MachineGun_Fire;
 gun[8,3] = snd_MachineGun_Reload;
 
@@ -142,14 +142,14 @@ hitRange = 32;
 hitDelay = 0;
 
 //FireAxe
-melee[1,1] = true; //Unlocked
+melee[1,1] = false; //Unlocked
 melee[1,2] = 100; //Damage
 melee[1,3] = 1; //Swing time in seconds
 melee[1,4] = 10;
 melee[1,5] = 5;
 
 //Crowbar
-melee[2,1] = true;
+melee[2,1] = false;
 melee[2,2] = 40;
 melee[2,3] = 0.5;
 melee[2,4] = 5;

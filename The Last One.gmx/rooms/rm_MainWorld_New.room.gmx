@@ -4994,12 +4994,12 @@
     <instance objName="obj_Flower3" x="1216" y="4256" name="inst_1D81BEED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Flower3" x="1248" y="4256" name="inst_506421A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree1" x="416" y="4640" name="inst_A5A03586" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tree1" x="640" y="4512" name="inst_24E67724" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tree1" x="576" y="4672" name="inst_0675A1F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tree1" x="800" y="4640" name="inst_4EB8566D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Water2" x="6304" y="2496" name="inst_B27C6BC9" locked="0" code="" scaleX="2.32727265357971" scaleY="2.7428572177887" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Water2" x="4736" y="3104" name="inst_00F4CB06" locked="0" code="" scaleX="2.03636360168457" scaleY="2.28571438789368" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Water2" x="5024" y="480" name="inst_F327E04A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree1" x="1056" y="4544" name="inst_DF9CE159" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tree1" x="960" y="4736" name="inst_8FFDF773" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tree1" x="576" y="4736" name="inst_FF36B664" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Water2" x="10688" y="576" name="inst_E397721C" locked="0" code="" scaleX="1.74545454978943" scaleY="3.20000004768372" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Water2" x="9056" y="2688" name="inst_450C10DE" locked="0" code="" scaleX="1.74545454978943" scaleY="2.7428572177887" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree1" x="416" y="4896" name="inst_3D36659C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree1" x="1280" y="4576" name="inst_6C8EDCBF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree1" x="1632" y="4480" name="inst_19E74306" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -5257,6 +5257,9 @@
     <instance objName="obj_AmmoBox_Small2" x="11520" y="2944" name="inst_8346C54A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_NH_YPCity3" x="1177" y="5548" name="inst_E00B1EC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Box2" x="160" y="544" name="inst_430C36FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Water2" x="576" y="4544" name="inst_09655A34" locked="0" code="" scaleX="3.20000004768372" scaleY="2.7428572177887" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Water2" x="4160" y="5184" name="inst_3043AD5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Water2" x="8064" y="3552" name="inst_3D16E61D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_Tileset_Random" x="448" y="192" w="32" h="32" xo="128" yo="32" id="10003811" name="inst_071ADE23" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
