@@ -344,9 +344,10 @@ x += hSpeed;
 y += vSpeed;
 
 //Random sound
-playSound = irandom(500);
+playSound = irandom(1000);
 if (playSound = 1){audio_play_sound(snd_Zombie_Say1,1,false);}
 if (playSound = 50){audio_play_sound(snd_Zombie_Say2,1,false);}
+if (playSound = 200){audio_play_sound(snd_Zombie_Say3,1,false);}
 
 //Zombie death
 if (zHealth &lt;= 0){

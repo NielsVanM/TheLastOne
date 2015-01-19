@@ -37,6 +37,7 @@
       <sound>sound\snd_Zombie_Hurt</sound>
       <sound>sound\snd_Zombie_Say1</sound>
       <sound>sound\snd_Zombie_Say2</sound>
+      <sound>sound\snd_Zombie_Say3</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">

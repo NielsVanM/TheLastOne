@@ -68,10 +68,10 @@ invArraySelected[3] = 0;
 invArraySelected[4] = 0;
 
 invAmount[0,1] = 0; 
-invAmount[0,2] = 0;
-invAmount[0,3] = 0;
-invAmount[0,4] = 0;
-invAmount[1,1] = 1;
+invAmount[0,2] = 2;
+invAmount[0,3] = 1;
+invAmount[0,4] = 1;
+invAmount[1,1] = 2;
 invAmount[1,2] = 0;
 invAmount[2,1] = 0;
 invAmount[2,2] = 0;
