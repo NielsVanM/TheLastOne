@@ -55,7 +55,6 @@ surface_set_target(global.light);
 draw_set_color(c_ltgray);
 draw_rectangle(0,0,view_wview[0],view_hview[0],false);
 surface_reset_target();
-
 depth = -100000;
 </string>
           </argument>
@@ -80,8 +79,7 @@ depth = -100000;
           <argument>
             <kind>1</kind>
             <string>///Draw surface
-if (global.dark = true)
-{
+if (global.dark = true){
     draw_set_blend_mode(bm_subtract);
     draw_surface(global.light,view_xview[0],view_yview[0]);
     draw_set_blend_mode(bm_normal);

@@ -79,7 +79,7 @@ if (optionMenu = false &amp;&amp; survivalMenu = false)
     {
         enterLock = 2;
         if (mainSelected = 0){room_goto(rm_MainWorld_New);}
-        if (mainSelected = 1){/*Load Survival*/}
+        if (mainSelected = 1){room_goto(rm_MainWorld_New);}
         if (mainSelected = 2){optionMenu = true;}
         if (mainSelected = 3){game_end();}
     }

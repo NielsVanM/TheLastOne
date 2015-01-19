@@ -102,8 +102,8 @@ gun[2,3] = 1.7;
 gun[2,4] = 3;
 gun[2,5] = 0;
 gun[2,6] = 0;
-gun[2,7] = 12;
-gun[2,8] = 12;
+gun[2,7] = 8;
+gun[2,8] = 8;
 gun[2,9] = 101;
 gun[6,1] = true;
 gun[6,2] = snd_Shotgun_Fire;
@@ -116,8 +116,8 @@ gun[3,3] = 0.1;
 gun[3,4] = 1;
 gun[3,5] = 0;
 gun[3,6] = 0;
-gun[3,7] = 12;
-gun[3,8] = 12;
+gun[3,7] = 5;
+gun[3,8] = 8;
 gun[3,9] = 20;
 gun[7,1] = true;
 gun[7,2] = snd_AK47_Fire;
@@ -127,11 +127,11 @@ gun[7,3] = snd_AK47_Reload;
 gun[4,1] = 100;
 gun[4,2] = 300;
 gun[4,3] = 0.05;
-gun[4,4] = 5;
+gun[4,4] = 4.5;
 gun[4,5] = 0;
 gun[4,6] = 0;
-gun[4,7] = 12;
-gun[4,8] = 12;
+gun[4,7] = 5;
+gun[4,8] = 8;
 gun[4,9] = 15;
 gun[8,1] = true;
 gun[8,2] = snd_MachineGun_Fire;
@@ -145,15 +145,15 @@ hitDelay = 0;
 melee[1,1] = true; //Unlocked
 melee[1,2] = 100; //Damage
 melee[1,3] = 1; //Swing time in seconds
-melee[1,4] = 0;
-melee[1,5] = 0;
+melee[1,4] = 10;
+melee[1,5] = 5;
 
 //Crowbar
 melee[2,1] = true;
 melee[2,2] = 40;
 melee[2,3] = 0.5;
-melee[2,4] = 0;
-melee[2,5] = 0;
+melee[2,4] = 5;
+melee[2,5] = 5;
 </string>
           </argument>
         </arguments>
@@ -422,12 +422,15 @@ if (pWater = 0){pHealth -= pWaterDamage / room_speed;}
 if (pFood = 0){pHealth -= pFoodDamage / room_speed;}
 
 //Regeneration
-if (pHealth &lt; 100){
+if (pHealth &lt; 100) &amp;&amp; (pFood &gt; 25) &amp;&amp; (pWater &gt; 25){
     pHealth += pRegen / room_speed;
 }
 
 //Death
-if (pHealth &lt;= 0){/*Death animation*/}
+if (pHealth &lt;= 0){
+    file_delete('saveGame.ini');
+    game_restart();
+}
 
 
 //Water
@@ -453,9 +456,6 @@ if (keyboard_check(vk_shift) &amp;&amp; pStamina &gt; 0 &amp;&amp; isMoving = tr
 else if (!keyboard_check(vk_shift)){
     pStamina += 3 / room_speed;
 }
-
-////////DEBUG
-if (global.debug = true){pStamina = 100;}
 </string>
           </argument>
         </arguments>
@@ -699,7 +699,7 @@ if (invSelected = 3) &amp;&amp; gun[gunSelected+4,1,] = true{
     //Use guns
     if (mouse_check_button(mb_left)){
         if (gun[gunSelected,5] &gt; 0) &amp;&amp; (bulletDelay = 0) &amp;&amp; (reloadTime = 0){
-            action_create_object_motion(obj_Bullet,x,y,10,global.faceDirection);
+            action_create_object_motion(obj_Bullet,x,y+7,10,global.faceDirection);
             if (global.sound = true){
                 audio_play_sound(gun[gunSelected+4,2],1,false);
             }

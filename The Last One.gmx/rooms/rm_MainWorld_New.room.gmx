@@ -51,6 +51,9 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
+    <instance objName="obj_Player" x="448" y="384" name="inst_9CAFCC01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_MasterController" x="-96" y="-64" name="inst_0BC07488" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WorldController" x="0" y="-128" name="inst_22A8ACDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_House1" x="461" y="182" name="inst_5B3F5733" locked="0" code="" scaleX="1.74000000953674" scaleY="1.73000001907349" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="-32" y="0" name="inst_1D25EC07" locked="0" code="" scaleX="1" scaleY="64" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="0" y="-32" name="inst_F56F8282" locked="0" code="" scaleX="84" scaleY="1" colour="4294967295" rotation="0"/>
@@ -2820,7 +2823,6 @@
     <instance objName="obj_Tree2" x="10976" y="1152" name="inst_0304B6C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree2" x="10944" y="896" name="inst_239F2AD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_NH_YPCity1" x="1034" y="4208" name="inst_FDB4D01B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Player" x="448" y="384" name="inst_9CAFCC01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_WoodenBench" x="480" y="5056" name="inst_A762844E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree2" x="10464" y="1792" name="inst_F90270BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree2" x="10272" y="1920" name="inst_673D13E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -5236,7 +5238,6 @@
     <instance objName="obj_Trigger_NH_YPCity2" x="723" y="4984" name="inst_D7DAF4B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="1393" y="5547" name="inst_60A92C1B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_LockedHouse" x="1829" y="5543" name="inst_D3656E18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_MasterController" x="-96" y="-64" name="inst_0BC07488" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_AmmoBox_Small2" x="5792" y="3008" name="inst_FFFD3916" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_AmmoBox_Small2" x="5984" y="160" name="inst_22EB5423" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_AmmoBox_Small2" x="4192" y="5184" name="inst_2CC0A9D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -5255,7 +5256,7 @@
     <instance objName="obj_AmmoBox_Small1" x="8736" y="3040" name="inst_1543E58C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_AmmoBox_Small2" x="11520" y="2944" name="inst_8346C54A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_NH_YPCity3" x="1177" y="5548" name="inst_E00B1EC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_WorldController" x="0" y="-128" name="inst_22A8ACDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Box2" x="160" y="544" name="inst_430C36FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_Tileset_Random" x="448" y="192" w="32" h="32" xo="128" yo="32" id="10003811" name="inst_071ADE23" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

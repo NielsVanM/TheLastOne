@@ -753,9 +753,7 @@
     </objects>
     <objects name="Entities">
       <objects name="Living">
-        <objects name="Human">
-          <object>objects\obj_Player</object>
-        </objects>
+        <object>objects\obj_Player</object>
       </objects>
       <objects name="Dead">
         <objects name="With Path">

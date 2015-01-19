@@ -67,14 +67,15 @@ if (global.pause = true) &amp;&amp; (helpMenu = false) &amp;&amp; (enterLock = 0
     if (keyboard_check_pressed(vk_down)){pauseSelected += 1;}
     
     //If pauseSelected becomes to big select first option
-    if (pauseSelected &gt; 2){pauseSelected = 0;}
-    if (pauseSelected &lt; 0){pauseSelected = 2;}
+    if (pauseSelected &gt; 3){pauseSelected = 0;}
+    if (pauseSelected &lt; 0){pauseSelected = 3;}
     
     //If enter is pressed execute button
     if (keyboard_check_pressed(vk_enter) &amp;&amp; enterLock = 0){
         if (pauseSelected = 0){global.pause = false;}
         if (pauseSelected = 1){helpMenu = true; enterlock = 2;}
-        if (pauseSelected = 2){game_end();}
+        if (pauseSelected = 2){script_execute(scr_SaveGame);}
+        if (pauseSelected = 3){game_end();}
     }
 }
 
@@ -130,12 +131,14 @@ if (global.pause = true)
         draw_set_font(fnt_TitleScreen);
         draw_text(960,405,'Resume Game');
         draw_text(960,540,'Help');
-        draw_text(960,675,'Exit');
+        draw_text(960,675,'Save Game');
+        draw_text(960,810,'Exit');
         
         //Draw feedback
         if (pauseSelected = 0){draw_text(960,405,'___________');}
         if (pauseSelected = 1){draw_text(960,540,'____');}
-        if (pauseSelected = 2){draw_text(960,675,'____');}
+        if (pauseSelected = 2){draw_text(960,675,'_________')}
+        if (pauseSelected = 3){draw_text(960,810,'____');}
     }
 }
 

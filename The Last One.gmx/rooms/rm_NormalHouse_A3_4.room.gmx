@@ -68,8 +68,6 @@
     <instance objName="obj_Box2" x="562" y="279" name="inst_A25F5F35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_AmmoBox" x="287" y="559" name="inst_4E693937" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Trigger_NH_B1_2" x="466" y="574" name="inst_06C3200F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="0" y="0" name="inst_3582059C" locked="0" code="" scaleX="0" scaleY="0" colour="0" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="0" y="0" name="inst_79CBFF6D" locked="0" code="" scaleX="0" scaleY="0" colour="0" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_TileSet_Floor" x="640" y="544" w="32" h="32" xo="192" yo="64" id="10004666" name="inst_BFC9CD90" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
