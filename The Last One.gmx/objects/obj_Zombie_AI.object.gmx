@@ -40,7 +40,7 @@ moveLength = 128;
 //Tracking player
 lockedOn = false;
 trackRange = 200;
-hitRange = 16;
+hitRange = 1;
 toggleCoor = 0;
 hurtTick = 0;
 hurtPlayer = false;
