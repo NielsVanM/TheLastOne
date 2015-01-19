@@ -806,6 +806,24 @@
               <object>objects\obj_Trigger_NH_A1_2</object>
               <object>objects\obj_Trigger_NH_A1_3</object>
             </objects>
+            <objects name="B1">
+              <object>objects\obj_Trigger_NH_B1_1</object>
+              <object>objects\obj_Trigger_NH_B1_2</object>
+              <object>objects\obj_Trigger_NH_B1_3</object>
+              <object>objects\obj_Trigger_NH_B1_4</object>
+            </objects>
+            <objects name="C1">
+              <object>objects\obj_Trigger_NH_C1_1</object>
+              <object>objects\obj_Trigger_NH_C1_2</object>
+              <object>objects\obj_Trigger_NH_C1_3</object>
+              <object>objects\obj_Trigger_NH_C1_4</object>
+              <object>objects\obj_Trigger_Hospital_C1</object>
+            </objects>
+            <objects name="A3">
+              <object>objects\obj_Trigger_NH_A3_1</object>
+              <object>objects\obj_Trigger_NH_A3_2</object>
+              <object>objects\obj_Trigger_NH_A3_3</object>
+            </objects>
           </objects>
         </objects>
         <objects name="Crewhouse">
@@ -900,14 +918,32 @@
               <room>rooms\rm_NormalHouse_A1_2</room>
               <room>rooms\rm_NormalHouse_A1_3</room>
             </rooms>
+            <rooms name="B1">
+              <room>rooms\rm_NormalHouse_B1_1</room>
+              <room>rooms\rm_NormalHouse_B1_2</room>
+              <room>rooms\rm_NormalHouse_B1_3</room>
+              <room>rooms\rm_NormalHouse_B1_4</room>
+            </rooms>
+            <rooms name="C1">
+              <room>rooms\rm_NormalHouse_C1_1</room>
+              <room>rooms\rm_NormalHouse_C1_2</room>
+              <room>rooms\rm_NormalHouse_C1_3</room>
+              <room>rooms\rm_NormalHouse_C1_4</room>
+              <room>rooms\rm_Hospital_C1</room>
+            </rooms>
+            <rooms name="A3">
+              <room>rooms\rm_NormalHouse_A3_1</room>
+              <room>rooms\rm_NormalHouse_A3_2</room>
+              <room>rooms\rm_NormalHouse_A3_3</room>
+              <room>rooms\rm_NormalHouse_A3_4</room>
+              <room>rooms\rm_NormalHouse_A3_5</room>
+              <room>rooms\rm_NormalHouse_A3_6</room>
+            </rooms>
           </rooms>
         </rooms>
         <rooms name="Crew House">
           <room>rooms\rm_CrewHouse</room>
           <room>rooms\rm_ShootingRange</room>
-        </rooms>
-        <rooms name="Hospital">
-          <room>rooms\rm_Hospital</room>
         </rooms>
       </rooms>
     </rooms>
