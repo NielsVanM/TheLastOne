@@ -41,6 +41,8 @@ ini_write_real('GunAmmo','Machine Gun Unlocked',obj_Player.gun[8,1]);
 //Save melee
 ini_write_real('Melee','Axe Unlocked',obj_Player.melee[1,1]);
 ini_write_real('Melee','Crowbar Unlocked',obj_Player.melee[2,1]);
+//Save points
+ini_write_real('Points','Kills',obj_Player.kills);
 
 
 //Close file

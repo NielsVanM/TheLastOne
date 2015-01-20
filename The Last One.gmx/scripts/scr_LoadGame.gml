@@ -39,6 +39,8 @@ if (file_exists('saveGame.ini')){
     //Load melee
     obj_Player.melee[1,1] = ini_read_real('Melee','Axe Unlocked',false);
     obj_Player.melee[2,1] = ini_read_real('Melee','Axe Unlocked',false);
+    //Load kills
+    obj_Player.kills = ini_read_real('Points','Kills',0);
     
     //Close file
     ini_close();

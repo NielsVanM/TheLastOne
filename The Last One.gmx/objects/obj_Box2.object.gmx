@@ -58,10 +58,10 @@ if (distance_to_object(obj_Player) &lt; 32) &amp;&amp; (looted = false){
         loot = choose(1,2,3,4);
         if (loot = 1){
             obj_Player.invAmount[1,1] += 1; //Add empty bottle
-            obj_Player.invAmount[2,2] += 1; //Add bread
+            obj_Player.invAmount[0,2] += 1; //Add bread
         }
         if (loot = 2){
-            obj_Player.invAmount[2,4] += 2; //Add appple
+            obj_Player.invAmount[0,4] += 2; //Add appple
         }
         if (loot = 3){
             
